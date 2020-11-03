@@ -1,0 +1,107 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+  background-color: @main-background-color;
+}
+
+//header, contains banner, menu, language picker
+#header{
+  padding: 0; margin: 0;
+  border : 0; border-bottom: 1px solid @gray-light;
+  background-color: @brand-primary;
+  color:#fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+
+  #banner {
+    display: block; height: 64px;
+    padding: 0; margin: 0;
+    background-image : url("../images/banner_cscf.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #50768D;
+
+    .clearfix();
+
+    h1{
+      margin: 20px 0 0 240px;
+      color: white;
+    }
+
+    #languageMenu{
+      position: absolute;
+      top: 15px; right: 20px;
+      width: 60px;
+      button{
+        margin:0;
+      }
+      .dropdown-menu{
+        width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+
+  #menu {
+    background-color: @gray-lighter;
+    #gradient > .vertical(lighten(@gray-lighter, 10%); darken(@gray-lighter, 10%));
+    ul.nav {
+      width:100%;
+
+      >li >a:hover {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+  }
+}
+
+#breadcrumb {
+  //background-color: transparent;
+  //box-shadow: inset 0px 0px 6px 1px #c0c0c0;
+  border: 1px solid @gray-lighter;
+  position : absolute; top : 122px; left : 10px;
+  width: ~"calc(100% - 20px)";
+  //width: calc(100% - 12px);
+  //clear: left;
+  //margin: 0 5px 5px;
+
+  #page-code {
+    color: @gray-dark;
+  }
+}
+
+
+body > .container {
+  padding-top: 180px; padding-bottom: 80px;
+}
+
+#footer{
+  font-size: 0.85em;
+  position : absolute; bottom : 0; left : 0; right : 0;
+  min-height: 30px; margin : 0;
+  background-color: lighten(@gray, 15%);
+  #gradient > .vertical(lighten(@gray, 25%); lighten(@gray, 15%));
+  overflow: hidden;
+
+  div {
+    color: @gray-darker;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+}
+.map-font-switch{
+  position: absolute  !important;
+  z-index:1  !important;;
+  margin-top: 32px;
+  margin-left: 5px;
+}
+.fa-map-size{
+  font-size: 18px !important;
+}
+.coloerd-map{
+  color: #0db9f0;
+}

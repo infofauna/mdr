@@ -1,0 +1,47 @@
+//** Default background color used for all tables.
+@table-bg:                      white;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               @gray-lighter;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                @primary-lighter;
+@table-bg-active:               @primary-lighter;
+
+
+// Add alternate darker lines also for state variants in bootstrap tables
+table.table-striped > tbody > tr.danger:nth-child(2n) > td {
+  background-color: darken(@state-danger-bg, 10%);
+}
+
+table.table-striped > tbody > tr.warning:nth-child(2n) > td {
+  background-color: darken(@state-warning-bg, 10%);
+}
+
+table.table-striped > tbody > tr.info:nth-child(2n) > td {
+  background-color: darken(@state-info-bg, 10%);
+}
+
+table.table-striped > tbody > tr.success:nth-child(2n) > td {
+  background-color: darken(@state-success-bg, 10%);
+}
+//style for extra header above the normal columns headers
+table.table > thead > tr.uber-header > th{
+  border-bottom: 1px dotted  #999999; text-align: center;
+}
+
+table.ui-jqgrid-btable{
+  .table();
+  .table-striped();
+}
+
+
+/* ng-able related styles */
+
+//fix height related issues :  https://github.com/angular-ui/ng-grid/issues/80
+.ngViewport.ng-scope{
+  height: auto !important;
+  overflow-y: hidden;
+}
+
+.ngTopPanel.ng-scope, .ngHeaderContainer{
+  width: auto !important;
+}

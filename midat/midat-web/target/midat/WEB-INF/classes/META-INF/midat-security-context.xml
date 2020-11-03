@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/authentication/login"/>
+        <property name="successUrl" value="/app/home"/>
+        <property name="unauthorizedUrl" value="/authentication/login"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /resources/** =                 anon
+                /authentication/** =         anon
+
+                /app/home =                     authc, perms["midat:login"]
+                /app/import/** =                authc, perms["midat:samples:create"]
+                /app/samples/** =               authc, perms["midat:samples:read"]
+
+                /api/upload/** = authc, perms["midat:samples:create"]
+
+                /api/biotic-water-quality/** =  authc, rest["midat:samples"]
+                /api/midat-search/** =          authc, perms["midat:samples:read"]
+                /api/options/** =               authc, rest["midat:samples"]
+                /api/stations/linkunlink =      authc, rest["midat:samples:update"]
+                /api/stations/** =              authc, rest["midat:samples:read"]
+                /api/search-institution/** =    authc, rest["midat:samples:read"]
+                /api/search-project/** =        authc, rest["midat:samples:read"]
+                /api/task-status/** =           authc, perms["midat:samples:create"]
+                /api/groups/** =                authc, perms["midat:login"]
+                /api/users/session-user =       authc, perms["midat:login"]
+                /api/samples/** =               authc, rest["midat:samples:read"]
+
+                /** =                           authc, perms["denied"]
+            </value>
+        </property>
+    </bean>
+
+    <!-- Override the default authc security filter with our own -->
+    <bean id="authc" class="ch.cscf.jeci.web.security.ExtendedJeciFormAuthenticationFilter" />
+    <bean id="rest" class="org.apache.shiro.web.filter.authz.HttpMethodPermissionFilter" />
+
+    <!-- Security manager using our own realm -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="jeciRealm"/>
+    </bean>
+
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!-- JECI realm, gets users from DB, authenticates them from DB stored password, or from LDAP -->
+    <bean id="jeciRealm" class="ch.cscf.jeci.services.security.implementation.JeciRealm" >
+        <constructor-arg name="applicationId" value="2" />
+        <constructor-arg name="applicationName" value="MIDAT" />
+        <property name="credentialsMatcher" ref="allowAllCredentialsMatcher"/>
+    </bean>
+
+    <bean id="allowAllCredentialsMatcher" class="org.apache.shiro.authc.credential.AllowAllCredentialsMatcher"/>
+
+</beans>

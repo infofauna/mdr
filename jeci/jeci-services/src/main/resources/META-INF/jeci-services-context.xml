@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                            http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                            http://www.springframework.org/schema/tx        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+                            http://www.springframework.org/schema/jee       http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <!-- Load configuration files and allow '${}' style placeholders -->
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:config/default-config.properties</value>
+                <value>classpath:config/environment-config.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+    </bean>
+
+    <!-- Activate annotations for registered beans (@Autowired etc) -->
+    <context:annotation-config/>
+
+    <!-- Scan for annotated components (@Repository, @Service etc)-->
+    <context:component-scan base-package="ch.cscf.jeci.persistence" />
+    <context:component-scan base-package="ch.cscf.jeci.services" />
+
+    <!-- switch on the transactional infrastructure -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- Utility class to execute transactional code where use of annotation is not possible -->
+    <bean class="org.springframework.transaction.support.TransactionTemplate" id="txTemplate">
+        <constructor-arg name="transactionManager" ref="transactionManager"/>
+    </bean>
+
+    <!-- JDBC data source : JNDI lookup, the connexion is configured in Tomcat's context.xml -->
+    <jee:jndi-lookup id="jeciDataSource"
+                     jndi-name="jdbc/jeciDataSource" expected-type="javax.sql.DataSource"  />
+
+    <!-- JDBC Template to handle calls to stored procedure -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg name="dataSource" ref="jeciDataSource"/>
+    </bean>
+
+    <!-- Named parameters JDBC Template to handle calls to stored procedure with named parameters -->
+    <bean id="namedParamJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg name="classicJdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+
+    <!-- JPA EntityManager factory -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="jeciDataSource"/>
+        <property name="persistenceUnitName" value="mainPersistenceUnit" />
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.dialect">${persistence.hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql" >${persistence.hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql" >${persistence.hibernate.format_sql}</prop>
+                <!--<prop key="hibernate.spatial.connection_finder" >ch.cscf.jeci.persistence.hibernate.DBCPPooledConnectionFinder</prop>-->
+                <prop key="hibernate.spatial.ogc_strict" >false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Transaction manager based on JPA -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <!-- JSR-303 validator -->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+
+    <!-- Static proxy that allows look-up of Spring beans from non-Spring-managed objects -->
+    <bean id="springContextProxy" class="ch.cscf.jeci.services.general.SpringContextProxy" />
+
+    <!-- Use that loggedInUserService service for auditing : TODO rewrite this with SHIRO-->
+    <!--<jpa:auditing auditor-aware-ref="loggedInUserService" /> -->
+
+    <!-- LDAP context source -->
+    <bean id="ldapContextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+        <property name="url" value="${ldap.serverUrl}" />
+        <property name="base" value="${ldap.base}" />
+        <property name="userDn" value="${ldap.user}" />
+        <property name="password" value="${ldap.password}" />
+    </bean>
+
+    <!-- LDAP template -->
+    <bean id="ldap" class="org.springframework.ldap.core.LdapTemplate">
+        <constructor-arg ref="ldapContextSource" />
+    </bean>
+
+    <!-- Object2Map mapper -->
+    <bean id="o2m" class="ch.unine.sitel.o2m.MapperImpl" />
+
+    <!--  Task executor -->
+    <bean id="taskExecutor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="5" />
+		<property name="maxPoolSize" value="20" />
+		<property name="WaitForTasksToCompleteOnShutdown" value="true" />
+	</bean>
+
+</beans>

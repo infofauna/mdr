@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>Tango : Take-A-Number Next Generation</display-name>
+
+    <!-- Spring context -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:META-INF/midat-app-context.xml
+        </param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>jeciCurrentRequestFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetBeanName</param-name>
+            <param-value>jeciCurrentRequestFilter</param-value>
+        </init-param>
+    </filter>
+
+    <!-- Remote IP filter so that HttpServletRequest.remoteAddr methods returns
+    the value contained in the X-Forwarded-For header rather than 127.0.0.1 when proxied -->
+    <filter>
+        <filter-name>RemoteIpFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.RemoteIpFilter</filter-class>
+        <init-param>
+            <param-name>internalProxies</param-name>
+            <param-value>127\.0\.0\.1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>remoteIpHeader</param-name>
+            <param-value>x-forwarded-for</param-value>
+        </init-param>
+        <init-param>
+            <param-name>remoteIpProxiesHeader</param-name>
+            <param-value>x-forwarded-by</param-value>
+        </init-param>
+        <init-param>
+            <param-name>protocolHeader</param-name>
+            <param-value>x-forwarded-proto</param-value>
+        </init-param>
+    </filter>
+
+    <!-- The filter-name matches name of a 'shiroFilter' bean inside applicationContext.xml -->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <!-- This filter allows to use method=put or delete in Spring MVC additionalDataForm:forms and handles the extra parameter -->
+    <filter>
+        <filter-name>SpringFormMethodFilter</filter-name>
+        <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <!-- Spring context loader -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- Tiles listener -->
+    <listener>
+        <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
+    </listener>
+
+    <!-- SSO session listener to clean up the persistent SSO session on session time out -->
+    <listener>
+        <listener-class>ch.cscf.jeci.web.security.JeciSSOSessionListener</listener-class>
+    </listener>
+
+    <!-- SSO Servlet Context Listener to resetForSessionAndKey all SSO counters on webapp startup -->
+    <listener>
+        <listener-class>ch.cscf.jeci.web.security.JeciSSOServletContextListener</listener-class>
+    </listener>
+
+    <!-- Spring dispatcher servlet - creates Spring web context  -->
+    <servlet>
+        <servlet-name>SpringMVCDispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>WEB-INF/midat-web-context.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <filter-mapping>
+        <filter-name>RemoteIpFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <!-- Mapping to our Spring MVC controllers - see exclusion for static resources in -->
+    <servlet-mapping>
+        <servlet-name>SpringMVCDispatcher</servlet-name>
+        <url-pattern>/app/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/authentication/*</url-pattern>
+    </servlet-mapping>
+
+    <filter-mapping>
+        <filter-name>jeciCurrentRequestFilter</filter-name>
+        <url-pattern>/app/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/authentication/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/app/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/authentication/*</url-pattern>
+        <url-pattern>/resources/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/app/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/authentication/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>SpringFormMethodFilter</filter-name>
+        <url-pattern>/app/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/authentication/*</url-pattern>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 404 error page -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/jsp/errors/404-tiles.jsp</location>
+    </error-page>
+
+    <!-- Default error page -->
+    <error-page>
+        <location>/WEB-INF/jsp/errors/defaultError-tiles.jsp</location>
+    </error-page>
+
+</web-app>

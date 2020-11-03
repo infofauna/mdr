@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: log4j:log4j:99-empty">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/99-empty/log4j-99-empty.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/99-empty/log4j-99-empty-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/99-empty/log4j-99-empty-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

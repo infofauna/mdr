@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# The midat-[profile] servers must be configured in the servers section of your .m2/settings.xml for this script to work.
+# See the tomcat plugin config in the pom.xml of the webapps.
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied. You must supply the target profile."
+    exit -1
+fi
+
+echo Deploying MIDAT for profile : $1
+
+pushd ./midat/midat-web
+mvn -DskipTests=true -P $1 tomcat7:undeploy tomcat7:deploy
+popd
+

@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.cscf</groupId>
+		<artifactId>midat-parent</artifactId>
+		<version>4.1.0</version>
+	</parent>
+
+    <artifactId>midat-web</artifactId>
+    <packaging>war</packaging>
+    <name>MIDAT Web Application Module</name>
+
+
+    <dependencies>
+
+		<!-- MIDAT services module -->
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>midat-services</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- JECI Web Commons module -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jeci-web-commons</artifactId>
+            <version>${jeci.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <!-- JECI Web Commons module - Classes -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jeci-web-commons</artifactId>
+            <version>${jeci.version}</version>
+            <classifier>classes</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>midat</finalName>
+
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+
+        <plugins>
+
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+
+                <configuration>
+                    <warName>${project.build.finalName}-${project.version}-${environment}</warName>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                        <manifestEntries>
+                            <Implementation-Build>${buildNumber}</Implementation-Build>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Automatic deployment to tomcat -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>${tomcatDeployUrl}</url>
+                    <warFile>target/${project.build.finalName}-${project.version}-${environment}.war</warFile>
+                    <server>${tomcatDeployServer}</server>
+                    <path>/midat</path>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+	</build>
+
+</project>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="col-xs-12">
+    <h3>
+        {{'menu.charts' | j18n}}
+    </h3>
+    <hr/>
+
+    <div class="line clearfix">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <input type="text" class="form-control"  ng-model="filter" autofocus placeholder="Filtrer Login, nom ou prénom" ng-keyup="filterTable(filter)">
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="listConnection">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

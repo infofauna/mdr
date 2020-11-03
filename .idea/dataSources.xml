@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="fauna_app@tfauna10" uuid="4bdeb644-84ad-4853-bee9-c972a210c229">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@mizar1.unine.ch:1521:tfauna10</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Dev - fauna_app@tfauna" uuid="03c0a7b9-fb4c-4e70-9efe-8bfa0c0a3d55">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@mizar.unine.ch:1521:tfauna</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Dev admin- fauna_app@tfauna" uuid="17b1db3b-9f17-4f1c-96ba-8ea053517bad">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@mizar.unine.ch:1521:tfauna</jdbc-url>
+    </data-source>
+  </component>
+</project>

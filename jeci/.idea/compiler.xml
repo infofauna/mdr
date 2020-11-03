@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="infofauna-services" />
+        <module name="infofauna-web" />
+        <module name="jeci-commons" />
+        <module name="jeci-domain" />
+        <module name="jeci-persistence" />
+        <module name="jeci-services" />
+        <module name="jeci-web-commons" />
+        <module name="midat-services" />
+        <module name="midat-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="infofauna-parent" target="1.5" />
+      <module name="infofauna-services" target="1.8" />
+      <module name="infofauna-web" target="1.8" />
+      <module name="jeci-commons" target="1.8" />
+      <module name="jeci-domain" target="1.8" />
+      <module name="jeci-parent" target="1.5" />
+      <module name="jeci-persistence" target="1.8" />
+      <module name="jeci-services" target="1.8" />
+      <module name="jeci-web-commons" target="1.8" />
+      <module name="midat-parent" target="1.5" />
+      <module name="midat-services" target="1.8" />
+      <module name="midat-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

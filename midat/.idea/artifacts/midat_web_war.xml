@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="midat-web:war">
+    <output-path>$PROJECT_DIR$/midat-web/target</output-path>
+    <root id="archive" name="midat-2.3.4-${environment}.war">
+      <element id="artifact" artifact-name="midat-web:war exploded" />
+    </root>
+  </artifact>
+</component>

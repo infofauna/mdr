@@ -1,0 +1,564 @@
+<div ng-show="loading">
+    <i class="fa fa-spin fa-cog"></i> {{"search.details.loading" | j18n }}
+</div>
+
+<div class="ng-cloak" ng-show="!loading" id="midat-sample-detail-1">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>
+                {{"search.details.header" | j18n }}
+            </h4>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-default pull-right" ng-click="back()">
+                <i class="fa fa-arrow-left"></i>
+                <span class="text">
+                    {{"search.details.back" | j18n }}
+                </span>
+            </button>
+
+            <!-- ng-if="!sample.massImport" -->
+
+            <a  ng-if="sessionUser.isPermitted('midat:samples:update')" class="btn btn-default pull-right" href="{{additionalDataFormUrl}}">
+                <i class="fa fa-file-excel-o"></i>
+                <span class="text">
+                    {{"search.details.addprotocol" | j18n }}
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <hr class="v-spacer-5"/>
+</div>
+
+<geoadmin-map
+        style="height:300px; width:100%;"
+        model="mapModel">
+</geoadmin-map>
+
+<div class="ng-cloak" ng-show="!loading" id="midat-sample-detail-2">
+
+    <hr class="v-spacer-10"/>
+
+    <uib-tabset>
+
+        <!-------------------- Station tab 1 ------------------>
+        <uib-tab heading="{{'search.details.station.header' | j18n }}" select="forceRenderMap()">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.number" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.stationNumber}}
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.watercourse" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.watercourse}}
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.locality" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.locality}}
+                        </p>
+                    </div>
+                    <!--
+                    <div class="form-group">
+                        <label class="control-label">
+                          {{"search.details.station.namedplace" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.namedPlace}}
+                        </p>
+                    </div>
+                     -->
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.altitude" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span  ng-if="sample.stationAltitude > 0">{{sample.stationAltitude}} m</span>
+                            <span  ng-if="sample.stationAltitude =='NaN' || sample.stationAltitude == null || sample.stationAltitude == ''">-</span>
+                        </p>
+                    </div>
+
+                    <!-- Canton -->
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.canton" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.stationCanton}}
+                        </p>
+                    </div>
+
+                    <!-- No.Gewiss-->
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.gewiss" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span  ng-if="sample.stationGewissNumber > 0">{{sample.stationGewissNumber}}</span>
+                            <span  ng-if="sample.stationGewissNumber =='NaN' || sample.stationGewissNumber == null || sample.stationGewissNumber == ''">-</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-7 ">
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.coordinates" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.stationCoordinatesX}} {{sample.stationCoordinatesY}}
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.precisiontype" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.precisionReferenceSystem}}
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.station.precision" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.precision}}
+                        </p>
+                    </div>
+
+                    <!-- Autres stations liées -->
+                    <div class="form-group" ng-if="!sample.mainStation && sessionUser.isPermitted('midat:samples:update')">
+                        <label class="control-label">
+                            {{"search.details.station.linked" | j18n }}
+                        </label>
+                        <span data-tooltip=" {{('search.details.station.linked.msg1' | j18n).replace('{0}',sample.staLinkBuffInMeter) }}" data-tooltip-position="right"><i class="fa fa-info-circle fa-lg information"></i> </span>
+                        <p class="form-control-static">
+                            <!-- <span> {{sampleStationStations | json}}</span> -->
+                            <!-- <span>{{sessionUser.isPermitted('midat:samples:update')}}</span> -->
+
+
+                            <multiselect class="input-xlarge" multiple="true"
+                                         ng-model="sampleStationStations"
+                                         options="c.stationDisplay for c in stationStations"
+                                         change="selected();updateModel(sampleStationStations);" >
+
+                            </multiselect>
+
+                        <div class="well well-small">
+                            <!--  {{selectedStation}} -->
+                            <div ng-repeat="station in sampleStationStations" class="form-control-static">
+
+                                <i class="fa fa-plus-square-o" toggle-details="fa fa-minus-square-o"  aria-hidden="true" style="cursor: pointer">
+                                    <b> &nbsp;{{station.stationDisplay}} </b>
+                                </i>
+                                <ul  class="hidden">
+                                    <li> {{"search.details.station.coordinates" | j18n }} : {{station.stationCoordinatesX}}, {{station.stationCoordinatesY}}</li>
+                                    <li> {{"search.details.station.gewiss" | j18n }} : {{station.stationGewissNumber}} </li>
+                                    <li> {{"search.details.sample.principal" | j18n }} : {{station.stationPrincipalInstitution}}</li>
+                                    <li> {{"search.details.station.canton" | j18n }} : {{station.stationCanton}}</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        </p>
+                    </div>
+                    <!-- display sampleStationStations only -->
+                    <div class="form-group" ng-if="!sample.mainStation && !sessionUser.isPermitted('midat:samples:update')">
+                        <label class="control-label">
+                            {{"search.details.station.linked" | j18n }}
+                        </label>
+                        <span data-tooltip=" {{'search.details.station.linked.msg1' | j18n }}" data-trigger="click" data-tooltip-position="right"><i class="fa fa-info-circle fa-lg information"></i> </span>
+
+                        <div class="well well-small">
+                            <div ng-repeat="station in sampleStationStations" class="form-control-static">
+                                <i class="fa fa-plus-square-o" toggle-details="fa fa-minus-square-o"  aria-hidden="true" style="cursor: pointer">
+                                    <b> &nbsp;{{station.stationDisplay}} </b>
+                                </i>
+
+                                <ul  class="hidden">
+                                    <li> {{"search.details.station.coordinates" | j18n }} : {{station.stationCoordinatesX}}, {{station.stationCoordinatesY}}</li>
+                                    <li> {{"search.details.station.gewiss" | j18n }} : {{station.stationGewissNumber}} </li>
+                                    <li> {{"search.details.sample.principal" | j18n }} : {{station.stationPrincipalInstitution}}</li>
+                                    <li> {{"search.details.station.canton" | j18n }} : {{station.stationCanton}}</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- mainStation -->
+                    <div class="form-group" ng-if="sample.mainStation">
+                        <label class="control-label">
+                            {{"search.details.station.linkedChild" | j18n }}
+                        </label>
+                        <span data-tooltip=" {{'search.details.station.linkedChild.msg' | j18n }}"  data-trigger="click" data-tooltip-position="right"><i class="fa fa-info-circle fa-lg information"></i> </span>
+                        <div class="well well-small">
+                            <!--  {{selectedStation}} -->
+                            <div class="form-control-static">
+
+                                <i class="fa fa-plus-square-o" toggle-details="fa fa-minus-square-o"  aria-hidden="true" style="cursor: pointer">
+                                    <b> &nbsp;{{sample.mainStation.stationDisplay}} </b>
+                                </i>
+
+                                <ul  class="hidden">
+                                    <li> {{"search.details.station.coordinates" | j18n }} : {{sample.mainStation.stationCoordinatesX}}, {{sample.mainStation.stationCoordinatesY}}</li>
+                                    <li> {{"search.details.station.gewiss" | j18n }} : {{sample.mainStation.stationGewissNumber}} </li>
+                                    <li> {{"search.details.sample.principal" | j18n }} : {{sample.mainStation.stationPrincipalInstitution}}</li>
+                                    <li> {{"search.details.station.canton" | j18n }} : {{sample.mainStation.stationCanton}}</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </uib-tab>
+
+        <!-------------------- Sample tab 2------------------>
+        <uib-tab heading="{{'search.details.sample.header' | j18n }}" >
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.id" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.sampleId}}
+                        </p>
+                    </div>
+
+                    <!-- search.resulttable.protocolType -->
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.resulttable.protocolType" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span ng-if="sample.massImport  === true ">{{'search.form.protocoltype.mass.description' | j18n }}</span>
+                            <span ng-if="sample.massImport !== true ">{{'search.form.protocoltype.laboratory.description' | j18n }}</span>
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.principal" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.principalInstitution}}
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.proxy" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.mandataryInstitution}}
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.sampledate" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.sampleDateIncludingPartialDate}}
+                        </p>
+                    </div>
+
+                    <!--
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.analysisdate" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            {{sample.analysisDate | date }}
+                        </p>
+                    </div>
+                    -->
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.resulttable.project" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span ng-if="sample.project"> {{sample.project | date }}</span>
+                            <span ng-if="!sample.project"> - </span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.operator" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span ng-if="sample.samplePerson">  {{sample.samplePerson}}</span>
+                            <span ng-if="!sample.samplePerson"> - </span>
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"search.details.sample.determinator" | j18n }}
+                        </label>
+                        <p class="form-control-static">
+                            <span ng-if="sample.validationPerson">  {{sample.validationPerson}}</span>
+                            <span ng-if="!sample.validationPerson"> - </span>
+                        </p>
+                    </div>
+
+                    <div xclass="form-group">
+                        <label class="control-label">
+                            {{"search.details.auditData" | j18n}}
+                        </label>
+                        <a class="btn btn-primary btn-xs" ng-click="loadAuditingData(sample.sampleId)"
+                           bs-popover
+                           data-placement="left"
+                           data-auto-close="true"
+                           data-template="{{auditPopoverTplUrl}}"
+                           data-trigger="click"
+                           data-content="{{'search.sampleEntityType' | j18n}}"
+                        >
+                            <i class="fa fa-info-circle"></i>
+                        </a>
+                    </div>
+
+
+
+                    <div class="form-group" ng-if="hasDocuments()">
+
+                        <label class="control-label">
+                            {{"search.details.sample.documents" | j18n }}
+                        </label>
+
+
+                        <p ng-repeat="(key, value) in sample.documents" class="form-control-static">
+                            <a target="_blank" href="{{value}}">{{value}}</a>
+                        </p>
+
+                    </div>
+
+                    <!-- details.sample.remarks-->
+                    <br>
+                    <div class="form-group">
+                        <label class="control-label">
+                            {{"details.sample.remarks" | j18n }}
+                        </label>
+                        <div  class="form-control-static">
+                            <span  ng-repeat="comment in sample.sampleComments">
+                               <i class="fa fa-check-square" aria-hidden="true"></i> &nbsp;{{comment.designation}}<br>
+                            </span>
+
+                            <span ng-if="sample.sampleCommentOther.length>0"><i class="fa fa-check-square" aria-hidden="true"></i> &nbsp;{{sample.sampleCommentOther}}</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </uib-tab>
+
+        <!-------------------- Index tab 3------------------>
+
+        <uib-tab  heading="{{'search.details.sample.indexs' | j18n }}"   >
+            <uib-tabset class="subNavTab" >
+
+                <uib-tab   heading="{{'search.details.sample.indexTab1' | j18n }}"  class="subTabContent" >
+                    <ng-include src="indexTabTemplatePath" ></ng-include>
+                </uib-tab>
+                <uib-tab ng-click="loadSampleIndiceHistoryData()" heading="{{'search.details.sample.indexTab2' | j18n }}" class="subTabContent" >
+                    <ng-include src="indexHistoryTabTemplatePath" ></ng-include>
+                </uib-tab>
+            <uib-tabset>
+        </uib-tab>
+        <!-------------------- Fauna tab 4 ------------------>
+        <uib-tab heading="{{'search.details.analysis.header' | j18n }}">
+
+            <div ng-if="!sample.absoluteNumbers" class="alert alert-warning" role="alert">
+                {{"search.details.analysis.notAbsoluteWarning" | j18n }}
+            </div>
+
+
+            <table class="table table-condensed table-striped">
+                <thead>
+                <tr>
+                    <th>{{"search.details.analysis.taxon" | j18n }}</th>
+                    <th ng-if="sample.labRecordFields[0].ibchTaxon">{{"search.details.analysis.taxonibch" | j18n }}</th>
+                    <th>{{"search.details.analysis.stadium" | j18n }}</th>
+                    <th>{{"search.details.analysis.frequency" | j18n }}</th>
+                    <th>{{"search.details.analysis.comment" | j18n }}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="field in sample.labRecordFields">
+                    <td>{{field.infofaunaTaxon}}</td>
+                    <td ng-if="field.ibchTaxon">{{field.ibchTaxon}}</td>
+                    <td>{{field.stadium}}</td>
+                    <td>{{field.frequency}}</td>
+                    <td>{{field.comment}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </uib-tab>
+
+
+        <!-------------------- import log tab 5 ------------------>
+        <uib-tab heading="{{'search.details.tab.header.logImport' | j18n }}"   ng-if="showLogTab" ng-click="loadImportLog()">
+
+            <div ng-if="loadingJournal">
+                      <span>
+                          <i class="fa fa-spinner fa-spin ">  </i>
+                          {{'search.details.tab.content.loading' | j18n}}
+                      </span>
+                <br/>
+            </div>
+
+            <div>
+
+                <label class="label label-info">
+                    <input type="checkbox" aria-label="..." ng-checked="infoChecked" ng-bind="infoChecked" ng-click="toggleInfo()">
+                    {{'search.details.tab.content.info' | j18n}}
+                </label>
+                &nbsp;&nbsp;
+                <label class="label label-warning">
+                    <input type="checkbox" aria-label="..."
+                           ng-checked="warningChecked" ng-bind="warningChecked" ng-click="toggleWarning()">
+                    {{'search.details.tab.content.warning' | j18n}}
+
+                </label>
+            </div>
+
+            <br/>
+
+            <div   ng-repeat="item in importLog">
+                <div class="alert alert-info" ng-if="item.severity ==='I' && infoChecked" role="alert">
+                    {{$index + 1 +'/'+importLog.length+1 +' - ' +item.message}}
+                </div>
+                <div class="alert alert-warning" ng-if="item.severity ==='W' && warningChecked" role="alert">
+                    {{$index + 1 +'/'+importLog.length+1 +' - ' +item.message}}
+                </div>
+
+            </div>
+
+        </uib-tab>
+
+
+        <!-------------------- Evaluation grid tab 5 ------------------>
+        <uib-tab heading="{{'search.details.evalgrid.header' | j18n }}" disable="!sample.evaluationGrid">
+            <div ng-if="sample.evaluationGrid">
+
+                <table class="table table-condensed table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            {{sample.evaluationGrid.grid[0][1]}}
+                        </th>
+                        <th>S**</th>
+                        <th ng-repeat="cell in sample.evaluationGrid.grid[0].slice(2, sample.evaluationGrid.grid[0].length) track by $index">
+                            {{cell}}
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>{{"search.details.evalgrid.habitability" | j18n }}</th>
+                        <td></td><td></td>
+                        <td>2</td><td>4</td><td>5</td><td>3</td><td>1</td>
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tr ng-repeat="row in sample.evaluationGrid.grid.slice(1, sample.evaluationGrid.length)">
+                        <td>
+                            {{row[0]}}
+                        </td>
+                        <td>{{row[1]}}</td>
+                        <td>
+                            {{10 - $index}}
+                        </td>
+                        <td ng-repeat="cell in row.slice(2, row.length) track by $index">
+                            {{cell}}
+                        </th>
+                    </tr>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <div class="form-horizontal ">
+
+                    <div class="form-group additional-info" ng-repeat="(label, value) in sample.evaluationGrid.extraFields">
+                        <label class="col-sm-4 control-label">{{label}} :</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-static">{{value}}</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <ul class="legend">
+                        <li ng-if="( 'search.details.evalgrid.legend.r.desc' | j18n ).length > 0">
+                           <span class="label label-default">
+                             {{'search.details.evalgrid.legend.r.desc' | j18n }}
+                           </span>
+                        </li>
+                        <li>
+                            <span class="label label-default">
+                            {{'search.details.evalgrid.legend.s.desc' | j18n }}
+                            </span>
+                        </li>
+                        <li>
+                            <span class="label label-default">
+                                {{'search.details.evalgrid.legend.v.desc' | j18n }}
+                           </span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+
+        </uib-tab>
+
+        <!-------------------- Ground protocol tab 6 ------------------>
+        <uib-tab heading="{{'search.details.groundproto.header' | j18n }}" disable="!sample.groundProtocol">
+            <div ng-if="sample.groundProtocol" id="ground-protocol">
+                <div ng-repeat="item in sample.groundProtocol.children">
+                    <hr/>
+                    <h4>{{item.label}}</h4>
+                    <ng-include src="groundProtocolItemTemplatePath" ></ng-include>
+                </div>
+            </div>
+        </uib-tab>
+
+        </tabset>
+
+
+
+</div>

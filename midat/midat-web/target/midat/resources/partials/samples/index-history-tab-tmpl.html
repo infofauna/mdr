@@ -1,0 +1,154 @@
+<div ng-if="loadingSampleIndiceHistoryData">
+  <span>
+      <i class="fa fa-spinner fa-spin ">  </i>
+      {{'search.details.tab.content.loading' | j18n}}
+  </span>
+    <br/>
+</div>
+
+
+
+<div class="row" style="margin-top: -30px">
+
+    <div class="col-md-6">
+        <div>
+            <label class="control-label" >
+                {{"search.details.sample.indexBrutes" | j18n }}
+            </label>
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"details.sample.ibch.family" | j18n }} :
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.taxonSumFamily  || 0}}
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.ephemeroptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{ sampleIndiceHistoryData.ephemeropteraCounter  || 0}}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.plecoptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.plecopteraCounter  || 0}}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.trichoptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.tricopteraCounter  || 0}}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+
+        <div >
+            <label class="control-label" >
+                {{"search.details.sample.index" | j18n }}
+            </label>
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"details.sample.ibch.indicator" | j18n }} :
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.valeurGi}} / {{sampleIndiceHistoryData.taxonIndicateur}}
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                GI_2019:
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.giFinal}}
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                VT_2019:
+            </label>
+            <p class="form-control-static">
+                {{sampleIndiceHistoryData.valuerVt}}
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <label class="control-label">
+                IBCH :&nbsp;&nbsp;
+            </label>
+
+            <span ng-if="sampleIndiceHistoryData.ibchIndexValue ">
+               <span  ng-if="sampleIndiceHistoryData.ibchLegendVersionId" class="badge" style="background-color: {{sampleIndiceHistoryData.ibchQuality.bgColorCode}}; color: {{sampleIndiceHistoryData.ibchQuality.textColorCode}}"
+                      bs-popover data-title="{{sampleIndiceHistoryData.ibchLegendVersionId}}" data-placement="top" data-template="{{indexesPopoverTplUrl}}"
+
+                      data-content="IBCH" data-trigger="hover" >
+                {{sampleIndiceHistoryData.ibchIndexValue}}
+               </span>
+               <span ng-if="!sampleIndiceHistoryData.ibchLegendVersionId" >
+                    {{sampleIndiceHistoryData.ibchIndexValue}}
+               </span>
+           </span>
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                IBCH_2019_R:
+            </label>
+            <p class="form-control-static">
+                {{sample.ibchRobust}}
+            </p>
+
+        </div>
+
+        <div style="margin-top: 10px;">
+
+            <label class="control-label">
+                SPEAR :&nbsp;&nbsp;
+            </label>
+            <span ng-if="sampleIndiceHistoryData.spearIndexValue ">
+                <span class="badge" style="background-color: {{sampleIndiceHistoryData.spearQuality.bgColorCode}}; color: {{sampleIndiceHistoryData.spearQuality.textColorCode}}"
+                      ng-if="sampleIndiceHistoryData.spearLegendVersionId"  data-title="{{sampleIndiceHistoryData.spearLegendVersionId}}" bs-popover data-placement="top" data-html="true" data-template="{{indexesPopoverTplUrl}}" data-content="SPEAR" data-trigger="hover" data-container="body">
+                    {{sample.bioticIndexes.spearIndexValue}}
+                </span>
+                <span ng-if="!sample.spearLegendVersionId">
+                      {{sample.bioticIndexes.spearIndexValue}}
+                </span>
+            </span>
+            <span ng-if="!sample.bioticIndexes.spearIndexValue">{{"sample.bioticIndexes.notAvailable" | j18n }}</span>
+        </div>
+
+    </div>
+</div>
+
+
+
+</div>

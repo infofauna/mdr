@@ -1,0 +1,198 @@
+
+<div class="row" style="margin-top: -30px">
+
+    <div class="col-md-6">
+
+        <div >
+            <label class="control-label" >
+                {{"search.details.sample.indexBrutes" | j18n }}
+            </label>
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"details.sample.ibch.family" | j18n }} :
+            </label>
+            <p class="form-control-static">
+                {{sample.taxonSumFamily || 0}}
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.ephemeroptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{ sample.ephemeropteraCounter  || 0 }}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.plecoptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{sample.plecopteraCounter  || 0}}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.trichoptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{sample.tricopteraCounter || 0}}
+            </p>
+            &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
+        </div>
+        <div class="form-group form-inline">
+            <label class="control-label">
+                {{"search.details.sample.trichoptera" | j18n }}:
+            </label>
+            <p class="form-control-static">
+                {{sample.sommeAbon || 0}}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+
+        <div >
+            <label class="control-label" >
+                {{"search.details.sample.index" | j18n }}
+            </label>
+        </div>
+
+
+
+
+
+                <div class="form-group form-inline">
+                    <label class="control-label">
+                        {{"details.sample.ibch.indicator" | j18n }} :
+                    </label>
+                    <p class="form-control-static">
+                        {{sample.valeurGi || '-'}} / {{sample.taxonIndicateur || '-'}}
+                    </p>
+
+                </div>
+
+                <div class="form-group form-inline">
+                    <label class="control-label">
+                        GI_2019:
+                    </label>
+                    <p class="form-control-static">
+                        {{sample.giFinal}}
+                    </p>
+
+                </div>
+
+                <div class="form-group form-inline">
+                    <label class="control-label">
+                        VT_2019:
+                    </label>
+                    <p class="form-control-static">
+                        {{sample.valuerVt}}
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+
+                    <label class="control-label">
+                        IBCH :&nbsp;&nbsp;
+                    </label>
+
+                    <span ng-if="sample.bioticIndexes.ibchIndexValue ">
+                       <span  ng-if="sample.ibchLegendVersionId" class="badge" style="background-color: {{sample.bioticIndexes.ibchQuality.bgColorCode}}; color: {{sample.bioticIndexes.ibchQuality.textColorCode}}"
+                              bs-popover data-title="{{sample.ibchLegendVersionId}}" data-placement="top" data-template="{{indexesPopoverTplUrl}}"
+
+                              data-content="IBCH" data-trigger="hover" >
+                        {{sample.bioticIndexes.ibchIndexValue}}
+                       </span>
+                       <span ng-if="!sample.ibchLegendVersionId" >
+                            {{sample.bioticIndexes.ibchIndexValue}}
+                       </span>
+                   </span>
+
+                    <div  ng-if="sample.bioticIndexes.ibchIndexValue"  style="margin-top: 10px;">
+
+
+
+                        <div  ng-switch="sample.bioticIndexes.ibchExtraMsgCode"  style="margin-top: 10px;" >
+
+                            <!-- T -->
+                            <div ng-switch-when="T" ng-hide="true">
+                                <div>
+                                    <div>
+                                        <div class="alert alert-warning" role="alert">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                            {{formatMsg( "details.sample.ibch.t"  ,sample.sampleDateDay,sample.sampleDateMonth,sample.sampleDateYear,sample.stationAltitude,sample.bioticIndexes.ibchCalendarDateInterval)}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- F-->
+                            <div ng-switch-when="F" ng-hide="true">
+                                <div >
+                                    <div >
+                                        <div class="alert alert-success" role="alert">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            {{formatMsg( "details.sample.ibch.f"  ,sample.sampleDateDay,sample.sampleDateMonth,sample.sampleDateYear,sample.stationAltitude,sample.bioticIndexes.ibchCalendarDateInterval)}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- O -->
+                            <div ng-switch-when="O">
+                                <div>
+                                    <div>
+                                        <div class="alert alert-danger" role="alert">
+                                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            {{formatMsg( "details.sample.ibch.o"  ,sample.sampleDateDay,sample.sampleDateMonth,sample.sampleDateYear,sample.stationAltitude,sample.bioticIndexes.ibchCalendarDateInterval)}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-inline">
+                    <label class="control-label">
+                        IBCH_2019_R:
+                    </label>
+                    <p class="form-control-static">
+                        {{sample.ibchRobust}}
+                    </p>
+
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <label class="control-label">
+                        SPEAR :&nbsp;&nbsp;
+                    </label>
+
+                    <span ng-if="sample.bioticIndexes.spearIndexValue ">
+                                                <span class="badge" style="background-color: {{sample.bioticIndexes.spearQuality.bgColorCode}}; color: {{sample.bioticIndexes.spearQuality.textColorCode}}"
+                                                      ng-if="sample.spearLegendVersionId"  data-title="{{sample.spearLegendVersionId}}" bs-popover data-placement="top" data-html="true" data-template="{{indexesPopoverTplUrl}}" data-content="SPEAR" data-trigger="hover" data-container="body">
+                                                    {{sample.bioticIndexes.spearIndexValue}}
+                                                </span>
+                                                <span ng-if="!sample.spearLegendVersionId">
+                                                      {{sample.bioticIndexes.spearIndexValue}}
+                                                </span>
+                                            </span>
+                    <span ng-if="!sample.bioticIndexes.spearIndexValue">{{"sample.bioticIndexes.notAvailable" | j18n }}</span>
+                </div>
+
+        </div>
+</div>

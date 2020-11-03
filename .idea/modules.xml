@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" filepath="$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" filepath="$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-parent.iml" filepath="$PROJECT_DIR$/jeci/jeci-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" filepath="$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" filepath="$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jeci-shell.iml" filepath="$PROJECT_DIR$/.idea/jeci-shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" filepath="$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midat/midat-parent.iml" filepath="$PROJECT_DIR$/midat/midat-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midat/midat-services/midat-services.iml" filepath="$PROJECT_DIR$/midat/midat-services/midat-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midat/midat-web/midat-web.iml" filepath="$PROJECT_DIR$/midat/midat-web/midat-web.iml" />
+    </modules>
+  </component>
+</project>

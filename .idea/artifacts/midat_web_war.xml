@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="midat-web:war">
+    <output-path>$PROJECT_DIR$/midat/midat-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>midat-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="midat-4.1.0-dev.war">
+      <element id="artifact" artifact-name="midat-web:war exploded" />
+    </root>
+  </artifact>
+</component>

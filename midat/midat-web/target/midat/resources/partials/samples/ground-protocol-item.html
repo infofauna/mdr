@@ -1,0 +1,17 @@
+<ul class="ground-protocol-item">
+    <li ng-repeat="item in item.children">
+
+        <span class="item-label">
+            {{item.label}}
+        </span>
+
+        <span ng-if="item.values != null && item.values.length > 0">
+            :
+            <span ng-repeat="value in item.values">
+                {{value}}<span ng-if="! $last">, </span>
+            </span>
+        </span>
+
+        <ng-include src="groundProtocolItemTemplatePath"/>
+    </li>
+</ul>

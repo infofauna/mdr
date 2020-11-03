@@ -1,0 +1,201 @@
+<div>
+    <h3>
+        {{'menu.charts' | j18n}}
+    </h3>
+    <hr/>
+
+    <div class="line clearfix">
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="chartType">
+                    {{"chart.type.selection" | j18n }}
+                </label> <br/>
+
+                <select ng-model="chartTypeValue" class="form-control" id="chartType" ng-change="resetCheckUser()">
+                    <option value="USERUPLOAD" >{{ 'chart.userupload' | j18n }}</option>
+                    <option value="TIME" >{{ 'chart.timeline' | j18n }}</option>
+                    <option value="INDEX" >{{ 'chart.index' | j18n }}</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-if="chartTypeValue === 'USERUPLOAD'"  class="line clearfix" >
+
+        <div class="col-md-12" style="display: flex">
+            <h4>   <label class="label label-primary">
+                <input type="checkbox" aria-label="..."  id="all"  ng-checked="true"  ng-model="checkValue" ng-click="toggleUser('all',checkValue)">
+                Tous
+            </label>
+                <span style="width: 10px">&nbsp;&nbsp;</span>
+            </h4>
+            <span ng-repeat=" u in logins">
+         <h4>   <label class="label label-primary">
+                <input type="checkbox" aria-label="..."  id="u"  ng-model="$index" ng-click="toggleUser(u,$index)">
+                {{u}}
+            </label>
+            <span style="width: 10px">&nbsp;&nbsp;</span>
+             </h4>
+        </span>
+        </div>
+
+        <div ng-if="loadingStatUserUpload">
+                      <span>
+                          <i class="fa fa-spinner fa-spin ">  </i>
+                          {{ 'chart.userupload' | j18n }}
+                      </span>
+            <br/>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <div class="panel panel-default" ng-repeat=" dataEntry in  dataSetPerLogin "  ng-if="checkUser(dataEntry[0] ) === true">
+            <div class="panel-heading" >
+                {{"chart.userupload.description" | j18n }}
+                <br/>
+                {{"chart.userupload.descriptionCantonUser" | j18n }}  <b>{{ dataEntry[0]}}</b>
+                <br/>
+                {{"chart.pdl.number" | j18n }} : <b>{{dataEntry[1].max_pdl}}</b> ;
+                {{"chart.pdm.number" | j18n }} : <b>{{dataEntry[1].max_pdm}}</b> ;
+                {{"chart.pdlpdm.number" | j18n }} : <b>{{dataEntry[1].max}}</b>
+                <br/>
+                <br/>
+                {{"chart.axe.y" | j18n }}
+            </div>
+
+            <div class="panel-body">
+                <canvas id="'bar'+$index" class="chart chart-bar" chart-data="[dataEntry[1].pdm, dataEntry[1].pdl]"
+                        chart-labels="cantons" chart-series="series"
+                        chart-colors="colors"
+                        chart-click="onClick">
+                </canvas>
+            </div>
+            <div class="panel-footer  panel-info">
+                <span style="color:#803690">{{ 'search.form.protocoltype.laboratory.description' | j18n }}</span>
+                &nbsp;&nbsp;
+                <span style="color:#ff0000">{{ 'search.form.protocoltype.mass.description' | j18n }}</span>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div ng-if="chartTypeValue === 'TIME'">
+
+
+
+        <div ng-if="loadingStatTempo">
+                      <span>
+                          <i class="fa fa-spinner fa-spin ">  </i>
+                          {{ 'chart.timeline' | j18n }}
+                      </span>
+            <br/>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {{ 'chart.timeline.description' | j18n }}
+                <br/>
+                {{ 'chart.axe.y' | j18n }}
+            </div>
+            <div class="panel-body">
+                <canvas id="line" class="chart chart-line" chart-data="lineData"
+                        chart-labels="timeLabels" chart-series="series"
+                        chart-colors="colors"
+                        chart-click="onClick">
+                </canvas>
+            </div>
+            <div class="panel-footer  panel-info">
+                <span style="color:#803690">{{ 'search.form.protocoltype.laboratory.description' | j18n }}</span>
+                &nbsp;&nbsp;
+                <span style="color:#ff0000">{{ 'search.form.protocoltype.mass.description' | j18n }}</span>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {{ 'chart.timeline.description' | j18n }}
+                <br/>
+                {{ 'chart.axe.yy' | j18n }}
+            </div>
+            <div class="panel-body">
+                <canvas id="line2" class="chart chart-line" chart-data="lineData"
+                        chart-labels="timeLabels" chart-series="series" chart-options="options"
+                        chart-colors="colors"
+                        chart-dataset-override="datasetOverride" chart-click="onClick">
+                </canvas>
+            </div>
+            <div class="panel-footer  panel-info">
+                <span style="color:#803690">{{ 'search.form.protocoltype.laboratory.description' | j18n }}</span>
+                &nbsp;&nbsp;
+                <span style="color:#ff0000">{{ 'search.form.protocoltype.mass.description' | j18n }}</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div ng-if="chartTypeValue === 'INDEX'"  class="line clearfix" >
+
+
+        <div class="col-md-12" style="display: flex">
+            <span ng-repeat=" index in indexs">
+         <h4>   <label class="label label-primary">
+                <input type="checkbox" aria-label="..."  id="_index"  ng-checked="checkIndex(index )" ng-model="$index" ng-click="toggleIndex(index,$index)">
+                {{index}}
+            </label>
+            <span style="width: 10px">&nbsp;&nbsp;</span>
+             </h4>
+        </span>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div ng-if="loadingStatIndice">
+                      <span>
+                          <i class="fa fa-spinner fa-spin ">  </i>
+                          {{ 'search.form.index' | j18n }}
+                      </span>
+            <br/>
+        </div>
+        <div class="panel panel-default" ng-repeat=" dataEntryIndex in  dataSetPerIndex "  ng-if="checkIndex(dataEntryIndex[0] ) === true">
+            <div class="panel-heading" >
+
+                {{('chart.index.description' | j18n).replace('{0}',dataEntryIndex[0]) }}
+
+                <br/>
+
+
+
+            </div>
+
+            <div class="panel-body">
+                <canvas id="'bar_index'+$index" class="chart chart-bar" chart-data="[dataEntryIndex[1].min, dataEntryIndex[1].avg,dataEntryIndex[1].max]"
+                        chart-labels="cantons" chart-series="indexSeries"
+                        chart-colors="colors"
+                        chart-click="onClick">
+                </canvas>
+            </div>
+            <div class="panel-footer  panel-info">
+                <br/>
+                <ul  class="biotic-ul">
+                    <li  ng-repeat="rating in bioticIndexQualityValues[dataEntryIndex[0]]" class="biotic-li">
+                            <span class="label"  style="font-size: 12px" title="{{rating.rangeLegendText}}"  ng-if="rating.ratingCode !=='UNDIFINED'" ng-style="{ 'background-color': 'lightgray', color: 'black' }">
+                                {{rating.rangeLegendText +' ( '+ rating.rating+' ) '}}
+                            </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

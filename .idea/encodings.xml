@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$/jeci" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-commons/src/main/profiles/dev" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-persistence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-web-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-services/src/main/filtered-resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/midat/midat-web/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

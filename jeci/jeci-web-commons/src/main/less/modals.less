@@ -1,0 +1,55 @@
+/*
+  Custom modal styles
+*/
+.modal {
+  .modal-dialog{
+    .modal-content{
+      .modal-header{
+        background-color: @primary-lighter;
+        padding: 12px 20px;
+        .border-top-radius(6px);
+        h4{
+          padding:0; margin:0;
+        }
+      }
+
+      .modal-body {
+      }
+
+      .modal-footer {
+        background-color: lighten(@primary-lighter, 15%);
+        padding: 12px 20px;
+        .border-bottom-radius(6px);
+      }
+
+    }
+  }
+}
+
+
+/*
+* Styles for modals with vertical overflow and scrollbars in the body.
+*/
+.modal-overflow {
+  position: absolute;
+  .modal-dialog {
+    height: 95%; margin-top: 2.5%;
+
+    .modal-content {
+      height: 100%;
+
+      .modal-header{
+        height: 70px;
+      }
+
+      .modal-body {
+        height: ~"calc(100% - 160px)"; margin-top: 0;
+        overflow: auto;
+      }
+
+      .modal-footer {
+        height: 90px;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{ "roles" :[
+    {
+        "name" : "infofauna:manager",
+        "permissions" : ["infofauna:login", "infofauna:*"]
+    },
+    {
+        "name" : "midat:user",
+        "permissions" : [
+            "midat:login",
+            "midat:samples:read",
+            "midat:stations:read",
+            "midat:search:read"
+        ]
+    },
+    {
+        "name" : "midat:contributor",
+        "permissions" : [
+            "midat:login",
+            "midat:samples:read",
+            "midat:samples:create",
+            "midat:samples:update",
+            "midat:samples:delete",
+            "midat:stations:read",
+            "midat:search:read"
+        ]
+    },
+    {
+        "name" : "midat:national_user",
+        "permissions" : [
+            "midat:login",
+            "midat:samples:read",
+            "midat:stations:read",
+            "midat:search:read",
+            "midat:national"
+        ]
+    },
+    {
+        "name" : "midat:national_contributor",
+        "permissions" : [
+            "midat:login",
+            "midat:samples:read",
+            "midat:samples:create",
+            "midat:samples:update",
+            "midat:samples:delete",
+            "midat:stations:read",
+            "midat:search:read",
+            "midat:national"
+        ]
+    },
+    {
+        "name" : "mds:user",
+        "permissions" : [
+            "mds:login",
+            "mds:samples:read",
+            "mds:stations:read"
+        ]
+    },
+    {
+        "name" : "mds:contributor",
+        "permissions" : [
+            "mds:login",
+            "mds:samples:read",
+            "mds:samples:create",
+            "mds:samples:update",
+            "mds:samples:delete",
+            "mds:stations:read"
+        ]
+    },
+    {
+        "name" : "mds:national_user",
+        "permissions" : [
+            "mds:login",
+            "mds:samples:read",
+            "mds:stations:read",
+            "mds:national"
+        ]
+    },
+    {
+        "name" : "mds:national_contributor",
+        "permissions" : [
+            "mds:login",
+            "mds:samples:read",
+            "mds:samples:create",
+            "mds:samples:update",
+            "mds:samples:delete",
+            "mds:stations:read",
+            "mds:national"
+        ]
+    }
+]}

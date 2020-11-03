@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="midat-web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/jeci/MappingHeaderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ImportMassDataDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingMassField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingMassMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GridProtocolImportDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolImportDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ImportMassDataDetailDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/LabProtocolImportDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/LaboProtocolMappingDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingHeaderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingMassFieldDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingMassMapDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GridProtocolImportJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolImportJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ImportMassDataDetailJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/LabProtocolImportJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/LaboProtocolMappingJpaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingHeaderJpaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingMassFieldJpaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingMassMapJpaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-history-tab-tmpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-tab-tmpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scp_midat_apps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/MIDAT_Tomcat7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/MIDAT_Tomcat7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy-webapp-midat.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy-webapp-midat.sh.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci" beforeDir="false" afterPath="$PROJECT_DIR$/jeci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingLocalizedDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingLocalizedDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SearchResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SearchResultDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/base/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/base/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/BioticWaterQualityRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/BioticWaterQualityRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/EvaluationGridFieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/EvaluationGridFieldMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/GroundProtocolMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/GroundProtocolMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/LabProtocolFieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/LabProtocolFieldMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolImportHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolImportHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/StationSamplesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/StationSamplesView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/security/RoleGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/security/RoleGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/EvaluationGridFieldMappingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/EvaluationGridFieldMappingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolMappingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolMappingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolImportHeaderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolImportHeaderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/SampleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/SampleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJMappingJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJMappingJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolMappingJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolMappingJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/hibernate/PersistentEnumUserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/hibernate/PersistentEnumUserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/less/midat-sample.less" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/less/midat-sample.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/WEB-INF/jsp/layout/layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/WEB-INF/jsp/layout/layout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat" beforeDir="false" afterPath="$PROJECT_DIR$/midat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/midat-services.iml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/midat-services.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/BioticWaterQualityRatingReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/BioticWaterQualityRatingReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/BioticWaterQualityRatingReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/BioticWaterQualityRatingReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/ProtocolImportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/ProtocolImportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/SampleReadUpdateDeleteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_de.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/midat-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/midat-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleReadUpdateDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleReadUpdateDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/resources/META-INF/midat-security-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/resources/META-INF/midat-security-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/common-logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/common-logic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/details-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/details-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/samples-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/samples-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/biotic-index-ratings.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/biotic-index-ratings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/search-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/search-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/test/java/ch/cscf/jeci/test/integration/services/TestBioticWaterQualityGradeReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/test/java/ch/cscf/jeci/test/integration/services/TestBioticWaterQualityGradeReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/midat" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/midat" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="dev" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1P6CECdU81c3ZQY8qB5KXtjjVa5" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="details&#9;FILE&#9;file:///Development/projects/cscf/develop/jeci-shell/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QIndexAvaliabiltyCalendar.java" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563881640961" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="Push.Settings">
+    <excluded-roots>
+      <path value="$PROJECT_DIR$" />
+    </excluded-roots>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ch.cscf.jeci.domain.entities.midat.sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/js/angular" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/css" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-services/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch.cscf.jeci.domain.entities.midat" />
+      <recent name="ch.cscf.jeci.persistence.daos.jpa.midat" />
+      <recent name="ch.cscf.jeci.persistence.daos.interfaces.midat" />
+      <recent name="ch.cscf.midat.services.implementations" />
+      <recent name="ch.cscf.jeci.domain.dto.jeci" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jeci/jeci-static-website" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/js/moment/2.17.1" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/js/moment" />
+      <recent name="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.MIDAT@Tomcat7">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="jeci-shell" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="midat-parent [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map>
+                <entry key="dev" value="true" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/midat" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.midat-parent [clean]" />
+      <item itemvalue="Tomcat Server.Infofauna@Tomcat7" />
+      <item itemvalue="Tomcat Server.MIDAT@Tomcat7" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.midat-parent [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="" />
+      <created>1483977581286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1483977581286</updated>
+      <workItem from="1483977582846" duration="2290000" />
+      <workItem from="1483979902367" duration="955000" />
+      <workItem from="1483980922117" duration="7869000" />
+      <workItem from="1484000061698" duration="2767000" />
+      <workItem from="1484032571021" duration="28939000" />
+      <workItem from="1484117674944" duration="634000" />
+      <workItem from="1484118547565" duration="9205000" />
+      <workItem from="1484146319673" duration="10859000" />
+      <workItem from="1484170231639" duration="33963000" />
+      <workItem from="1484294857653" duration="16855000" />
+      <workItem from="1484549936401" duration="5222000" />
+      <workItem from="1484559518005" duration="1253000" />
+      <workItem from="1484560913253" duration="39889000" />
+      <workItem from="1484724080494" duration="8206000" />
+      <workItem from="1484843590169" duration="397000" />
+      <workItem from="1484905748812" duration="736000" />
+      <workItem from="1484916232733" duration="32000" />
+      <workItem from="1485104223728" duration="3741000" />
+      <workItem from="1485154921189" duration="385000" />
+      <workItem from="1485159826584" duration="4077000" />
+      <workItem from="1485517101959" duration="21715000" />
+      <workItem from="1486106027152" duration="12288000" />
+      <workItem from="1486642335453" duration="599000" />
+      <workItem from="1486643725628" duration="3910000" />
+      <workItem from="1487061366981" duration="768000" />
+      <workItem from="1487143109043" duration="9966000" />
+      <workItem from="1487175521501" duration="2560000" />
+      <workItem from="1487235307973" duration="4719000" />
+      <workItem from="1487573511445" duration="296000" />
+      <workItem from="1487756886466" duration="20518000" />
+      <workItem from="1488266437786" duration="422000" />
+      <workItem from="1488959696355" duration="1938000" />
+      <workItem from="1488962595128" duration="46000" />
+      <workItem from="1488963956782" duration="14237000" />
+      <workItem from="1489651449390" duration="1143000" />
+      <workItem from="1489758869223" duration="6801000" />
+      <workItem from="1489999937883" duration="551000" />
+      <workItem from="1490012377348" duration="3965000" />
+      <workItem from="1490878589172" duration="5300000" />
+      <workItem from="1490959687229" duration="1518000" />
+      <workItem from="1492004566883" duration="1135000" />
+      <workItem from="1498204431705" duration="2651000" />
+      <workItem from="1498639117089" duration="3413000" />
+      <workItem from="1498653240739" duration="15977000" />
+      <workItem from="1498720852124" duration="19775000" />
+      <workItem from="1498833384717" duration="50117000" />
+      <workItem from="1499180698160" duration="58115000" />
+      <workItem from="1499676374302" duration="1399000" />
+      <workItem from="1499677927556" duration="9000" />
+      <workItem from="1499677965368" duration="79899000" />
+      <workItem from="1499952301966" duration="9286000" />
+      <workItem from="1500018299217" duration="14467000" />
+      <workItem from="1500040320412" duration="92000" />
+      <workItem from="1500040417670" duration="49095000" />
+      <workItem from="1500445250777" duration="23000" />
+      <workItem from="1500445294570" duration="18540000" />
+      <workItem from="1500470658408" duration="16056000" />
+      <workItem from="1500540319297" duration="4131000" />
+      <workItem from="1500551738930" duration="64203000" />
+      <workItem from="1501148987411" duration="607000" />
+      <workItem from="1501149657880" duration="1207000" />
+      <workItem from="1501223043530" duration="4013000" />
+      <workItem from="1501502834763" duration="11424000" />
+      <workItem from="1501656355999" duration="52176000" />
+      <workItem from="1501826964921" duration="29760000" />
+      <workItem from="1502085068905" duration="93964000" />
+      <workItem from="1502369757869" duration="8469000" />
+      <workItem from="1502416842347" duration="62333000" />
+      <workItem from="1502868114455" duration="3630000" />
+      <workItem from="1502972485018" duration="7211000" />
+      <workItem from="1502979793099" duration="10072000" />
+      <workItem from="1503044136130" duration="227000" />
+      <workItem from="1503044469690" duration="97727000" />
+      <workItem from="1504508853573" duration="5199000" />
+      <workItem from="1504528209108" duration="14187000" />
+      <workItem from="1504603407234" duration="16023000" />
+      <workItem from="1504683353180" duration="16636000" />
+      <workItem from="1504769669630" duration="915000" />
+      <workItem from="1504772876907" duration="1401000" />
+      <workItem from="1504786591573" duration="1148000" />
+      <workItem from="1505116221237" duration="7297000" />
+      <workItem from="1505225531951" duration="2093000" />
+      <workItem from="1505304627024" duration="2511000" />
+      <workItem from="1505310735429" duration="25192000" />
+      <workItem from="1507284607038" duration="4364000" />
+      <workItem from="1507531021316" duration="65676000" />
+      <workItem from="1507893413685" duration="8000" />
+      <workItem from="1508153606700" duration="6154000" />
+      <workItem from="1508161321735" duration="634000" />
+      <workItem from="1508166198896" duration="2927000" />
+      <workItem from="1508246641423" duration="11205000" />
+      <workItem from="1508835664307" duration="6800000" />
+      <workItem from="1509115408791" duration="2048000" />
+      <workItem from="1509446081684" duration="6000" />
+      <workItem from="1509953898980" duration="7999000" />
+      <workItem from="1511164191699" duration="1883000" />
+      <workItem from="1511272205174" duration="17177000" />
+      <workItem from="1511442223470" duration="2998000" />
+      <workItem from="1511770982203" duration="573000" />
+      <workItem from="1511779102342" duration="893000" />
+      <workItem from="1511864690124" duration="114000" />
+      <workItem from="1511880513306" duration="4896000" />
+      <workItem from="1512459304325" duration="22000" />
+      <workItem from="1512471001951" duration="1470000" />
+      <workItem from="1513596309153" duration="23000" />
+      <workItem from="1513596348909" duration="6021000" />
+      <workItem from="1513932173960" duration="3160000" />
+      <workItem from="1525357922735" duration="461000" />
+      <workItem from="1525771924685" duration="9676000" />
+      <workItem from="1525848272539" duration="12036000" />
+      <workItem from="1526974737547" duration="4094000" />
+      <workItem from="1527599106057" duration="781000" />
+      <workItem from="1528444777612" duration="8155000" />
+      <workItem from="1528468283962" duration="223000" />
+      <workItem from="1528957987208" duration="1213000" />
+      <workItem from="1529316362444" duration="5932000" />
+      <workItem from="1531204235084" duration="744000" />
+      <workItem from="1531224389591" duration="1464000" />
+      <workItem from="1531312728467" duration="829000" />
+      <workItem from="1531820788495" duration="16344000" />
+      <workItem from="1532952348476" duration="19589000" />
+      <workItem from="1533038108728" duration="12499000" />
+      <workItem from="1533213233177" duration="629000" />
+      <workItem from="1533215893134" duration="1517000" />
+      <workItem from="1533646832197" duration="38000" />
+      <workItem from="1533647161077" duration="1531000" />
+      <workItem from="1533654438149" duration="552000" />
+      <workItem from="1533711114798" duration="3507000" />
+      <workItem from="1533889646306" duration="25267000" />
+      <workItem from="1536233832850" duration="13775000" />
+      <workItem from="1536318731023" duration="5340000" />
+      <workItem from="1536326144464" duration="14445000" />
+      <workItem from="1536589559115" duration="3291000" />
+      <workItem from="1536647855418" duration="22758000" />
+      <workItem from="1536763231858" duration="758000" />
+      <workItem from="1537536856684" duration="1912000" />
+      <workItem from="1537778700571" duration="427000" />
+      <workItem from="1537794822151" duration="63000" />
+      <workItem from="1537860603177" duration="3655000" />
+      <workItem from="1538379175203" duration="581000" />
+      <workItem from="1538380117083" duration="56947000" />
+      <workItem from="1538552015237" duration="7435000" />
+      <workItem from="1538568875830" duration="53514000" />
+      <workItem from="1538986831576" duration="6000" />
+      <workItem from="1539001398474" duration="3246000" />
+      <workItem from="1539006530894" duration="1346000" />
+      <workItem from="1539325593206" duration="5091000" />
+      <workItem from="1543584702764" duration="183000" />
+      <workItem from="1547561129142" duration="4907000" />
+      <workItem from="1548081271480" duration="4725000" />
+      <workItem from="1548325351245" duration="4526000" />
+      <workItem from="1552577679260" duration="360000" />
+      <workItem from="1552637786031" duration="152000" />
+      <workItem from="1552640570705" duration="104000" />
+      <workItem from="1552640971258" duration="6339000" />
+      <workItem from="1552661227063" duration="16878000" />
+      <workItem from="1553086701410" duration="573000" />
+      <workItem from="1553095739694" duration="7000" />
+      <workItem from="1553098253635" duration="16459000" />
+      <workItem from="1553521064699" duration="14104000" />
+      <workItem from="1553862042397" duration="1698000" />
+      <workItem from="1559827401333" duration="291000" />
+      <workItem from="1559832106275" duration="423000" />
+      <workItem from="1560326213828" duration="2000" />
+      <workItem from="1563797585029" duration="6215000" />
+      <workItem from="1563869015962" duration="12000" />
+      <workItem from="1563869272676" duration="1403000" />
+      <workItem from="1563871029126" duration="71000" />
+      <workItem from="1563871105654" duration="6321000" />
+      <workItem from="1565186227739" duration="97000" />
+      <workItem from="1571043329437" duration="2327000" />
+      <workItem from="1571046713057" duration="13437000" />
+      <workItem from="1571063215456" duration="10082000" />
+      <workItem from="1571129397257" duration="1144000" />
+      <workItem from="1571130916144" duration="5157000" />
+      <workItem from="1571655198018" duration="51000" />
+      <workItem from="1578558754029" duration="18315000" />
+      <workItem from="1578641352658" duration="920000" />
+      <workItem from="1578997683625" duration="11000" />
+      <workItem from="1580893143962" duration="1628000" />
+      <workItem from="1580951660278" duration="2934000" />
+      <workItem from="1597403267111" duration="3393000" />
+      <workItem from="1597407479729" duration="4764000" />
+      <workItem from="1597413034503" duration="475000" />
+      <workItem from="1597739617827" duration="1351000" />
+      <workItem from="1597749617242" duration="1205000" />
+      <workItem from="1597909615450" duration="604000" />
+      <workItem from="1598257467234" duration="19686000" />
+      <workItem from="1598357132017" duration="14065000" />
+      <workItem from="1598429788054" duration="10001000" />
+      <workItem from="1598447134627" duration="6342000" />
+      <workItem from="1598453498145" duration="7155000" />
+      <workItem from="1598517351769" duration="38108000" />
+      <workItem from="1598859255474" duration="1382000" />
+      <workItem from="1598876913689" duration="34428000" />
+      <workItem from="1599469525292" duration="228000" />
+      <workItem from="1599469761395" duration="3693000" />
+      <workItem from="1599555009437" duration="2685000" />
+      <workItem from="1599557703714" duration="7205000" />
+      <workItem from="1600066220678" duration="35320000" />
+      <workItem from="1600764704155" duration="179000" />
+      <workItem from="1600765024454" duration="2139000" />
+      <workItem from="1603116668685" duration="1405000" />
+      <workItem from="1603793560243" duration="508000" />
+      <workItem from="1603794073394" duration="17702000" />
+      <workItem from="1603961796237" duration="85609000" />
+    </task>
+    <task id="LOCAL-00001" summary="change jeci.version in the pom  from 3.6.0 to 3.6.2">
+      <created>1483979388303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1483979388303</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove midat-source lines">
+      <created>1483979516731</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1483979516731</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JIRA  -&gt; MIDAT / MID-253 : Changement de labels : remplacer INDEX par INDICE (en FR)">
+      <created>1483984755311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1483984755311</updated>
+    </task>
+    <task id="LOCAL-00004" summary="JIRA  -&gt; MIDAT / MID-250 :Export CSV depuis recherche carte ne marche plus">
+      <created>1484054558480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1484054558480</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JIRA  -&gt; MIDAT / MID-253 : Changement de labels : remplacer INDEX par INDICE (en FR)">
+      <created>1484054654062</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484054654062</updated>
+    </task>
+    <task id="LOCAL-00006" summary="iml files only">
+      <created>1484054790652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1484054790652</updated>
+    </task>
+    <task id="LOCAL-00007" summary="JIRA  -&gt; MIDAT / MID-250 : Export CSV depuis recherche carte ne marche plus">
+      <created>1484055212290</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1484055212290</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JIRA  -&gt; MIDAT / MID-257 : Stations sur la carte : n'afficher que le numéro de station et le nom de la localité">
+      <created>1484056124079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1484056124079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JIRA  -&gt; MIDAT / MID-258 : Formulaire de recherche : Ajouter un bouton &quot;clear&quot;">
+      <created>1484068467491</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1484068467491</updated>
+    </task>
+    <task id="LOCAL-00010" summary="JIRA  -&gt; MIDAT / MID-258 : Formulaire de recherche : Ajouter un bouton &quot;clear&quot;">
+      <created>1484118269134</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1484118269134</updated>
+    </task>
+    <task id="LOCAL-00011" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484643730997</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1484643730997</updated>
+    </task>
+    <task id="LOCAL-00012" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484643800829</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1484643800829</updated>
+    </task>
+    <task id="LOCAL-00013" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484643848887</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1484643848887</updated>
+    </task>
+    <task id="LOCAL-00014" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484644014003</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1484644014003</updated>
+    </task>
+    <task id="LOCAL-00015" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484649549631</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1484649549631</updated>
+    </task>
+    <task id="LOCAL-00016" summary="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)">
+      <created>1484649574135</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1484649574135</updated>
+    </task>
+    <task id="LOCAL-00017" summary="MDR 2.5.0">
+      <created>1501056000383</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1501056000383</updated>
+    </task>
+    <task id="LOCAL-00018" summary="MDR 2.5.0">
+      <created>1501502993013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1501502993013</updated>
+    </task>
+    <task id="LOCAL-00019" summary="IFF 2.4.0">
+      <created>1501503064778</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1501503064778</updated>
+    </task>
+    <task id="LOCAL-00020" summary="JECI 3.7.0">
+      <created>1501503257985</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1501503257985</updated>
+    </task>
+    <task id="LOCAL-00021" summary="JECI 3.8.0">
+      <created>1502715498224</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1502715498224</updated>
+    </task>
+    <task id="LOCAL-00022" summary="MDR 2.6.0">
+      <created>1502715711150</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1502715711150</updated>
+    </task>
+    <task id="LOCAL-00023" summary="jeci 3.8.0">
+      <created>1502868166445</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1502868166445</updated>
+    </task>
+    <task id="LOCAL-00024" summary="MDR 2.6.0">
+      <created>1502868482512</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1502868482512</updated>
+    </task>
+    <task id="LOCAL-00025" summary="JECI 3.8.0">
+      <created>1504704726225</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1504704726225</updated>
+    </task>
+    <task id="LOCAL-00026" summary="MDR 2.6.0">
+      <created>1504704811513</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1504704811513</updated>
+    </task>
+    <task id="LOCAL-00027" summary="IFF 2.4.0">
+      <created>1504704858105</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1504704858105</updated>
+    </task>
+    <task id="LOCAL-00028" summary="IFF 2.4.0">
+      <created>1504708248230</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1504708248230</updated>
+    </task>
+    <task id="LOCAL-00029" summary="JECI 3.8.0">
+      <created>1504708875385</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1504708875385</updated>
+    </task>
+    <task id="LOCAL-00030" summary="JECI 3.8.0 add sort order by role">
+      <created>1505132246605</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1505132246605</updated>
+    </task>
+    <task id="LOCAL-00031" summary="IFF 2.4.6 apply sortorder by role and app">
+      <created>1505132311248</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1505132311248</updated>
+    </task>
+    <task id="LOCAL-00032" summary="IFF 2.4.6">
+      <created>1505132537057</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1505132537057</updated>
+    </task>
+    <task id="LOCAL-00033" summary="MIDAT 2.6.5">
+      <created>1505226555858</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1505226555858</updated>
+    </task>
+    <task id="LOCAL-00034" summary="MIDAT 2.6.5">
+      <created>1505227048133</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1505227048133</updated>
+    </task>
+    <task id="LOCAL-00035" summary="JECI 3.8.1, MIDAT 2.6.1 IFF 2.4.7">
+      <created>1507710856679</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1507710856679</updated>
+    </task>
+    <task id="LOCAL-00036" summary="JECI 3.8.1-">
+      <created>1507790496268</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1507790496268</updated>
+    </task>
+    <task id="LOCAL-00037" summary="JECI 3.8.1 - MIDAT 2.6.7 IFF 2.4.7 traductions">
+      <created>1508160412334</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1508160412334</updated>
+    </task>
+    <task id="LOCAL-00038" summary="JECI 3.8.1 MIDAT 2.6.7">
+      <created>1508246870982</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1508246870982</updated>
+    </task>
+    <task id="LOCAL-00039" summary="JECI 3.8.1 MIDAT 2.6.7">
+      <created>1508326938208</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1508326938208</updated>
+    </task>
+    <task id="LOCAL-00040" summary="JECI 3.8.1 MIDAT 2.6.7">
+      <created>1508836225000</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1508836225000</updated>
+    </task>
+    <task id="LOCAL-00041" summary="JECI 3.8.1 MIDAT 2.6.8 - add translations">
+      <created>1509963505425</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1509963505425</updated>
+    </task>
+    <task id="LOCAL-00042" summary="JECI 3.8.1 MIDAT 2.6.8 - traductions">
+      <created>1509966915359</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1509966915359</updated>
+    </task>
+    <task id="LOCAL-00043" summary="JECI 3.8.1 MIDAT 2.7.0">
+      <created>1513605416346</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1513605416346</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/jeci" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/midat" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/infofauna" />
+      <path value="$PROJECT_DIR$/midat-sources" />
+    </ignored-roots>
+    <MESSAGE value="remove midat-source lines" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-250 :Export CSV depuis recherche carte ne marche plus" />
+    <MESSAGE value="iml files only" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-253 : Changement de labels : remplacer INDEX par INDICE (en FR)" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-250 : Export CSV depuis recherche carte ne marche plus" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-257 : Stations sur la carte : n'afficher que le numéro de station et le nom de la localité" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-258 : Formulaire de recherche : Ajouter un bouton &quot;clear&quot;" />
+    <MESSAGE value="JIRA  -&gt; MIDAT / MID-254 : Exportation de données résumées en excel ( 2 sheets)" />
+    <MESSAGE value="MDR 2.5.0" />
+    <MESSAGE value="JECI 3.7.0" />
+    <MESSAGE value="jeci 3.8.0" />
+    <MESSAGE value="MDR 2.6.0" />
+    <MESSAGE value="IFF 2.4.0" />
+    <MESSAGE value="JECI 3.8.0 add sort order by role" />
+    <MESSAGE value="IFF 2.4.6 apply sortorder by role and app" />
+    <MESSAGE value="IFF 2.4.6" />
+    <MESSAGE value="MIDAT 2.6.5" />
+    <MESSAGE value="JECI 3.8.0" />
+    <MESSAGE value="JECI 3.8.1, MIDAT 2.6.1 IFF 2.4.7" />
+    <MESSAGE value="JECI 3.8.1-" />
+    <MESSAGE value="JECI 3.8.1 - MIDAT 2.6.7 IFF 2.4.7 traductions" />
+    <MESSAGE value="JECI 3.8.1 MIDAT 2.6.7" />
+    <MESSAGE value="JECI 3.8.1 MIDAT 2.6.8 - add translations" />
+    <MESSAGE value="JECI 3.8.1 MIDAT 2.6.8 - traductions" />
+    <MESSAGE value="JECI 3.8.1 MIDAT 2.7.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="JECI 3.8.1 MIDAT 2.7.0" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="619" y="418" key="#Tomcat_Server" timestamp="1603794691620">
+      <screen x="0" y="23" width="1680" height="960" />
+    </state>
+    <state x="619" y="418" key="#Tomcat_Server/0.23.1680.960@0.23.1680.960" timestamp="1603794691620" />
+    <state x="-1496" y="96" width="938" height="660" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604050452408">
+      <screen x="-1920" y="-107" width="1920" height="1080" />
+    </state>
+    <state x="-1496" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604050452408" />
+    <state x="371" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1603823448160" />
+    <state x="371" y="203" width="938" height="660" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.960@0.23.1680.960" timestamp="1603794694976" />
+    <state x="2104" y="202" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403998897" />
+    <state x="2104" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598279468624" />
+    <state x="2104" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598281036101" />
+    <state x="2104" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597404074037" />
+    <state x="2104" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598512581962" />
+    <state x="677" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1604397779172">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="-1146" y="85" key="#com.intellij.ide.util.MemberChooser/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604058638244" />
+    <state x="677" y="187" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1604397779172" />
+    <state x="2454" y="211" key="#com.intellij.ide.util.MemberChooser/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600242415391" />
+    <state x="2454" y="211" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599742862449" />
+    <state x="2454" y="211" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598530690555" />
+    <state x="2454" y="211" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599035355147" />
+    <state x="2366" y="205" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598512580669">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2366" y="205" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598512580669" />
+    <state x="2329" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600764751951">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2329" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1600764751951" />
+    <state x="545" y="401" width="590" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603965764605">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="545" y="401" width="590" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1603965764605" />
+    <state x="2379" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598539054916">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2379" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598539054916" />
+    <state x="639" y="345" width="958" height="579" key="#xdebugger.evaluate" timestamp="1604336039423">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="639" y="345" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1604336039423" />
+    <state x="2410" y="370" key="#xdebugger.evaluate/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600250002002" />
+    <state x="2345" y="51" width="1088" height="972" key="#xdebugger.evaluate/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278501553" />
+    <state x="2345" y="51" key="#xdebugger.evaluate/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598625983744" />
+    <state x="2410" y="370" width="958" height="579" key="#xdebugger.evaluate/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599467786607" />
+    <state width="497" height="463" key="DebuggerActiveHint" timestamp="1604413456222">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="497" height="463" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1604413456222" />
+    <state width="567" height="466" key="DebuggerActiveHint/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262423825" />
+    <state width="544" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598521351064" />
+    <state width="567" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598952773309" />
+    <state width="567" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599033416836" />
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom" timestamp="1604414516459">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834558" />
+    <state width="1878" height="160" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362028" />
+    <state width="1878" height="160" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691437" />
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516459" />
+    <state width="1835" height="312" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
+    <state width="1835" height="504" key="GridCell.Tab.0.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792688" />
+    <state width="1587" height="410" key="GridCell.Tab.0.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
+    <state width="1587" height="575" key="GridCell.Tab.0.bottom/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952600" />
+    <state width="1835" height="312" key="GridCell.Tab.0.bottom/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608050" />
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom/0.23.1680.956@0.23.1680.956" timestamp="1604312378560" />
+    <state width="1638" height="611" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1603986588577" />
+    <state width="1371" height="403" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1604341654868" />
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1604412850273" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403966936" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746442" />
+    <state width="1835" height="319" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263002004" />
+    <state width="1556" height="287" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105611" />
+    <state width="1556" height="228" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598279132813" />
+    <state width="1835" height="453" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598281048478" />
+    <state width="1878" height="319" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127597" />
+    <state width="1878" height="319" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843016" />
+    <state width="917" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292405" />
+    <state width="1835" height="504" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578930" />
+    <state width="1316" height="266" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698764" />
+    <state width="1325" height="111" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650805" />
+    <state width="1332" height="382" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
+    <state width="917" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185427" />
+    <state width="917" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
+    <state width="1638" height="403" key="GridCell.Tab.0.center" timestamp="1604414516458">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834556" />
+    <state width="1878" height="160" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362026" />
+    <state width="1878" height="160" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691434" />
+    <state width="1638" height="403" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516458" />
+    <state width="1835" height="312" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
+    <state width="1835" height="504" key="GridCell.Tab.0.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792686" />
+    <state width="1587" height="410" key="GridCell.Tab.0.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
+    <state width="1587" height="575" key="GridCell.Tab.0.center/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952599" />
+    <state width="1835" height="312" key="GridCell.Tab.0.center/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608049" />
+    <state width="1638" height="403" key="GridCell.Tab.0.center/0.23.1680.956@0.23.1680.956" timestamp="1604312378559" />
+    <state width="1638" height="611" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1603986588575" />
+    <state width="1371" height="403" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1604341654867" />
+    <state width="1638" height="403" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1604412850273" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403966934" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746440" />
+    <state width="1835" height="319" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263002003" />
+    <state width="1556" height="287" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105609" />
+    <state width="1556" height="228" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598279132812" />
+    <state width="1835" height="453" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598281048477" />
+    <state width="1878" height="319" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127596" />
+    <state width="1878" height="319" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843015" />
+    <state width="917" height="320" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292403" />
+    <state width="1835" height="504" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578929" />
+    <state width="1316" height="266" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698763" />
+    <state width="1325" height="111" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650804" />
+    <state width="1332" height="382" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964664" />
+    <state width="917" height="320" key="GridCell.Tab.0.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185426" />
+    <state width="917" height="320" key="GridCell.Tab.0.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272848" />
+    <state width="1638" height="403" key="GridCell.Tab.0.left" timestamp="1604414516457">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834555" />
+    <state width="1878" height="160" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362025" />
+    <state width="1878" height="160" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691433" />
+    <state width="1638" height="403" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516457" />
+    <state width="1835" height="312" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
+    <state width="1835" height="504" key="GridCell.Tab.0.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792685" />
+    <state width="1587" height="410" key="GridCell.Tab.0.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202491" />
+    <state width="1587" height="575" key="GridCell.Tab.0.left/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952598" />
+    <state width="1835" height="312" key="GridCell.Tab.0.left/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608049" />
+    <state width="1638" height="403" key="GridCell.Tab.0.left/0.23.1680.956@0.23.1680.956" timestamp="1604312378558" />
+    <state width="1638" height="611" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1603986588575" />
+    <state width="1371" height="403" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1604341654864" />
+    <state width="1638" height="403" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1604412850272" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403966933" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746439" />
+    <state width="1835" height="319" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263002003" />
+    <state width="1556" height="287" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105609" />
+    <state width="1556" height="228" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598279132812" />
+    <state width="1835" height="453" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598281048477" />
+    <state width="1878" height="319" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127596" />
+    <state width="1878" height="319" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843015" />
+    <state width="917" height="320" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292403" />
+    <state width="1835" height="504" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578929" />
+    <state width="1316" height="266" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698762" />
+    <state width="1325" height="111" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650803" />
+    <state width="1332" height="382" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964664" />
+    <state width="917" height="320" key="GridCell.Tab.0.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185425" />
+    <state width="917" height="320" key="GridCell.Tab.0.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272848" />
+    <state width="1638" height="403" key="GridCell.Tab.0.right" timestamp="1604414516458">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="403" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834557" />
+    <state width="1878" height="160" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362027" />
+    <state width="1878" height="160" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691435" />
+    <state width="1638" height="403" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516458" />
+    <state width="1835" height="312" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
+    <state width="1835" height="504" key="GridCell.Tab.0.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792687" />
+    <state width="1587" height="410" key="GridCell.Tab.0.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
+    <state width="1587" height="575" key="GridCell.Tab.0.right/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952600" />
+    <state width="1835" height="312" key="GridCell.Tab.0.right/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608050" />
+    <state width="1638" height="403" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1604312378560" />
+    <state width="1638" height="611" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1603986588576" />
+    <state width="1371" height="403" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1604341654867" />
+    <state width="1638" height="403" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1604412850273" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403966935" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746441" />
+    <state width="1835" height="319" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263002004" />
+    <state width="1556" height="287" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105610" />
+    <state width="1556" height="228" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598279132813" />
+    <state width="1835" height="453" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598281048478" />
+    <state width="1878" height="319" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127597" />
+    <state width="1878" height="319" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843015" />
+    <state width="917" height="320" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292404" />
+    <state width="1835" height="504" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578930" />
+    <state width="1316" height="266" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698763" />
+    <state width="1325" height="111" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650805" />
+    <state width="1332" height="382" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
+    <state width="917" height="320" key="GridCell.Tab.0.right/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185427" />
+    <state width="917" height="320" key="GridCell.Tab.0.right/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
+    <state width="1371" height="403" key="GridCell.Tab.1.bottom" timestamp="1604414516267">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834452" />
+    <state width="1576" height="500" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361883" />
+    <state width="1576" height="500" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691300" />
+    <state width="1371" height="403" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516267" />
+    <state width="1835" height="312" key="GridCell.Tab.1.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
+    <state width="1587" height="272" key="GridCell.Tab.1.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792437" />
+    <state width="1587" height="410" key="GridCell.Tab.1.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
+    <state width="1587" height="575" key="GridCell.Tab.1.bottom/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952601" />
+    <state width="1835" height="312" key="GridCell.Tab.1.bottom/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608053" />
+    <state width="1371" height="507" key="GridCell.Tab.1.bottom/0.23.1680.956@0.23.1680.956" timestamp="1604312378420" />
+    <state width="1371" height="393" key="GridCell.Tab.1.bottom/0.23.1680.958@0.23.1680.958" timestamp="1603986588423" />
+    <state width="1371" height="403" key="GridCell.Tab.1.bottom/0.23.1680.961@0.23.1680.961" timestamp="1604341654314" />
+    <state width="1638" height="403" key="GridCell.Tab.1.bottom/0.23.1680.965@0.23.1680.965" timestamp="1604412850274" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804152" />
+    <state width="1593" height="385" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746143" />
+    <state width="1556" height="287" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001893" />
+    <state width="1556" height="287" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105612" />
+    <state width="1556" height="228" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882072" />
+    <state width="1556" height="287" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275855872" />
+    <state width="1593" height="345" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127418" />
+    <state width="1878" height="319" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843017" />
+    <state width="1408" height="293" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292199" />
+    <state width="1835" height="504" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578932" />
+    <state width="1316" height="266" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698765" />
+    <state width="1325" height="111" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650807" />
+    <state width="1332" height="382" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
+    <state width="1345" height="420" key="GridCell.Tab.1.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
+    <state width="917" height="320" key="GridCell.Tab.1.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
+    <state width="1371" height="403" key="GridCell.Tab.1.center" timestamp="1604414516265">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834450" />
+    <state width="1576" height="500" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361882" />
+    <state width="1576" height="500" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691298" />
+    <state width="1371" height="403" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516265" />
+    <state width="1835" height="312" key="GridCell.Tab.1.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
+    <state width="1587" height="272" key="GridCell.Tab.1.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792436" />
+    <state width="1587" height="410" key="GridCell.Tab.1.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
+    <state width="1587" height="575" key="GridCell.Tab.1.center/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952601" />
+    <state width="1835" height="312" key="GridCell.Tab.1.center/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608052" />
+    <state width="1371" height="507" key="GridCell.Tab.1.center/0.23.1680.956@0.23.1680.956" timestamp="1604312378419" />
+    <state width="1371" height="393" key="GridCell.Tab.1.center/0.23.1680.958@0.23.1680.958" timestamp="1603986588423" />
+    <state width="1371" height="403" key="GridCell.Tab.1.center/0.23.1680.961@0.23.1680.961" timestamp="1604341654313" />
+    <state width="1638" height="403" key="GridCell.Tab.1.center/0.23.1680.965@0.23.1680.965" timestamp="1604412850274" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804149" />
+    <state width="1593" height="385" key="GridCell.Tab.1.center/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746137" />
+    <state width="1556" height="287" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001892" />
+    <state width="1556" height="287" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105612" />
+    <state width="1556" height="228" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882072" />
+    <state width="1556" height="287" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275855871" />
+    <state width="1593" height="345" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127417" />
+    <state width="1878" height="319" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843016" />
+    <state width="1408" height="293" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292197" />
+    <state width="1835" height="504" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578931" />
+    <state width="1316" height="266" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698764" />
+    <state width="1325" height="111" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650806" />
+    <state width="1332" height="382" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
+    <state width="1345" height="420" key="GridCell.Tab.1.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185282" />
+    <state width="917" height="320" key="GridCell.Tab.1.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
+    <state width="1371" height="403" key="GridCell.Tab.1.left" timestamp="1604414516264">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834449" />
+    <state width="1576" height="500" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361881" />
+    <state width="1576" height="500" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691297" />
+    <state width="1371" height="403" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516264" />
+    <state width="1835" height="312" key="GridCell.Tab.1.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
+    <state width="1587" height="272" key="GridCell.Tab.1.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792436" />
+    <state width="1587" height="410" key="GridCell.Tab.1.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205547" />
+    <state width="1587" height="575" key="GridCell.Tab.1.left/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952601" />
+    <state width="1835" height="312" key="GridCell.Tab.1.left/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608051" />
+    <state width="1371" height="507" key="GridCell.Tab.1.left/0.23.1680.956@0.23.1680.956" timestamp="1604312378418" />
+    <state width="1371" height="393" key="GridCell.Tab.1.left/0.23.1680.958@0.23.1680.958" timestamp="1603986588422" />
+    <state width="1371" height="403" key="GridCell.Tab.1.left/0.23.1680.961@0.23.1680.961" timestamp="1604341654313" />
+    <state width="1638" height="403" key="GridCell.Tab.1.left/0.23.1680.965@0.23.1680.965" timestamp="1604412850274" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804148" />
+    <state width="1593" height="385" key="GridCell.Tab.1.left/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746136" />
+    <state width="1556" height="287" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001892" />
+    <state width="1556" height="287" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105611" />
+    <state width="1556" height="228" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882072" />
+    <state width="1556" height="287" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275855871" />
+    <state width="1593" height="345" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127417" />
+    <state width="1878" height="319" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843016" />
+    <state width="1408" height="293" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292196" />
+    <state width="1835" height="504" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578930" />
+    <state width="1316" height="266" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698764" />
+    <state width="1325" height="111" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650806" />
+    <state width="1332" height="382" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
+    <state width="1345" height="420" key="GridCell.Tab.1.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185282" />
+    <state width="917" height="320" key="GridCell.Tab.1.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
+    <state width="1371" height="403" key="GridCell.Tab.1.right" timestamp="1604414516266">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834451" />
+    <state width="1576" height="500" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361882" />
+    <state width="1576" height="500" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691299" />
+    <state width="1371" height="403" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516266" />
+    <state width="1835" height="312" key="GridCell.Tab.1.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
+    <state width="1587" height="272" key="GridCell.Tab.1.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792437" />
+    <state width="1587" height="410" key="GridCell.Tab.1.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
+    <state width="1587" height="575" key="GridCell.Tab.1.right/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952601" />
+    <state width="1835" height="312" key="GridCell.Tab.1.right/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608052" />
+    <state width="1371" height="507" key="GridCell.Tab.1.right/0.23.1680.956@0.23.1680.956" timestamp="1604312378420" />
+    <state width="1371" height="393" key="GridCell.Tab.1.right/0.23.1680.958@0.23.1680.958" timestamp="1603986588423" />
+    <state width="1371" height="403" key="GridCell.Tab.1.right/0.23.1680.961@0.23.1680.961" timestamp="1604341654314" />
+    <state width="1638" height="403" key="GridCell.Tab.1.right/0.23.1680.965@0.23.1680.965" timestamp="1604412850274" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804151" />
+    <state width="1593" height="385" key="GridCell.Tab.1.right/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746141" />
+    <state width="1556" height="287" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001893" />
+    <state width="1556" height="287" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105612" />
+    <state width="1556" height="228" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882072" />
+    <state width="1556" height="287" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275855872" />
+    <state width="1593" height="345" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127418" />
+    <state width="1878" height="319" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843017" />
+    <state width="1408" height="293" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292198" />
+    <state width="1835" height="504" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578932" />
+    <state width="1316" height="266" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698765" />
+    <state width="1325" height="111" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650806" />
+    <state width="1332" height="382" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
+    <state width="1345" height="420" key="GridCell.Tab.1.right/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
+    <state width="917" height="320" key="GridCell.Tab.1.right/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
+    <state width="1371" height="403" key="GridCell.Tab.2.bottom" timestamp="1604414516269">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834455" />
+    <state width="1576" height="500" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361886" />
+    <state width="1576" height="500" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691303" />
+    <state width="1371" height="403" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516269" />
+    <state width="1835" height="312" key="GridCell.Tab.2.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
+    <state width="1587" height="272" key="GridCell.Tab.2.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792441" />
+    <state width="1587" height="575" key="GridCell.Tab.2.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />
+    <state width="1587" height="575" key="GridCell.Tab.2.bottom/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952602" />
+    <state width="1835" height="312" key="GridCell.Tab.2.bottom/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608055" />
+    <state width="1371" height="507" key="GridCell.Tab.2.bottom/0.23.1680.956@0.23.1680.956" timestamp="1604312378418" />
+    <state width="1371" height="393" key="GridCell.Tab.2.bottom/0.23.1680.958@0.23.1680.958" timestamp="1603986588425" />
+    <state width="1371" height="403" key="GridCell.Tab.2.bottom/0.23.1680.961@0.23.1680.961" timestamp="1604341654313" />
+    <state width="1638" height="403" key="GridCell.Tab.2.bottom/0.23.1680.965@0.23.1680.965" timestamp="1604412850275" />
+    <state width="1878" height="376" key="GridCell.Tab.2.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804156" />
+    <state width="1593" height="385" key="GridCell.Tab.2.bottom/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746134" />
+    <state width="1556" height="287" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001894" />
+    <state width="1835" height="319" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105282" />
+    <state width="1556" height="228" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882073" />
+    <state width="1593" height="345" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127416" />
+    <state width="1878" height="319" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843018" />
+    <state width="1408" height="293" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292202" />
+    <state width="1835" height="504" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578933" />
+    <state width="1316" height="266" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698766" />
+    <state width="1325" height="111" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650808" />
+    <state width="1332" height="382" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
+    <state width="1345" height="420" key="GridCell.Tab.2.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185284" />
+    <state width="917" height="320" key="GridCell.Tab.2.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
+    <state width="1371" height="403" key="GridCell.Tab.2.center" timestamp="1604414516268">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834454" />
+    <state width="1576" height="500" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361885" />
+    <state width="1576" height="500" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691302" />
+    <state width="1371" height="403" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516268" />
+    <state width="1835" height="312" key="GridCell.Tab.2.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
+    <state width="1587" height="272" key="GridCell.Tab.2.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792440" />
+    <state width="1587" height="575" key="GridCell.Tab.2.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />
+    <state width="1587" height="575" key="GridCell.Tab.2.center/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952602" />
+    <state width="1835" height="312" key="GridCell.Tab.2.center/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608054" />
+    <state width="1371" height="507" key="GridCell.Tab.2.center/0.23.1680.956@0.23.1680.956" timestamp="1604312378417" />
+    <state width="1371" height="393" key="GridCell.Tab.2.center/0.23.1680.958@0.23.1680.958" timestamp="1603986588424" />
+    <state width="1371" height="403" key="GridCell.Tab.2.center/0.23.1680.961@0.23.1680.961" timestamp="1604341654312" />
+    <state width="1638" height="403" key="GridCell.Tab.2.center/0.23.1680.965@0.23.1680.965" timestamp="1604412850275" />
+    <state width="1878" height="376" key="GridCell.Tab.2.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804155" />
+    <state width="1593" height="385" key="GridCell.Tab.2.center/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746132" />
+    <state width="1556" height="287" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001893" />
+    <state width="1835" height="319" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105281" />
+    <state width="1556" height="228" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882073" />
+    <state width="1593" height="345" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127415" />
+    <state width="1878" height="319" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843017" />
+    <state width="1408" height="293" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292200" />
+    <state width="1835" height="504" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578932" />
+    <state width="1316" height="266" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698765" />
+    <state width="1325" height="111" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650807" />
+    <state width="1332" height="382" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
+    <state width="1345" height="420" key="GridCell.Tab.2.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
+    <state width="917" height="320" key="GridCell.Tab.2.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
+    <state width="1371" height="403" key="GridCell.Tab.2.left" timestamp="1604414516267">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834453" />
+    <state width="1576" height="500" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361884" />
+    <state width="1576" height="500" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691301" />
+    <state width="1371" height="403" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516267" />
+    <state width="1835" height="312" key="GridCell.Tab.2.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
+    <state width="1587" height="272" key="GridCell.Tab.2.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792439" />
+    <state width="1587" height="575" key="GridCell.Tab.2.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506188" />
+    <state width="1587" height="575" key="GridCell.Tab.2.left/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952602" />
+    <state width="1835" height="312" key="GridCell.Tab.2.left/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608053" />
+    <state width="1371" height="507" key="GridCell.Tab.2.left/0.23.1680.956@0.23.1680.956" timestamp="1604312378417" />
+    <state width="1371" height="393" key="GridCell.Tab.2.left/0.23.1680.958@0.23.1680.958" timestamp="1603986588424" />
+    <state width="1371" height="403" key="GridCell.Tab.2.left/0.23.1680.961@0.23.1680.961" timestamp="1604341654312" />
+    <state width="1638" height="403" key="GridCell.Tab.2.left/0.23.1680.965@0.23.1680.965" timestamp="1604412850275" />
+    <state width="1878" height="376" key="GridCell.Tab.2.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804154" />
+    <state width="1593" height="385" key="GridCell.Tab.2.left/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746130" />
+    <state width="1556" height="287" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001893" />
+    <state width="1835" height="319" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105281" />
+    <state width="1556" height="228" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882073" />
+    <state width="1593" height="345" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127414" />
+    <state width="1878" height="319" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843017" />
+    <state width="1408" height="293" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292199" />
+    <state width="1835" height="504" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578932" />
+    <state width="1316" height="266" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698765" />
+    <state width="1325" height="111" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650807" />
+    <state width="1332" height="382" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
+    <state width="1345" height="420" key="GridCell.Tab.2.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
+    <state width="917" height="320" key="GridCell.Tab.2.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
+    <state width="1371" height="403" key="GridCell.Tab.2.right" timestamp="1604414516268">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="524" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834455" />
+    <state width="1576" height="500" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361885" />
+    <state width="1576" height="500" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691303" />
+    <state width="1371" height="403" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516268" />
+    <state width="1835" height="312" key="GridCell.Tab.2.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
+    <state width="1587" height="272" key="GridCell.Tab.2.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792440" />
+    <state width="1587" height="575" key="GridCell.Tab.2.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />
+    <state width="1587" height="575" key="GridCell.Tab.2.right/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952602" />
+    <state width="1835" height="312" key="GridCell.Tab.2.right/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422608054" />
+    <state width="1371" height="507" key="GridCell.Tab.2.right/0.23.1680.956@0.23.1680.956" timestamp="1604312378418" />
+    <state width="1371" height="393" key="GridCell.Tab.2.right/0.23.1680.958@0.23.1680.958" timestamp="1603986588424" />
+    <state width="1371" height="403" key="GridCell.Tab.2.right/0.23.1680.961@0.23.1680.961" timestamp="1604341654313" />
+    <state width="1638" height="403" key="GridCell.Tab.2.right/0.23.1680.965@0.23.1680.965" timestamp="1604412850275" />
+    <state width="1878" height="376" key="GridCell.Tab.2.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403804155" />
+    <state width="1593" height="385" key="GridCell.Tab.2.right/1680.0.1920.1080/0.23.1680.960@1680.0.1920.1080" timestamp="1597403746133" />
+    <state width="1556" height="287" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001894" />
+    <state width="1835" height="319" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105282" />
+    <state width="1556" height="228" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882073" />
+    <state width="1593" height="345" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597740127415" />
+    <state width="1878" height="319" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597741843018" />
+    <state width="1408" height="293" key="GridCell.Tab.2.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292201" />
+    <state width="1835" height="504" key="GridCell.Tab.2.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743578933" />
+    <state width="1316" height="266" key="GridCell.Tab.2.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698766" />
+    <state width="1325" height="111" key="GridCell.Tab.2.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650807" />
+    <state width="1332" height="382" key="GridCell.Tab.2.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
+    <state width="1345" height="420" key="GridCell.Tab.2.right/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185284" />
+    <state width="917" height="320" key="GridCell.Tab.2.right/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
+    <state width="1371" height="403" key="GridCell.Tab.3.bottom" timestamp="1604414085725">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="676" key="GridCell.Tab.3.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604070963873" />
+    <state width="1371" height="403" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414085725" />
+    <state width="1587" height="575" key="GridCell.Tab.3.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579963" />
+    <state width="1587" height="272" key="GridCell.Tab.3.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792439" />
+    <state width="1587" height="263" key="GridCell.Tab.3.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600249124149" />
+    <state width="1587" height="575" key="GridCell.Tab.3.bottom/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952603" />
+    <state width="1587" height="575" key="GridCell.Tab.3.bottom/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422238069" />
+    <state width="1371" height="393" key="GridCell.Tab.3.bottom/0.23.1680.958@0.23.1680.958" timestamp="1603986588426" />
+    <state width="1556" height="287" key="GridCell.Tab.3.bottom/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001895" />
+    <state width="1556" height="287" key="GridCell.Tab.3.bottom/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105265" />
+    <state width="1556" height="228" key="GridCell.Tab.3.bottom/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882074" />
+    <state width="1408" height="293" key="GridCell.Tab.3.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292205" />
+    <state width="1587" height="272" key="GridCell.Tab.3.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599742400417" />
+    <state width="1316" height="266" key="GridCell.Tab.3.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698767" />
+    <state width="1325" height="111" key="GridCell.Tab.3.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650809" />
+    <state width="1332" height="382" key="GridCell.Tab.3.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964668" />
+    <state width="1371" height="403" key="GridCell.Tab.3.center" timestamp="1604414085724">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="676" key="GridCell.Tab.3.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604070963871" />
+    <state width="1371" height="403" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414085724" />
+    <state width="1587" height="575" key="GridCell.Tab.3.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579963" />
+    <state width="1587" height="272" key="GridCell.Tab.3.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792438" />
+    <state width="1587" height="263" key="GridCell.Tab.3.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600249124149" />
+    <state width="1587" height="575" key="GridCell.Tab.3.center/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952603" />
+    <state width="1587" height="575" key="GridCell.Tab.3.center/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422238068" />
+    <state width="1371" height="393" key="GridCell.Tab.3.center/0.23.1680.958@0.23.1680.958" timestamp="1603986588426" />
+    <state width="1556" height="287" key="GridCell.Tab.3.center/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001895" />
+    <state width="1556" height="287" key="GridCell.Tab.3.center/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105264" />
+    <state width="1556" height="228" key="GridCell.Tab.3.center/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882074" />
+    <state width="1408" height="293" key="GridCell.Tab.3.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292203" />
+    <state width="1587" height="272" key="GridCell.Tab.3.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599742400416" />
+    <state width="1316" height="266" key="GridCell.Tab.3.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698766" />
+    <state width="1325" height="111" key="GridCell.Tab.3.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650808" />
+    <state width="1332" height="382" key="GridCell.Tab.3.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964668" />
+    <state width="1371" height="403" key="GridCell.Tab.3.left" timestamp="1604414085724">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="676" key="GridCell.Tab.3.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604070963871" />
+    <state width="1371" height="403" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414085724" />
+    <state width="1587" height="575" key="GridCell.Tab.3.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579963" />
+    <state width="1587" height="272" key="GridCell.Tab.3.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792437" />
+    <state width="1587" height="263" key="GridCell.Tab.3.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600249124148" />
+    <state width="1587" height="575" key="GridCell.Tab.3.left/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952603" />
+    <state width="1587" height="575" key="GridCell.Tab.3.left/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422238067" />
+    <state width="1371" height="393" key="GridCell.Tab.3.left/0.23.1680.958@0.23.1680.958" timestamp="1603986588425" />
+    <state width="1556" height="287" key="GridCell.Tab.3.left/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001894" />
+    <state width="1556" height="287" key="GridCell.Tab.3.left/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105264" />
+    <state width="1556" height="228" key="GridCell.Tab.3.left/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882074" />
+    <state width="1408" height="293" key="GridCell.Tab.3.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292202" />
+    <state width="1587" height="272" key="GridCell.Tab.3.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599742400416" />
+    <state width="1316" height="266" key="GridCell.Tab.3.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698766" />
+    <state width="1325" height="111" key="GridCell.Tab.3.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650808" />
+    <state width="1332" height="382" key="GridCell.Tab.3.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
+    <state width="1371" height="403" key="GridCell.Tab.3.right" timestamp="1604414085725">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1576" height="676" key="GridCell.Tab.3.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604070963872" />
+    <state width="1371" height="403" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414085725" />
+    <state width="1587" height="575" key="GridCell.Tab.3.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579963" />
+    <state width="1587" height="272" key="GridCell.Tab.3.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792438" />
+    <state width="1587" height="263" key="GridCell.Tab.3.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600249124149" />
+    <state width="1587" height="575" key="GridCell.Tab.3.right/0.23.1680.954/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262952603" />
+    <state width="1587" height="575" key="GridCell.Tab.3.right/0.23.1680.956/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600422238068" />
+    <state width="1371" height="393" key="GridCell.Tab.3.right/0.23.1680.958@0.23.1680.958" timestamp="1603986588426" />
+    <state width="1556" height="287" key="GridCell.Tab.3.right/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598263001895" />
+    <state width="1556" height="287" key="GridCell.Tab.3.right/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598274105264" />
+    <state width="1556" height="228" key="GridCell.Tab.3.right/1680.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598278882074" />
+    <state width="1408" height="293" key="GridCell.Tab.3.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.954@1680.23.1920.1057" timestamp="1598445292204" />
+    <state width="1587" height="272" key="GridCell.Tab.3.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599742400416" />
+    <state width="1316" height="266" key="GridCell.Tab.3.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470698767" />
+    <state width="1325" height="111" key="GridCell.Tab.3.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599051650808" />
+    <state width="1332" height="382" key="GridCell.Tab.3.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964668" />
+    <state width="1313" height="671" key="GridCell.Tab.4.bottom" timestamp="1599724907450">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.4.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724907450" />
+    <state width="1313" height="671" key="GridCell.Tab.4.center" timestamp="1599724907449">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.4.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724907449" />
+    <state width="1313" height="671" key="GridCell.Tab.4.left" timestamp="1599724907449">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.4.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724907449" />
+    <state width="1313" height="671" key="GridCell.Tab.4.right" timestamp="1599724907450">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.4.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724907450" />
+    <state width="1313" height="671" key="GridCell.Tab.5.bottom" timestamp="1599724906494">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.5.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724906494" />
+    <state width="1313" height="671" key="GridCell.Tab.5.center" timestamp="1599724906493">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.5.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724906493" />
+    <state width="1313" height="671" key="GridCell.Tab.5.left" timestamp="1599724906492">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.5.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724906492" />
+    <state width="1313" height="671" key="GridCell.Tab.5.right" timestamp="1599724906494">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1313" height="671" key="GridCell.Tab.5.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599724906494" />
+    <state x="2422" y="562" key="VcsDiffUtil.ChangesDialog" timestamp="1598537511361">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2422" y="562" key="VcsDiffUtil.ChangesDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598537511361" />
+    <state x="108" y="99" width="1468" height="772" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604340046877">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="108" y="99" width="1468" height="772" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1604340046877" />
+    <state x="1803" y="123" width="1677" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598876824998" />
+    <state x="1803" y="123" width="1677" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598540376721" />
+    <state x="2056" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599470502930">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2056" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1680.23.1920.1057/0.23.1680.949@1680.23.1920.1057" timestamp="1598263332902" />
+    <state x="2056" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275824224" />
+    <state x="2056" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598357399233" />
+    <state x="2056" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599470502930" />
+    <state x="2506" y="517" key="extract.method.dialog" timestamp="1599039915798">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2506" y="517" key="extract.method.dialog/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599039915798" />
+    <state x="347" y="69" width="1008" height="689" key="find.popup" timestamp="1604415955956">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="-1523" y="-36" width="1279" height="871" key="find.popup/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077511495" />
+    <state x="347" y="69" width="1008" height="689" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604415955956" />
+    <state x="2340" y="263" width="1151" height="692" key="find.popup/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600163780855" />
+    <state x="2340" y="263" width="1151" height="692" key="find.popup/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262704307" />
+    <state x="628" y="353" width="1008" height="628" key="find.popup/0.23.1680.958@0.23.1680.958" timestamp="1603794219442" />
+    <state x="2347" y="295" width="586" height="490" key="find.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1597403846081" />
+    <state x="2347" y="312" width="1151" height="692" key="find.popup/1680.23.1920.1057/0.23.1680.952@1680.23.1920.1057" timestamp="1598264648487" />
+    <state x="2347" y="312" width="1151" height="692" key="find.popup/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598275792297" />
+    <state x="2347" y="312" width="1151" height="692" key="find.popup/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1597410491177" />
+    <state x="2347" y="312" width="1151" height="692" key="find.popup/1680.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1597739642268" />
+    <state x="2252" y="156" width="1151" height="692" key="find.popup/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1599743442043" />
+    <state x="2252" y="156" width="1151" height="692" key="find.popup/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1599463801529" />
+    <state x="2252" y="156" width="1151" height="692" key="find.popup/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1598602630478" />
+    <state x="2305" y="280" key="run.anything.popup" timestamp="1598257510288">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2305" y="280" key="run.anything.popup/1680.23.1920.1057/0.23.1680.947@1680.23.1920.1057" timestamp="1598257510288" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/JeciPermissionsAuthorizationFilter.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/list/PersonListController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/list/ProjectListController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/UserController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciSessionUserService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/list/ProjectListController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>200</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>210</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>587</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleComment.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleJPADAO.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>480</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleExportExcelController.java</url>
+          <line>347</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java</url>
+          <line>307</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/infofauna/infofauna-web/src/main/java/ch/cscf/infofauna/web/controllers/app/crud/UsersCRUDController.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/infofauna/infofauna-web/src/main/java/ch/cscf/infofauna/web/controllers/app/crud/UsersCRUDController.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>242</line>
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleExportExcelController.java</url>
+          <line>396</line>
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/infofauna/infofauna-web/src/main/java/ch/cscf/infofauna/web/controllers/app/crud/UsersCRUDController.java</url>
+          <line>250</line>
+          <option name="timeStamp" value="392" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java</url>
+          <line>219</line>
+          <option name="timeStamp" value="398" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java</url>
+          <line>381</line>
+          <option name="timeStamp" value="399" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="401" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>319</line>
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/StationsController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/StationsController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleSearchController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/ProtocolVersionsController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="430" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="447" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/app/authentication/AuthenticationController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciSSOService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/app/authentication/AuthenticationController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/general/ActiveApplicationService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/general/ActiveApplicationService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/ExtendedJeciFormAuthenticationFilter.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/ExtendedJeciFormAuthenticationFilter.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/ExtendedJeciFormAuthenticationFilter.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/ExtendedJeciFormAuthenticationFilter.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/app/authentication/AuthenticationController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/app/authentication/AuthenticationController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="497" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>388</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/security/ExtendedJeciFormAuthenticationFilter.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciCurrentRequestFilter.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="506" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/app/upload/ProtocolExcelFileHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JeciRealm.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>547</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="541" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>312</line>
+          <option name="timeStamp" value="545" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>284</line>
+          <option name="timeStamp" value="546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="548" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="551" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="552" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>292</line>
+          <option name="timeStamp" value="553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>302</line>
+          <option name="timeStamp" value="554" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>287</line>
+          <option name="timeStamp" value="555" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="556" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ExcelFileValidationResult.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="557" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>319</line>
+          <option name="timeStamp" value="560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>584</line>
+          <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>582</line>
+          <option name="timeStamp" value="562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>320</line>
+          <option name="timeStamp" value="566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>622</line>
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>614</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>590</line>
+          <option name="timeStamp" value="577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>595</line>
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>592</line>
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>598</line>
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/MassImportController.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/MassImportController.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="582" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/MassImportController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="583" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/MassImportController.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="584" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/MassImportController.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>386</line>
+          <option name="timeStamp" value="588" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>392</line>
+          <option name="timeStamp" value="589" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>463</line>
+          <option name="timeStamp" value="596" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java</url>
+          <line>437</line>
+          <option name="timeStamp" value="605" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>395</line>
+          <option name="timeStamp" value="606" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java</url>
+          <line>399</line>
+          <option name="timeStamp" value="607" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/list/PersonListController.java</url>
+          <line>25</line>
+          <properties field="mapper" class="ch.cscf.jeci.web.controllers.api.list.PersonListController" />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/jeci/jeci-web-commons/src/main/java/ch/cscf/jeci/web/controllers/api/ProcessingStatusController.java</url>
+          <line>21</line>
+          <properties field="executorService" class="ch.cscf.jeci.web.controllers.api.ProcessingStatusController" />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/jeci/jeci-services/src/main/java/ch/cscf/jeci/services/security/implementation/JSONPermissionsLoader.java</url>
+          <line>19</line>
+          <properties field="filePath" class="ch.cscf.jeci.services.security.implementation.JSONPermissionsLoader" />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/details-controller.js</url>
+          <line>298</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="618" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="pageContext" />
+        <watch expression="((HashMap)columnPropValues).entrySet().toArray()[17]" custom="java.util.HashMap" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jeci_shell$MIDAT_Tomcat7.ic" NAME="MIDAT@Tomcat7 Coverage Results" MODIFIED="1598356968393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>infofauna-web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>@types/react</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>midat-parent</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

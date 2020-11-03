@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <!-- main persistence unit -->
+    <persistence-unit name="mainPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Mapped superclasses -->
+        <class>ch.cscf.jeci.domain.entities.base.BaseEntity</class>
+
+        <!-- Security related entities -->
+        <class>ch.cscf.jeci.domain.entities.security.Role</class>
+        <class>ch.cscf.jeci.domain.entities.security.Group</class>
+        <class>ch.cscf.jeci.domain.entities.security.RoleGroup</class>
+        <class>ch.cscf.jeci.domain.entities.security.User</class>
+        <class>ch.cscf.jeci.domain.entities.security.JeciApplication</class>
+
+        <!-- Utility entities -->
+        <class>ch.cscf.jeci.domain.entities.utility.TaskStatus</class>
+
+        <!-- Base InfoFauna entities -->
+        <class>ch.cscf.jeci.domain.entities.base.Institution</class>
+        <class>ch.cscf.jeci.domain.entities.base.Person</class>
+        <class>ch.cscf.jeci.domain.entities.base.Project</class>
+
+        <!-- Thesaurus -->
+        <class>ch.cscf.jeci.domain.entities.thesaurus.LocalizedThesaurusEntry</class>
+        <class>ch.cscf.jeci.domain.entities.thesaurus.Language</class>
+        <class>ch.cscf.jeci.domain.entities.thesaurus.ThesaurusValue</class>
+        <class>ch.cscf.jeci.domain.entities.thesaurus.ThesaurusCodesRealm</class>
+        <class>ch.cscf.jeci.domain.entities.thesaurus.AbstractCodesRealm</class>
+
+        <!-- Systematics -->
+        <class>ch.cscf.jeci.domain.entities.systematics.TaxonomicRank</class>
+        <class>ch.cscf.jeci.domain.entities.systematics.Taxon</class>
+        <class>ch.cscf.jeci.domain.entities.systematics.TaxonDesignation</class>
+        <class>ch.cscf.jeci.domain.entities.systematics.TaxonPathDTO</class>
+
+        <!-- MIDAT tables -->
+        <class>ch.cscf.jeci.domain.entities.midat.MIDATProtocolVersion</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolImportHeader</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolImportLog</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolImportLogParam</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.Sample</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleAttribute</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleOriginalFile</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleProtocolType</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.StationSamplesView</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleStationItemView</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleImportDisplayLog</class>
+
+
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleStatPerProtocolMonth</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleProtocolPerUserCanton</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ListConnection</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolIndex</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleInfoIbchData</class>
+
+
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleStation</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleStationItem</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleDocument</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleComment</class>
+        <class>ch.cscf.jeci.domain.entities.midat.IndexAvaliabilityCalendar</class>
+        <class>ch.cscf.jeci.domain.entities.midat.LabRecordField</class>
+        <class>ch.cscf.jeci.domain.entities.midat.LabProtocolFieldMapping</class>
+        <class>ch.cscf.jeci.domain.entities.midat.EvaluationGridItem</class>
+        <class>ch.cscf.jeci.domain.entities.midat.EvaluationGridFieldMapping</class>
+        <class>ch.cscf.jeci.domain.entities.midat.GroundProtocolMapping</class>
+        <class>ch.cscf.jeci.domain.entities.midat.GroundProtocolItem</class>
+        <class>ch.cscf.jeci.domain.entities.midat.BioticWaterQualityRating</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleTaxonIndicateur</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleMassOriginalFile</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolMappingHeader</class>
+
+        <class>ch.cscf.jeci.domain.entities.midat.GroundProtocolImport</class>
+        <class>ch.cscf.jeci.domain.entities.midat.GridProtocolImport</class>
+        <class>ch.cscf.jeci.domain.entities.midat.LabProtocolImport</class>
+
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolMappingMassMap</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ProtocolMappingMassField</class>
+        <class>ch.cscf.jeci.domain.entities.midat.ImportMassDataDetail</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceHistory</class>
+
+
+
+
+    </persistence-unit>
+
+</persistence>

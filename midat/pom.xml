@@ -1,0 +1,191 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ch.cscf</groupId>
+	<artifactId>midat-parent</artifactId>
+	<version>4.1.0</version>
+	<packaging>pom</packaging>
+	<name>MIDAT</name>
+
+	<description>MIDAT - Qualité des eaux des rivières - parent module</description>
+
+    <properties>
+        <jeci.version>4.1.0-SNAPSHOT</jeci.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <org.springframework.version>4.0.5.RELEASE</org.springframework.version>
+    </properties>
+
+    <modules>
+		<module>midat-services</module>
+		<module>midat-web</module>
+    </modules>
+
+	<organization>
+		<name>Centre Suisse de Cartographie de la Faune (CSCF)</name>
+		<url>http://www.cscf.ch/</url>
+	</organization>
+
+    <scm>
+        <connection>scm:git:https://git.unine.ch/scm/jeci/midat.git</connection>
+        <developerConnection>scm:git:https://git.unine.ch/scm/jeci/midat.git</developerConnection>
+        <url>https://git.unine.ch/scm/jeci/midat.git</url>
+    </scm>
+
+	<repositories>
+        <repository>
+            <id>version99</id>
+            <!-- highly available repository serving empty artifacts. See : http://www.slf4j.org/faq.html#excludingJCL -->
+            <url>http://version99.qos.ch/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- This JAR provides all the classes and interfaces needed for JEE6 : web, JPA2... Some actual classes are provided at runtime by Tomcat, some by JPA provider. -->
+        <dependency>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-7.0</artifactId>
+            <version>1.0.0.Final</version>
+            <type>pom</type>
+            <scope>provided</scope>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.validation</groupId>
+                    <artifactId>validation-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--
+            Support for testing Spring applications with tools such as JUnit and TestNG
+            This artifact is generally defined with a 'test' scope for the integration testing framework and unit testing stubs
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Hamcrest matchers -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Oracle JDBC driver and Tomcat connection pool for integration testing - when deployed the datasource comes from Tomcat -->
+        <!-- Connection pool and Oracle JDBC classes are also needed for the Hibernate Spatial API and for working with BLOBs in stored procedures -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jdbc</artifactId>
+            <version>7.0.55</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+
+
+    </dependencies>
+
+	<build>
+		<plugins>
+
+            <!-- build number plugin : generates build number from Git (first 6 digits from hash) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.3</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                        <configuration>
+                            <shortRevisionLength>6</shortRevisionLength>
+                            <timestampFormat>{0, date, dd.MM.yyyy HH:mm:ss}</timestampFormat>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+        <!-- Plugins management specifies plugins configuration for all sub-modules -->
+        <pluginManagement>
+            <plugins>
+
+                <!-- Compiler plugin - specify java version -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.0</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+	</build>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<environment>dev</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+                <tomcatDeployUrl>http://vdelta30.unine.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-dev-new</tomcatDeployServer>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>test</id>
+			<properties>
+				<environment>test</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+                <tomcatDeployUrl>http://vdelta33.unine.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-test-new</tomcatDeployServer>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<environment>prod</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+                <tomcatDeployUrl>http://venigma40.unine.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-prod</tomcatDeployServer>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>

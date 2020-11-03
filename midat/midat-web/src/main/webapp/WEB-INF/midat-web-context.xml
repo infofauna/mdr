@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/mvc       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+                           http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           ">
+
+
+    <context:component-scan base-package="ch.cscf.jeci.web" />
+    <context:component-scan base-package="ch.cscf.midat.web" />
+
+    <!-- Turn on annotation support for MVC controllers -->
+    <mvc:annotation-driven/>
+
+    <!-- Multipart additionalDataForm resolver for forms with file upload -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="5242880"/>
+    </bean>
+
+    <!-- VIEW RESOLVERS -->
+    <bean id="tilesviewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />
+
+    <!-- JSTL URL view resolver default, used for redirects / forwards
+    <bean id="altViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    </bean>    -->
+
+    <!-- END OF VIEW RESOLVERS -->
+
+    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+        <!-- Important so that the full path is used in the @RequestMapping annotations, including e.g. "/authentication" and "/administration" -->
+        <property name="alwaysUseFullPath" value="true"/>
+
+        <property name="interceptors">
+            <!-- Defined below -->
+            <ref bean="localeChangeInterceptor" />
+        </property>
+    </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/app/**"/>
+            <mvc:mapping path="/authentication/**"/>
+            <bean class="ch.cscf.jeci.web.menu.MenuInterceptor" />
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/app/**"/>
+            <mvc:mapping path="/authentication/**"/>
+            <bean class="ch.cscf.jeci.web.jsi18n.JsI18nInterceptor" />
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/app/**"/>
+            <mvc:mapping path="/authentication/**"/>
+            <bean class="ch.cscf.jeci.web.tools.MessagesInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!-- I18N stuff -->
+    <bean id="messageSource"
+          class="ch.cscf.jeci.services.general.CustomReloadableResourceBundleMessageSource">
+        <property name="fallbackToSystemLocale" value="false" />
+        <property name="basenames">
+            <list>
+                <value>classpath:versioning</value>
+                <value>classpath:ValidationMessages</value>
+                <value>classpath:MIDAT-GUIMessages</value>
+                <value>classpath:CommonGUIMessages</value>
+            </list>
+        </property>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+
+
+    <!-- Tiles configurer - we set it to lazy-init so that we can still load the context outside of web container for testing -->
+    <bean id="tilesConfigurer"
+          class="org.springframework.web.servlet.view.tiles3.TilesConfigurer" lazy-init="true">
+        <property name="definitions">
+            <list>
+                <value>WEB-INF/tiles-base.xml</value>
+                <value>WEB-INF/tiles-midat.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Allows user to change the locale -->
+    <bean id="localeChangeInterceptor"
+          class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="lang" />
+    </bean>
+
+    <!-- Allows locale to be stored in cookie -->
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="defaultLocale" value="fr"/>
+        <property name="cookieName" value="cscf-webapp-language"/>
+        <property name="cookiePath" value="/"/>
+        <property name="cookieMaxAge" value="2592000"/> <!-- 30 days -->
+    </bean>
+    
+    <bean id="menu" class="ch.cscf.jeci.web.menu.Menu">
+        <constructor-arg name="xmlFile" value="classpath:menu.xml" />
+    </bean>
+
+</beans>

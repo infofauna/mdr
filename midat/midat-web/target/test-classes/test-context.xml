@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <!-- JDBC data source : uses the same Tomcat JDBC pool, created as singleton bean -->
+    <bean id="jeciDataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@mizar.unine.ch:1521:tfauna"/>
+        <property name="username" value="fauna_app"/>
+        <property name="password" value="fauna4onelogin"/>
+    </bean>
+
+    <!-- Mock servlet context -->
+    <bean id="servletContext" class="org.springframework.mock.web.MockServletContext"/>
+
+
+</beans>

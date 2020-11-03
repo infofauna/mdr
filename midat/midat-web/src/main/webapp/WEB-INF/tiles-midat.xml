@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="midatBase" extends="base.definition">
+        <put-attribute name="title" value="MIDAT" />
+        <put-attribute name="appJS" value="/WEB-INF/jsp/layout/midatAppJS.jsp" />
+    </definition>
+
+    <definition name="home" extends="midatBase">
+        <put-attribute name="pageId" value="home" />
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/home.jsp" />
+        <put-attribute name="selectedMenuItem" value="home" />
+        <put-attribute name="pageCode" value="MIDAT-001" />
+    </definition>
+
+    <definition name="labProtocolImportForm" extends="midatBase">
+        <put-attribute name="pageId" value="labProtocolForm" />
+        <put-attribute name="title" value="Importation de protocole de laboratoire" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/protocol-import/dataImportForm.jsp" />
+        <put-attribute name="selectedMenuItem" value="protocolImportLab" />
+        <put-attribute name="pageCode" value="MIDAT-060" />
+        <put-attribute name="bodyClasses" value="form" />
+    </definition>
+
+    <definition name="massImportForm" extends="midatBase">
+        <put-attribute name="pageId" value="massImportForm" />
+        <put-attribute name="title" value="Importation de données en masse" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/protocol-import/dataImportForm.jsp" />
+        <put-attribute name="selectedMenuItem" value="protocolImportMass" />
+        <put-attribute name="pageCode" value="MIDAT-080" />
+    </definition>
+
+    <definition name="dataValidationResult" extends="midatBase">
+        <put-attribute name="pageId" value="protocolValidationResult" />
+        <put-attribute name="title" value="Résultat de la validation du protocole" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/protocol-import/dataValidationResult.jsp" />
+        <put-attribute name="selectedMenuItem" value="protocolImport" />
+        <put-attribute name="pageCode" value="MIDAT-061" />
+    </definition>
+
+    <definition name="additionalDataForm" extends="midatBase">
+        <put-attribute name="pageId" value="additionalDataForm" />
+        <put-attribute name="title" value="Données complémentaires" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/protocol-import/additionalDataForm.jsp" />
+        <put-attribute name="selectedMenuItem" value="protocolImport" />
+        <put-attribute name="pageCode" value="MIDAT-070" />
+        <put-attribute name="bodyClasses" value="form" />
+    </definition>
+
+    <definition name="samples" extends="midatBase">
+        <put-attribute name="breadcrumb" value="" />
+        <put-attribute name="pageId" value="samples" />
+        <put-attribute name="title" value="Consultation des échantillons" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pages/search/samples.jsp" />
+        <put-attribute name="selectedMenuItem" value="searchForm" />
+        <put-attribute name="pageCode" value="MIDAT-030" />
+    </definition>
+
+</tiles-definitions>

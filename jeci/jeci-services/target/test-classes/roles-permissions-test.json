@@ -1,0 +1,10 @@
+{ "roles" :[
+  {
+    "name" : "test1",
+    "permissions" : ["p1", "p2", "p3"]
+  },
+  {
+    "name" : "test2",
+    "permissions" : ["p4", "p5", "p6"]
+  }
+]}

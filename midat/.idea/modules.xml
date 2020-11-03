@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/midat-parent.iml" filepath="$PROJECT_DIR$/midat-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midat-services/midat-services.iml" filepath="$PROJECT_DIR$/midat-services/midat-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midat-web/midat-web.iml" filepath="$PROJECT_DIR$/midat-web/midat-web.iml" />
+    </modules>
+  </component>
+</project>

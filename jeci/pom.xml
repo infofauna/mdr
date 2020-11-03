@@ -1,0 +1,565 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ch.cscf</groupId>
+	<artifactId>jeci-parent</artifactId>
+	<version>4.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>JECI</name>
+
+	<description>Java Environment for CSCF InfoFauna</description>
+
+    <properties>
+        <org.springframework.version>4.0.5.RELEASE</org.springframework.version>
+        <org.hibernate.version>4.3.10.Final</org.hibernate.version>
+        <org.apache.shiro.version>1.2.3</org.apache.shiro.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <com.querydsl.version>4.0.1</com.querydsl.version>
+    </properties>
+
+    <modules>
+		<module>jeci-commons</module>
+		<module>jeci-domain</module>
+		<module>jeci-persistence</module>
+		<module>jeci-services</module>
+        <module>jeci-web-commons</module>
+    </modules>
+
+	<organization>
+		<name>Centre Suisse de Cartographie de la Faune (CSCF)</name>
+		<url>http://www.cscf.ch/</url>
+	</organization>
+
+    <scm>
+        <connection>scm:git:https://git.unine.ch/scm/jeci/jeci.git</connection>
+        <developerConnection>scm:git:https://git.unine.ch/scm/jeci/jeci.git</developerConnection>
+        <url>https://git.unine.ch/scm/jeci/jeci.git</url>
+    </scm>
+
+	<repositories>
+        <repository>
+            <id>java.net2</id>
+            <name>Repository hosting the jee6 artifacts</name>
+            <url>http://download.java.net/maven/2</url>
+        </repository>
+
+
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Repository serving Spring release artifacts</name>
+            <url>https://repo.springsource.org/libs-release-remote</url>
+        </repository>
+
+        <repository>
+            <id>OSGEO GeoTools repo</id>
+            <name>OSGeo Release Repository</name>
+            <url>https://repo.osgeo.org/repository/release/</url>
+            <snapshots><enabled>false</enabled></snapshots>
+            <releases><enabled>true</enabled></releases>
+        </repository>
+
+        <repository>
+            <id>Hibernate Spatial repo</id>
+            <url>http://www.hibernatespatial.org/repository</url>
+        </repository>
+
+        <repository>
+            <id>version99</id>
+            <!-- highly available repository serving empty artifacts. See : http://www.slf4j.org/faq.html#excludingJCL -->
+            <url>http://version99.qos.ch/</url>
+        </repository>
+
+    </repositories>
+
+	<!-- dependencies that are used in multiple (most) children modules are defined here -->
+	<dependencies>
+
+        <dependency>
+            <groupId>ch.unine.sitel.Object2Map</groupId>
+            <artifactId>Object2Map</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+		<!-- This JAR provides all the classes and interfaces needed for JEE6 : web, JPA2... Some actual classes are provided at runtime by Tomcat, some by JPA provider. -->
+		<dependency>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-7.0</artifactId>
+            <version>1.0.0.Final</version>
+            <type>pom</type>
+            <scope>provided</scope>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.validation</groupId>
+                    <artifactId>validation-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Hamcrest matchers -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+        <!-- Oracle JDBC driver and Tomcat connection pool for integration testing - when deployed the datasource comes from Tomcat -->
+        <!-- Connection pool and Oracle JDBC classes are also needed for the Hibernate Spatial API and for working with BLOBs in stored procedures -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jdbc</artifactId>
+            <version>7.0.55</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+            Core Spring utilities used by other modules.
+            Define this if you use Spring Utility APIs (org.springframework.core.*/org.springframework.util.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Expression Language (depends on spring-core)
+            Define this if you use Spring Expression APIs (org.springframework.expression.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Bean Factory and JavaBeans utilities (depends on spring-core)
+            Define this if you use Spring Bean APIs (org.springframework.beans.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Aspect Oriented Programming (AOP) Framework (depends on spring-core, spring-beans)
+            Define this if you use Spring AOP APIs (org.springframework.aop.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!-- Spring aspects -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Application Context (depends on spring-core, spring-expression, spring-aop, spring-beans)
+            This is the central artifact for Spring's Dependency Injection Container and is generally always defined
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Various Spring Application Context utilities, including EhCache, JavaMail, Quartz, and Freemarker integration
+            Define this if you need any of these integrations
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Transaction Management Abstraction (depends on spring-core, spring-beans, spring-aop, spring-context)
+            Define this if you use Spring Transactions or DAO Exception Hierarchy
+            (org.springframework.transaction.*/org.springframework.dao.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Object-to-Relation-Mapping (ORM) integration with Hibernate, JPA, and iBatis.
+            (depends on spring-core, spring-beans, spring-context, spring-tx)
+            Define this if you need ORM (org.springframework.orm.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring Web application development utilities applicable to both Servlet and Portlet Environments
+            (depends on spring-core, spring-beans, spring-context)
+            Define this if you use Spring MVC, or wish to use Struts, JSF, or another web framework with Spring (org.springframework.web.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Spring MVC for Servlet Environments (depends on spring-core, spring-beans, spring-context, spring-web)
+            Define this if you use Spring MVC with a Servlet Container such as Apache Tomcat (org.springframework.web.servlet.*)
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!--
+            Support for testing Spring applications with tools such as JUnit and TestNG
+            This artifact is generally defined with a 'test' scope for the integration testing framework and unit testing stubs
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring LDAP - see http://www.springsource.org/ldap -->
+        <dependency>
+            <groupId>org.springframework.ldap</groupId>
+            <artifactId>spring-ldap-core</artifactId>
+            <version>1.3.2.RELEASE</version>
+        </dependency>
+
+        <!-- Spring Data JPA -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.4.1.RELEASE</version>
+        </dependency>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${org.hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${org.hibernate.version}</version>
+        </dependency>
+
+        <!-- Hibernate validator JSR-303 reference implementation -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.0.1.Final</version>
+        </dependency>
+
+        <!-- Hibernate Spatial -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-spatial</artifactId>
+            <version>4.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts</artifactId>
+            <version>1.13</version>
+        </dependency>
+
+        <!-- JBoss logging - used by Hibernate, added dependency to solve conflict between daos modules -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.1.0.GA</version>
+        </dependency>
+
+        <!-- Query DSL -->
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-core</artifactId>
+            <version>${com.querydsl.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-apt</artifactId>
+            <version>${com.querydsl.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-jpa</artifactId>
+            <version>${com.querydsl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-spatial</artifactId>
+            <version>${com.querydsl.version}</version>
+        </dependency>
+
+        <!-- Apache Shiro security framework -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <!-- Enables Shiro support for web.based applications -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <!-- Enables Shiro-Spring Framework integration -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <!-- JEE6 dependency injection -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+
+
+        <!-- SLF4J logging façade -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <!-- Logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.0.13</version>
+        </dependency>
+
+        <!-- SLF4J bridge for log4j (redirects logging from log4j to slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <!-- SLF4J bridge for commons-logging (redirects logging from java.commons.logging to slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <!-- Exclude commons-logging from the build by overriding it with an empty JAR -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>99-empty</version>
+        </dependency>
+
+        <!-- Exclude log4j from the build by overriding it with an empty JAR -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>99-empty</version>
+        </dependency>
+
+        <!-- Apache Commons IO -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!-- Joda Time API
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.2</version>
+        </dependency>      -->
+
+        <!-- JDOM for parsing XML files -->
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <!-- Guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>17.0</version>
+        </dependency>
+
+        <!-- Jackson JSON library -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <!-- Validation API (JSR-303) -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+
+        <!-- Force commons-digester version 2.1 -->
+        <!-- THis seems to fix the [UnsupportedOperationException: This parser does not support specification "null" version "null"] error -->
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <!-- Apache POI working with Excel -->
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+
+    </dependencies>
+
+	<build>
+		<plugins>
+
+            <!-- build number plugin : generates build number from Git (first 6 digits from hash) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.3</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                        <configuration>
+                            <shortRevisionLength>6</shortRevisionLength>
+                            <timestampFormat>{0, date, dd.MM.yyyy HH:mm:ss}</timestampFormat>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+        <!-- Plugins management specifies plugins configuration for all sub-modules -->
+        <pluginManagement>
+            <plugins>
+
+                <!-- Compiler plugin - specify java version -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+	</build>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<environment>dev</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+               <!-- <tomcatDeployUrl>http://midat-dev.cscf.ch/manager/text</tomcatDeployUrl>-->
+                <tomcatDeployUrl>http://vdelta30.unine.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-dev</tomcatDeployServer>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<environment>test</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+                <tomcatDeployUrl>http://vdelta33.unine.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-test</tomcatDeployServer>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<environment>prod</environment>
+
+                <!-- Parameters used by the tomcat deploy plugin, see POMs of war modules -->
+                <tomcatDeployUrl>http://midat.cscf.ch/manager/text</tomcatDeployUrl>
+                <!-- There must be a server block with matching ID in .m2/settings.xml -->
+                <tomcatDeployServer>midat-prod</tomcatDeployServer>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>

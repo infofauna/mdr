@@ -1,0 +1,79 @@
+{ "roles" :[
+    {
+        "name": "infofauna:manager",
+        "permissions": [
+            "infofauna:manager",
+            "midat:manager",
+            "mds:manager",
+            "systematique:manager",
+            "infofauna:login"
+        ]
+    },
+    {
+        "name": "infofauna:user",
+        "permissions": [
+            "infofauna:login"
+        ]
+    },
+
+    {
+        "name" : "midat:manager",
+        "permissions" : [
+            "infofauna:login",
+            "midat:manager"
+        ]
+    },
+    {
+        "name" : "midat:user",
+        "permissions" : [
+            "midat:login",
+            "midat:samples:read"
+        ]
+    },
+    {
+        "name" : "midat:export",
+        "permissions" : [
+            "midat:export"
+        ]
+    },
+    {
+        "name" : "mds:manager",
+        "permissions" : [
+            "infofauna:login",
+            "mds:manager"
+        ]
+    },
+    {
+        "name" : "mds:user",
+        "permissions" : [
+            "mds:login",
+            "mds:samples:read"
+
+        ]
+    },
+    {
+        "name" : "mds:arma",
+        "permissions" : [
+            "mds:arma"
+        ]
+    },
+    {
+        "name" : "mds:export",
+        "permissions" : [
+            "mds:export"
+        ]
+    },
+    {
+        "name": "systematique:manager",
+        "permissions": [
+            "infofauna:login",
+            "systematique:manager"
+        ]
+    },
+    {
+        "name": "systematique:user",
+        "permissions": [
+            "systematique:login"
+        ]
+    }
+]}

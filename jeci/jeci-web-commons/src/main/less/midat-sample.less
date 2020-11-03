@@ -1,0 +1,86 @@
+#midat-sample-detail {
+
+
+  .tab-content{
+    border : 1px solid @nav-tabs-border-color;
+    border-top: 5px solid @gray-lighter;
+    background-color: @gray-lightest;
+
+    .tab-pane {
+      position: absolute;
+      left: -10000px;
+    }
+
+    .active {
+      position: relative;
+      left: 0;
+    }
+  }
+
+  ul.nav-tabs{
+    li.active{
+      a{
+        background-color: @gray-lighter;
+      }
+    }
+  }
+
+}
+
+
+
+///////////// Specific styles for the ground protocol tab
+#ground-protocol {
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  ul.ground-protocol-item {
+
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+
+    li {
+      border-top: 1px solid @gray-lighter;
+      margin-top: 10px;
+
+      .item-label {
+        font-weight: bold;
+        display: inline-block;
+        min-width: 300px;
+      }
+
+      ul {
+        padding-left: 50px;
+        li {
+          margin-top: 4px;
+          .item-label {
+            font-size: 0.9em;
+            min-width: 250px;
+          }
+
+          ul {
+            li {
+              .item-label {
+                min-width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+///////////// Specific styles for the index rating popover
+
+.index-rating-popover{
+  max-width: 450px;
+
+  .label{
+    max-width: 120px; text-overflow: ellipsis;
+  }
+}

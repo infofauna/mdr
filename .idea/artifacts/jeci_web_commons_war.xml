@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jeci-web-commons:war">
+    <output-path>$PROJECT_DIR$/jeci/jeci-web-commons/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jeci-web-commons</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jeci-web-commons-4.1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="jeci-web-commons:war exploded" />
+    </root>
+  </artifact>
+</component>

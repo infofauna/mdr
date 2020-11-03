@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<menuGroup name="root" label="menu.root">
+
+    <menuItem name="home" label="menu.home" url="app/home" permission="midat:login" />
+    <menuGroup name="protocolImport" label="menu.protocolimport" permission="midat:samples:create">
+        <menuItem name="protocolImportLab" label="menu.protocolimport.lab" url="app/import/lab" permission="midat:samples:create" />
+        <menuItem name="protocolImportMass" label="menu.protocolimport.mass" url="app/import/mass" permission="midat:samples:create" />
+    </menuGroup>
+    <menuGroup name="search" label="menu.consultation" permission="midat:samples:read">
+        <menuItem name="searchForm" label="menu.searchForm" url="app/samples/#/search" permission="midat:samples:read" />
+        <menuItem name="searchGeo" label="menu.searchGeo" url="app/samples/#/map" permission="midat:samples:read" />
+    </menuGroup>
+
+
+    <menuGroup name="charts" label="menu.charts" permission="midat:samples:create">
+        <menuItem name="chartSamples" label="menu.chart.samples" url="app/samples/#/chart" permission="midat:samples:create" />
+        <menuItem name="chartUsers" label="menu.chart.users" url="app/samples/#/users" permission="midat:samples:create" />
+    </menuGroup>
+
+</menuGroup>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping>
+          <factory-entry name="mainPersistenceUnit" value="7ec1175e-804b-477c-b215-91ecb88c3f53" />
+        </datasource-mapping>
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/jeci/jeci-persistence/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/jeci/jeci-web-commons/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/jeci/jeci-web-commons/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-3.1.0-SNAPSHOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-3.1.0-SNAPSHOT" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/infofauna/infofauna-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/infofauna/infofauna-web/target/war/work/ch.cscf/jeci-web-commons" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-3.1.0-SNAPSHOT/WEB-INF/classes/ch/cscf/jeci/web/security/JeciSSOSessionListener.class" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-3.1.0-SNAPSHOT/WEB-INF/classes/ch/cscf/jeci/web/security" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/thesaurus" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/ProtocolVersionCachedRepository.java" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/infofauna/infofauna-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/infofauna/infofauna-web/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/classes/ch/cscf/jeci/web/tools/ServletContextsKeys.class" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/classes/ch/cscf/jeci/web/tools" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-web/target/midat/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-web/target/midat" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web12">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web13">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/GroupsReadController.java" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web14">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/midat/midat-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/midat/midat-web/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="Manually" manifestLocation="midat/midat-web/target/midat/WEB-INF/classes/org/hibernate/spatial" jarfileLocation="jeci-shell.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties />
+        <additionalJARContents />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/classes/META-INF/infofauna-app-context.xml</file>
+          <file>file://$MODULE_DIR$/jeci/jeci-services/src/main/resources/META-INF/jeci-services-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/infofauna-web-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-services/src/main/resources/META-INF/midat-services-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/classes/META-INF/infofauna-security-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-services/target/classes/META-INF/midat-services-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/src/test/resources/test-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/jsp/pages</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/test-classes/test-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/midat/WEB-INF/classes/META-INF/midat-security-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/midat/WEB-INF/classes/META-INF/midat-app-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/classes/META-INF/midat-security-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/classes/META-INF/midat-app-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/target/midat/WEB-INF/midat-web-context.xml</file>
+          <file>file://$MODULE_DIR$/jeci/jeci-services/target/classes/META-INF/jeci-services-context.xml</file>
+          <file>file://$MODULE_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/font-awesome-4.2.0/fonts/fontawesome-webfont.eot</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jdom-2.0.2.jar</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/src/main/webapp/WEB-INF/infofauna-web-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/src/main/webapp/WEB-INF/midat-web-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/classes/META-INF/infofauna-security-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/infofauna/WEB-INF/classes/META-INF/infofauna-app-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jackson-annotations-2.2.3.jar</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-services/target/classes/META-INF/infofauna-services-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/src/main/resources/META-INF/infofauna-app-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-web/src/main/resources/META-INF/infofauna-security-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/src/main/resources/META-INF/midat-security-context.xml</file>
+          <file>file://$MODULE_DIR$/midat/midat-web/src/main/resources/META-INF/midat-app-context.xml</file>
+          <file>file://$MODULE_DIR$/infofauna/infofauna-services/src/main/resources/META-INF/infofauna-services-context.xml</file>
+          <file>file://$MODULE_DIR$/jeci/jeci-commons/target/classes/config/environment-config.properties</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/midat/midat-services/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/midat/midat-services/src/main/filtered-resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/midat/midat-services/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

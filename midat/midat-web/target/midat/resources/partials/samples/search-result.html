@@ -1,0 +1,270 @@
+<!-- Empty result for form search -->
+<div ng-show="searchState.searchResult.total == 0 && !searchState.isMapSearch"
+     id="emptySearch"
+     class="callout-warning" >
+    <h4>
+        {{"search.resulttable.notfound.header" | j18n }}
+    </h4>
+    {{"search.resulttable.notfound.suggestions" | j18n }}
+    <ul>
+        <li>{{"search.resulttable.notfound.suggestions.1" | j18n }}</li>
+        <li>{{"search.resulttable.notfound.suggestions.2" | j18n }}</li>
+        <li>{{"search.resulttable.notfound.suggestions.3" | j18n }}</li>
+    </ul>
+</div>
+
+<!-- Empty result for map search -->
+<div ng-show="searchState.searchResult.total == 0 && searchState.isMapSearch" id="emptySearchMap" class="callout-warning" >
+    <h4>
+        {{"search.resulttable.notfoundonmap.header" | j18n }}
+    </h4>
+    {{"search.resulttable.notfound.suggestions" | j18n }}
+    <ul>
+        <li>{{"search.resulttable.notfoundonmap.suggestions.1" | j18n }}</li>
+        <li>{{"search.resulttable.notfoundonmap.suggestions.2" | j18n }}</li>
+    </ul>
+</div>
+
+<!-- Search results -->
+<div ng-show="searchState.searchResult.rows.length > 0" >
+
+
+
+    <!-- Message, reload button, excel export button -->
+    <div class="callout-info">
+        {{"search.resulttable.found1" | j18n }}
+        <strong>{{searchState.tableState.totalRows}}</strong>
+        {{"search.resulttable.found2" | j18n }}
+
+        <span class="pull-right" ng-if="maxRows && maxRows>0">
+
+            <!-- case 1 show initial buttons-->
+            <div class="dropdown"  ng-if ="downloadExportCSVStatus === 1 && searchState.tableState.totalRows <= maxRows" style="margin-top: -8px">
+              <button class="btn btn-primary  btn-default dropdown-toggle"
+                      type="button" id="dropdownMenuButton"
+                      id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                 <i class="fa fa-file-excel-o"></i>
+                  <span class="text " style="text-transform: capitalize">{{'search.resulttable.exportTitle' | j18n }}</span>
+                  <span class="caret"></span>
+              </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li >
+                          <a href="#" ng-click="downloadExportCSV($event ,pageCode,false)" title="only samples without their taxons" >{{'search.resulttable.export.light' | j18n }}</a>
+                      </li>
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="#"  ng-click="downloadExportCSV($event ,pageCode,true)" title="Full export samples with their taxons">{{'search.resulttable.export.full' | j18n }}</a>
+                    </li>
+              </ul>
+            </div>
+
+            <!-- case 2 runing export show up -->
+             <div class="dropdown"   ng-if ="downloadExportCSVStatus === 0" style="margin-top: -8px">
+                 <button class="btn btn-primary btn-default">
+                     <i class="fa fa-spinner fa-spin "></i>
+                     <span class="text" style="text-transform: capitalize">{{'search.resulttable.exportTitle' | j18n }}</span>
+                  </button>
+             </div>
+
+
+            <!-- case 3  export warning number of availbale rows is greater than allowed-->
+             <div class="dropdown"  ng-if ="downloadExportCSVStatus === 1 && searchState.tableState.totalRows > maxRows" style="margin-top: -8px">
+                  <button class="btn btn-primary btn-default" ng-click="showExportWarning()"
+                          title=" {{'search.resulttable.exportTitle' | j18n }} ">
+                      <i class="fa fa-file-excel-o"></i>
+                      <span class="text" style="text-transform: capitalize">{{'search.resulttable.exportTitle' | j18n }}</span>
+                  </button>
+             </div>
+
+
+
+        </span>
+    </div>
+
+    <div ng-hide="pageCode =='MIDAT-031'">
+        <!--  visualisation des résultats sur carte -->
+        <a id="viewResultsOnMapButton" class="btn btn-primary pull-right" href="/midat/app/samples/#/map/filtered">
+            <i class="fa fa-map"></i>
+            <span class="text"> {{"searchState.tableState.viewResultOnMap" | j18n }}</span>
+        </a>
+        <br/> <br/>
+    </div>
+
+
+    <div class="callout-warning"  ng-if="exportWarning === 1 && searchState.tableState.totalRows > maxRows" >
+        <span>
+             {{('search.resulttable.exportWarning' | j18n).replace('{0}',maxRows) }}
+        </span>
+    </div>
+    <!-- trNgGrid table -->
+    <table tr-ng-grid="" class="table table-striped table-condensed"
+           locale="{{locale}}"
+           items="searchState.searchResult.rows"
+           selected-items="searchState.selectedItems"
+           enable-filtering="false" enable-selections="true" selection-mode="MultiRow"
+           on-data-required="onNextPageRequested(currentPage, filterBy, filterByFields, orderBy, orderByReverse)"
+           on-data-required-delay="50"
+           current-page="0"
+           page-items="searchState.tableState.pageSize"
+           total-items="searchState.tableState.totalRows"
+    >
+
+        <thead>
+        <tr>
+            <th field-name="protocolType" display-name="{{'search.resulttable.protocolType' | j18n }}" enable-sorting="false"  ></th>
+            <th field-name="groups" display-name="{{'search.resulttable.groups' | j18n }}" enable-sorting="false" display-format="stringArray" ></th>
+            <th field-name="stationNumber" display-name="{{'search.resulttable.stationNumber' | j18n }}" enable-sorting="false"></th>
+            <th display-name="{{'search.resulttable.published' | j18n }}" enable-sorting="false"></th>
+            <th field-name="watercourse" display-name="{{'search.resulttable.watercourse' | j18n }}" enable-sorting="false" display-format="multilangValue" ></th>
+            <th field-name="locality" display-name="{{'search.resulttable.locality' | j18n }}" enable-sorting="false" display-format="multilangValue"></th>
+            <th field-name="sampleDateIncludingPartialDate" display-name="{{'search.resulttable.date' | j18n }}" enable-sorting="true" ></th>
+            <th field-name="project" display-name="{{'search.resulttable.project' | j18n }}" enable-sorting="false" ></th>
+            <th display-name="{{'search.resulttable.index' | j18n }}" enable-sorting="false" ></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <!-- added by aka on 10.10.17 -->
+            <td field-name="protocolType">
+                <span ng-if="gridItem.protocolType === 'MASS' ">{{'search.resulttable.protocolType.pdm' | j18n }}</span>
+                <span ng-if="gridItem.protocolType !== 'MASS' ">{{'search.resulttable.protocolType.pdl' | j18n }}</span>
+            </td>
+
+            <td field-name="stationNumber">
+                <a ng-if="gridItem.mainStations === true || gridItem.linkedToMainStation === true" href="#/details/{{gridItem.sampleId}}">{{gridItem.stationNumber}}  </a>
+                <span ng-if="gridItem.mainStations === false && gridItem.linkedToMainStation === false" > {{gridItem.stationNumber}} </span>
+            </td>
+            <td>
+
+                <span ng-if="gridItem.published" class='label label-success'><i class='fa fa-check'></i></span>
+                <span ng-if="!gridItem.published" class='label label-default'><i class='fa fa-times'></i></span>
+            </td>
+            <!-- TODO  gridItem.ibchLegendVersionId is empty or null , display the indice value only -->
+            <td>
+                    <span ng-if="gridItem.indexes.ibchIndexValue || gridItem.indexes.ibchIndexValue ===0  ">
+                        <span class="badge" ng-if="gridItem.ibchLegendVersionId" ng-style="{ 'background-color': gridItem.indexes.ibchQuality.bgColorCode, color: gridItem.indexes.ibchQuality.textColorCode}"
+                              bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title={{gridItem.ibchLegendVersionId}} data-content="IBCH" data-trigger="hover" >
+                            IBCH :
+                            {{gridItem.indexes.ibchIndexValue}}
+                        </span>
+                        <span ng-if="!gridItem.ibchLegendVersionId">
+                             {{gridItem.indexes.ibchIndexValue}}
+                        </span>
+                    </span>
+
+                     <span ng-if="gridItem.indexes.spearIndexValue || gridItem.indexes.spearIndexValue === 0 ">
+                        <span class="badge" ng-if="gridItem.spearLegendVersionId"  ng-style="{ 'background-color': gridItem.indexes.spearQuality.bgColorCode, color: gridItem.indexes.spearQuality.textColorCode}"
+                              bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title="{{gridItem.spearLegendVersionId}}" data-content="SPEAR" data-trigger="hover" >
+                            SPEAR :
+                            {{gridItem.indexes.spearIndexValue}}
+                        </span>
+                         <span  ng-if="!gridItem.spearLegendVersionId">
+                               {{gridItem.indexes.spearIndexValue}}
+                         </span>
+                    </span>
+
+                    <span ng-if="gridItem.indexes.makroIndexValue">
+                        <span class="badge" ng-if="gridItem.makroLegendVersionId" ng-style="{ 'background-color': gridItem.indexes.makroindexQuality.bgColorCode, color: gridItem.indexes.makroindexQuality.textColorCode}"
+                              bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title="{{gridItem.makroLegendVersionId}}" data-content="MAKROINDEX" data-trigger="hover" >
+                            MAKRO :
+                            {{gridItem.indexes.makroIndexValue}}
+                        </span>
+                        <span ng-if="!gridItem.makroLegendVersionId">
+                             {{gridItem.indexes.makroIndexValue}}
+                        </span>
+                    </span>
+
+            </td>
+            <td>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+
+                        <a class="btn btn-primary btn-xs" href="#/details/{{gridItem.sampleId}}">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                        <a class="btn btn-primary btn-xs" ng-click="loadAuditingData(gridItem.sampleId)"
+                           bs-popover
+                           data-placement="left"
+                           data-auto-close="true"
+                           data-template="{{auditPopoverTplUrl}}"
+                           data-trigger="click"
+                           data-content="{{'search.sampleEntityType' | j18n}}"
+                        >
+                            <i class="fa fa-info-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td>
+                <!-- button group with select all, unselect all, and delete buttons -->
+                <div class="btn-group" ng-if="searchState.searchCriteria.editionMode || searchState.editionMode">
+                    <button class="btn btn-default"
+                            ng-click="selectAllRows()" >
+                        <!--<i class="fa fa-check-square-o"></i> -->
+                        <span class="text">{{'search.resulttable.selectall' | j18n}}</span>
+                    </button>
+                    <button class="btn btn-default"
+                            ng-click="unselectAllRows()" >
+                        <!-- <i class="fa fa-square-o"></i> -->
+                        <span class="text">{{'search.resulttable.unselectall' | j18n}}</span>
+                    </button>
+                    <button class="btn btn-danger"
+                            ng-click="batchDeleteButtonClicked()"
+                            ng-disabled="!searchState.selectedItems || searchState.selectedItems.length == 0">
+                        <i class="fa fa-trash"></i>
+                        <span class="text">{{'search.resulttable.batchdelete.delete' | j18n }}</span>
+                    </button>
+                </div>
+
+                <!-- Pager buttons -->
+                <span tr-ng-grid-pager=""></span>
+
+            </td>
+        </tr>
+
+        </tfoot>
+
+    </table>
+
+    <!-- Batch edition panel -->
+    <div class="panel panel-default" ng-if="searchState.searchCriteria.editionMode || searchState.editionMode">
+        <div class="panel-body form-group form-inline">
+
+            <!-- choose property to edit -->
+            {{"search.resulttable.batchedit.label" | j18n }}
+            <select class="form-control" ng-model="batchUpdate.fieldName">
+                <option value="published">{{"search.resulttable.batchedit.publication" | j18n }}</option>
+                <option value="public">{{"search.resulttable.batchedit.availability" | j18n }}</option>
+            </select>
+
+            <!-- choose value to set -->
+            {{"search.resulttable.batchedit.label2" | j18n }} :
+            <select class="form-control" ng-model="batchUpdate.value">
+                <option value="true" ng-if="batchUpdate.fieldName==='published'">{{"search.resulttable.batchedit.publication.published" | j18n }}</option>
+                <option value="true" ng-if="batchUpdate.fieldName==='public'">{{"search.resulttable.batchedit.availability.public" | j18n }}</option>
+                <option value="false" ng-if="batchUpdate.fieldName==='public'">{{"search.resulttable.batchedit.availability.restricted" | j18n }}</option>
+            </select>
+
+            <!-- edit button -->
+            <button class="btn btn-primary"
+                    ng-disabled="!searchState.selectedItems || searchState.selectedItems.length == 0"
+                    ng-click="batchUpdateButtonClicked()">
+                <i class="fa fa-check-circle"></i>
+                <span class="text">{{"search.resulttable.batchedit.apply" | j18n }}</span>
+            </button>
+        </div>
+
+    </div>
+
+
+</div>
+

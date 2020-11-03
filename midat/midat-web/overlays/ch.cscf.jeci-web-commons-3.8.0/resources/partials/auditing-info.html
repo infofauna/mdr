@@ -1,0 +1,75 @@
+<div class="popover index-rating-popover">
+    <div class="arrow"></div>
+
+    <h3 class="popover-title">{{"global.auditing.header" | j18n}} {{content}}</h3>
+
+    <div class="popover-content">
+        <table class="table table-condensed table-bordered table-striped">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Date et heure</th>
+                <th>User</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th colspan="3" style="text-align: center">
+                    {{"global.auditing.db.header" | j18n}}
+                </th>
+            </tr>
+
+            <tr>
+                <th width="30%">
+                    {{"global.auditing.creation" | j18n }}
+                </th>
+                <td>
+                    {{auditingInfo.dbCreationDate | date:'dd.MM.yyyy HH:mm:ss'}}
+                </td>
+                <td>
+                    {{auditingInfo.dbCreationUser}}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    {{"global.auditing.update" | j18n }}
+                </th>
+                <td>
+                    {{auditingInfo.dbUpdateDate | date:'dd.MM.yyyy HH:mm:ss'}}
+                </td>
+                <td>
+                    {{auditingInfo.dbUpdateUser}}
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3" style="text-align: center">
+                    {{"global.auditing.app.header" | j18n }}
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    {{"global.auditing.creation" | j18n }}
+                </th>
+                <td>
+                    {{auditingInfo.creationDate | date:'dd.MM.yyyy HH:mm:ss'}}
+                </td>
+                <td>
+                    {{auditingInfo.creationUser}}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    {{"global.auditing.update" | j18n }}
+                </th>
+                <td>
+                    {{auditingInfo.updateDate | date:'dd.MM.yyyy HH:mm:ss'}}
+                </td>
+                <td>
+                    {{auditingInfo.updateUser}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

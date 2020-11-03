@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file url="file://$PROJECT_DIR$/infofauna/infofauna-web/overlays" />
+    <file url="file://$PROJECT_DIR$/midat/midat-web/overlays" />
+    <file type="web" url="file://$PROJECT_DIR$/infofauna/infofauna-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jeci/jeci-web-commons" />
+    <file type="web" url="file://$PROJECT_DIR$/midat-sources/mds-web" />
+    <file type="web" url="file://$PROJECT_DIR$/midat/midat-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/infofauna/pom.xml" />
+        <option value="$PROJECT_DIR$/jeci/pom.xml" />
+        <option value="$PROJECT_DIR$/midat/pom.xml" />
+        <option value="$PROJECT_DIR$/midat-sources/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/infofauna/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,184 @@
+/************ Inputs with different font-sizes ******************/
+.form-control-sm{
+  font-size: 12px !important;
+  padding: 4px 8px !important;
+}
+
+.form-control-xs{
+  font-size: 10px !important;
+  padding: 3px 6px !important;
+}
+
+
+
+
+/*
+For when you want to align the form's elements with elements outside the form itself.
+Use together with .form-inline
+*/
+form.form-inline-inline {
+  display: inline-block; width: auto;
+}
+
+/*
+To allow inline input-groups to actually be displayed online
+*/
+.input-group {
+  display: inline-table;
+  vertical-align: middle;
+
+  .input-group-addon,
+  .input-group-btn,
+  .form-control {
+    width: auto !important;
+  }
+}
+
+
+// inputs
+select, input[type=text], input[type=textarea], input[type=password] {
+
+  &:focus{
+    outline: none;
+    border-color: @primary-light;
+    box-shadow: inset 1px 0 8px @primary-lighter;
+  }
+
+}
+
+/************ Buttons ******************/
+
+input[type=submit].button, button.button, a.button, span.button, div.button, .button {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px; margin-left: 10px;
+  text-decoration: none; font-weight: 700; text-shadow: 0 1px 0 #FFFFFF; font-size: 1.1em;
+  color: @complimentary-dark;
+  border: 1px solid @gray-light;
+  background: @gray-lighter; /* Old browsers */
+  #gradient > .vertical(lighten(@gray-lighter, 10%); darken(@gray-lighter, 10%));
+  box-shadow: 1px 1px 2px #858585;
+  border-radius: 3px;
+
+  &:hover{
+    background: @gray-light-2; /* Old browsers */
+    #gradient > .vertical(lighten(@gray-light-2, 10%); darken(@gray-light-2, 10%));
+  }
+
+  &:active {
+    //border:0;
+    box-shadow: none;
+  }
+
+  //icons inside buttons have some right and top margin
+  span.icon{
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+
+  //wrap the button text in a span.text when an span.icon is present in sortOrder to vertically align both
+  span.text{
+    vertical-align: middle; margin-left: 7px;
+  }
+
+}
+
+.btn {
+  //text spans are used when there is also an icon to the left of it
+  span.text{
+    margin-left: 10px;
+  }
+}
+
+.btn-space {
+  margin-right: 0.5em;
+}
+/****************** Legends *********************/
+legend {
+  color: @gray-light;
+  font-family: @font-family-serif;
+  font-style: italic; font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*********** File upload **********/
+span.file-input-wrapper{
+  display: inline-block;
+  width: 100%; height: 34px; margin-bottom: 10px;
+  position: relative;
+
+  input[type=file]{
+    position: absolute; z-index: 1;
+    height: 100%; width: 100%;
+    opacity: 0; -moz-opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  }
+
+  label{
+    position: absolute; left: 0; top: 0; padding-top: 5px;
+    width: 100%; text-align: center;
+
+  }
+
+}
+
+/****  Errors **********************/
+div.errors {
+  .callout-danger;
+}
+
+div.field-error-wrapper {
+  display: block; width: 100%; min-height: 20px; padding:0; margin:0;
+  span.fieldError {
+    font-size: 0.8em;
+    color: @state-danger-text;
+  }
+}
+
+span.field-error-wrapper {
+  min-height: 20px; padding:0; margin:0;
+  span.fieldError {
+    font-size: 0.8em;
+    color: @state-danger-text;
+  }
+}
+
+
+div.field-error-wrapper:not(:empty) + div.form-group
+{
+  .has-feedback();
+  .has-error();
+}
+
+.has-error {
+  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+}
+
+/**************** Vertical separator ****************/
+span.vr {
+  height: 1.7em; width: 1px; margin: 0 1em; display: inline-block; vertical-align: text-bottom; border-left:  1px solid #CCCCCC;
+}
+
+
+/*************** Field sizes for inline forms *******/
+
+
+.form-inline{
+  input, select {
+    &.xsm {
+      width: 50px;
+    }
+    &.sm {
+      width: 80px;
+    }
+    &.md {
+      width: 150px;
+    }
+    &.lg {
+      width: 250px;
+    }
+    &.xlg {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../infofauna" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../infofauna/infofauna-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../infofauna/infofauna-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../infofauna/infofauna-web/src/test/java/ch/cscf/jeci/integration/services/TaxonDTOServiceTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-persistence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-services/src/main/java/ch/cscf/jeci/services/systematics/interfaces/TaxonDTOService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jeci-services/src/test/resources/test-jeci-services-context.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/jeci-web-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../midat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../midat/midat-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../midat/midat-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

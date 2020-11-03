@@ -1,0 +1,292 @@
+<div>
+    <h3>
+        {{"search.form.header" | j18n }}
+    </h3>
+    <hr/>
+    <form name="searchForm">
+    <fieldset>
+
+        <!-- First line -->
+        <div class="line clearfix">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="watercourse">
+                        {{"search.form.watercourse" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="watercourse" id="watercourse"
+                           ng-model="searchState.searchCriteria.watercourse"
+                           uib-typeahead="watercourse for watercourse in getWatercourseNamesLike($viewValue)"
+                           typeahead-loading="loadingWatercourses"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"
+                           autocomplete="off"
+                    />
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="locality">
+                        {{"search.form.locality" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="locality" id="locality"
+                           ng-model="searchState.searchCriteria.locality"
+                           uib-typeahead="locality for locality in getLocalityNamesLike($viewValue)"
+                           typeahead-loading="loadingLocalities"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"  autocomplete="off" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Second line Numéro de la station && Projet  -->
+
+        <div class="line clearfix">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="stationNumber">
+                        {{"search.resulttable.stationNumber" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="stationNumber" id="stationNumber"
+                           ng-model="searchState.searchCriteria.stationNumber"
+                           uib-typeahead="stationNumber for stationNumber in getStationNumbersLike($viewValue)"
+                           typeahead-loading="loadingStationNumbers"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"
+                           autocomplete="off"
+                    />
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="project">
+                        {{"search.resulttable.project" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="project" id="project"
+                           ng-model="searchState.searchCriteria.project"
+                           uib-typeahead="project for project in getProjectNamesLike($viewValue)"
+                           typeahead-loading="loadingProjects"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"
+                           autocomplete="off"
+                    />
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Third ligne No. gewiss and principal institution -->
+
+        <div class="line clearfix">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="gewissNumber">
+                        {{"search.details.station.gewiss" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="gewissNumber" id="gewissNumber"
+                           ng-model="searchState.searchCriteria.gewissNumber"
+                           uib-typeahead="gewissNumber for gewissNumber in getGewissNumbersLike($viewValue)"
+                           typeahead-loading="loadingGewissNumbers"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"
+                           autocomplete="off"
+                    />
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="principalInstitution">
+                        {{"search.details.sample.principal" | j18n }}
+                    </label>
+                    <input type="text" class="form-control" name="principalInstitution" id="principalInstitution"
+                           ng-model="searchState.searchCriteria.principalInstitution"
+                           uib-typeahead="principalInstitution for principalInstitution in getPrincipalInstitutionNamesLike($viewValue)"
+                           typeahead-loading="loadingPrincipalInstitutions"
+                           typeahead-min-length="2"
+                           typeahead-append-to-body="false"
+                           autocomplete="off"
+                    />
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth line -->
+        <div class="line clearfix">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="minDate">
+                        {{"search.form.dates" | j18n }}
+                    </label> <br/>
+                    <span class="input-group"
+                          ng-class="{'has-error': searchForm.minDate.$invalid}"
+                            >
+                        <span class="input-group">
+                            <input name="minDate" id="minDate" class="form-control"
+                                   ng-model="searchState.searchCriteria.minDate"
+                                   uib-datepicker-popup="dd.MM.yyyy"
+                                   datepicker-options="datepickerOptions"
+                                   is-open="minDatePickerOpened"
+                                   min-date="'1950-01-01'" max-date="'2025-12-31'"/>
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openMinDatePicker($event)"><i
+                                        class="fa fa-calendar"></i></button>
+                            </span>
+                        </span>
+                    </span>
+
+                    <label for="maxDate">
+                        {{"search.form.datesand" | j18n }}
+                    </label>
+                    <span class="input-group" ng-class="{'has-error': searchForm.maxDate.$invalid}">
+                        <input type="text" name="maxDate" id="maxDate" class="form-control"
+                               ng-model="searchState.searchCriteria.maxDate"
+                               uib-datepicker-popup="dd.MM.yyyy"
+                               datepicker-options="datepickerOptions"
+                               is-open="maxDatePickerOpened"
+                               min-date="'1950-01-01'" max-date="'2025-12-31'"  autocomplete="off"/>
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="openMaxDatePicker($event)"><i class="fa fa-calendar"></i></button>
+                        </span>
+                    </span>
+                    <div class="field-error-wrapper">
+                        <span ng-show="searchForm.minDate.$invalid || searchForm.maxDate.$invalid"
+                              class="fieldError">
+                            {{"search.form.dateformaterror" | j18n }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group form-inline">
+                    <label for="minBioIndex">
+                        {{"search.form.index" | j18n }}
+                    </label> <br/>
+
+                    <span class="input.group" ng-class="{'has-error': searchForm.minBioIndex.$invalid}">
+                        <input type="number" name="minBioIndex" id="minBioIndex" class="form-control sm" ng-model="searchState.searchCriteria.minBioIndex" />
+                    </span>
+                    &le;
+                    <select ng-model="searchState.searchCriteria.indexType"
+                            ng-options="indexType.value as indexType.label for indexType in indexTypesOptions"
+                            class="form-control md">
+                    </select>
+                    &le;
+                    <span class="input.group" ng-class="{'has-error': searchForm.maxBioIndex.$invalid}">
+                        <input type="number" name="maxBioIndex" id="maxBioIndex" class="form-control sm" ng-model="searchState.searchCriteria.maxBioIndex" min="0"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Five line -->
+        <div class="line clearfix">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="minBioIndex">
+                        {{"search.form.group.label" | j18n }}
+                    </label> <br/>
+
+                    <select ng-model="searchState.searchCriteria.selectedGroup"
+                            ng-options="group.name as (group.name+' ('+group.localizedDescription+')') for group in groupsForSearch"
+                            class="form-control">
+                        <option value="" >{{ 'search.form.group.nogroupitem.description' | j18n }}</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="minBioIndex">
+                        {{"search.form.published.label" | j18n }}
+                    </label> <br/>
+
+                    <div class="btn-group">
+                        <a href="javascript:void(0)"
+                           ng-click="searchState.searchCriteria.published = null"
+                           ng-class="{ 'active' : searchState.searchCriteria.published === null }"
+                           class="btn btn-default">
+                            {{"search.form.published.all" | j18n }}
+                        </a>
+                        <a href="javascript:void(0)"
+                           ng-click="searchState.searchCriteria.published = true"
+                           ng-class="{ 'active' : searchState.searchCriteria.published === true }"
+                           class="btn btn-default">
+                            {{"search.form.published.true" | j18n }}
+                        </a>
+                        <a href="javascript:void(0)"
+                           ng-click="searchState.searchCriteria.published = false"
+                           ng-class="{ 'active' : searchState.searchCriteria.published === false }"
+                           class="btn btn-default">
+                            {{"search.form.published.false" | j18n }}
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- line for the portocoltype select  -->
+        <div class="line clearfix">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="minBioIndex">
+                        {{"search.form.protocoltype.label" | j18n }}
+                    </label> <br/>
+
+                    <select ng-model="searchState.searchCriteria.selectedProtocolType" class="form-control">
+                        <option value="" >{{ 'search.form.protocoltype.all.description' | j18n }}</option>
+                        <option value="LABORATORY" >{{ 'search.form.protocoltype.laboratory.description' | j18n }}</option>
+                        <option value="MASS" >{{ 'search.form.protocoltype.mass.description' | j18n }}</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+
+        <div ng-if="sessionUser.isPermitted('midat:samples:update')">
+            <input type="checkbox" id="editModeCheckbox" ng-model="searchState.searchCriteria.editionMode"/>
+            <label for="editModeCheckbox">{{"search.form.enableeditmode" | j18n }}</label>
+        </div>
+
+        <div class="btn-group pull-right" role="group" aria-label="...">
+            <button id="submitSearchButton" class="btn btn-primary btn-space"
+                    ng-click="onSearchClicked()"
+                    ng-disabled="searchForm.$invalid">
+                <i class="fa fa-search"></i>
+                <span class="text">
+                    {{"search.form.search" | j18n }}
+                </span>
+            </button>
+
+            <!-- JIRA MID-258 Formulaire de recherche : Ajouter un bouton -clear -->
+            <button id="submitResetButton" class="btn btn-default align-right"
+                    ng-click="onResetClicked()"
+                    ng-disabled="searchForm.$invalid">
+                <i class="fa fa-eraser"></i>
+                <span class="text">
+                    {{"search.form.reset" | j18n }}
+                </span>
+            </button>
+        </div>
+
+    </fieldset>
+    </form>
+    <hr/>
+
+    <div>
+        <div id="searchResult" ng-include="searchResultTplUrl" class="slide-animate clearfix"></div>
+    </div>
+</div>

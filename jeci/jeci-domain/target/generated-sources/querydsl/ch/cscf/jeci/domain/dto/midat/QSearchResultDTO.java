@@ -1,0 +1,21 @@
+package ch.cscf.jeci.domain.dto.midat;
+
+import com.querydsl.core.types.dsl.*;
+
+import com.querydsl.core.types.ConstructorExpression;
+import javax.annotation.Generated;
+
+/**
+ * ch.cscf.jeci.domain.dto.midat.QSearchResultDTO is a Querydsl Projection type for SearchResultDTO
+ */
+@Generated("com.querydsl.codegen.ProjectionSerializer")
+public class QSearchResultDTO extends ConstructorExpression<SearchResultDTO> {
+
+    private static final long serialVersionUID = 946124393L;
+
+    public QSearchResultDTO(com.querydsl.core.types.Expression<Long> sampleId, com.querydsl.core.types.Expression<? extends java.util.Date> sampleDate, com.querydsl.core.types.Expression<Integer> sampleDateDay, com.querydsl.core.types.Expression<Integer> sampleDateMonth, com.querydsl.core.types.Expression<Integer> sampleDateYear, com.querydsl.core.types.Expression<Double> ibchIndexValue, com.querydsl.core.types.Expression<Double> makroIndexValue, com.querydsl.core.types.Expression<Double> spearIndexValue, com.querydsl.core.types.Expression<Integer> ibchLegendVersionId, com.querydsl.core.types.Expression<Integer> makroLegendVersionId, com.querydsl.core.types.Expression<Integer> spearLegendVersionId, com.querydsl.core.types.Expression<String> watercourseFr, com.querydsl.core.types.Expression<String> watercourseDe, com.querydsl.core.types.Expression<String> watercourseIt, com.querydsl.core.types.Expression<String> localityFr, com.querydsl.core.types.Expression<String> localityDe, com.querydsl.core.types.Expression<String> localityIt, com.querydsl.core.types.Expression<Long> operatorId, com.querydsl.core.types.Expression<String> operatorFirstName, com.querydsl.core.types.Expression<String> operatorLastName, com.querydsl.core.types.Expression<Long> determinatorId, com.querydsl.core.types.Expression<String> determinatorFirstName, com.querydsl.core.types.Expression<String> determinatorLastName, com.querydsl.core.types.Expression<String> determinatorExcel, com.querydsl.core.types.Expression<String> operatorExcel, com.querydsl.core.types.Expression<String> protocolType, com.querydsl.core.types.Expression<Boolean> published, com.querydsl.core.types.Expression<String> project, com.querydsl.core.types.Expression<String> stationNumber, com.querydsl.core.types.Expression<Long> stationId, com.querydsl.core.types.Expression<Double> valeurGi, com.querydsl.core.types.Expression<String> taxonIndicateur, com.querydsl.core.types.Expression<Double> giFinal, com.querydsl.core.types.Expression<Double> valuerVt, com.querydsl.core.types.Expression<Double> ibchRobust, com.querydsl.core.types.Expression<Integer> taxonSumFamily, com.querydsl.core.types.Expression<Integer> ephemeropteraCounter, com.querydsl.core.types.Expression<Integer> tricopteraCounter, com.querydsl.core.types.Expression<Integer> plecopteraCounter, com.querydsl.core.types.Expression<Integer> sommeAbon, com.querydsl.core.types.Expression<Integer> ibchQ, com.querydsl.core.types.Expression<Double> valeurCorrection) {
+        super(SearchResultDTO.class, new Class[]{long.class, java.util.Date.class, int.class, int.class, int.class, double.class, double.class, double.class, int.class, int.class, int.class, String.class, String.class, String.class, String.class, String.class, String.class, long.class, String.class, String.class, long.class, String.class, String.class, String.class, String.class, String.class, boolean.class, String.class, String.class, long.class, double.class, String.class, double.class, double.class, double.class, int.class, int.class, int.class, int.class, int.class, int.class, double.class}, sampleId, sampleDate, sampleDateDay, sampleDateMonth, sampleDateYear, ibchIndexValue, makroIndexValue, spearIndexValue, ibchLegendVersionId, makroLegendVersionId, spearLegendVersionId, watercourseFr, watercourseDe, watercourseIt, localityFr, localityDe, localityIt, operatorId, operatorFirstName, operatorLastName, determinatorId, determinatorFirstName, determinatorLastName, determinatorExcel, operatorExcel, protocolType, published, project, stationNumber, stationId, valeurGi, taxonIndicateur, giFinal, valuerVt, ibchRobust, taxonSumFamily, ephemeropteraCounter, tricopteraCounter, plecopteraCounter, sommeAbon, ibchQ, valeurCorrection);
+    }
+
+}
+
