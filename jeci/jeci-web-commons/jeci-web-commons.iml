@@ -39,6 +39,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.8.4" level="project" />
     <orderEntry type="module" module-name="jeci-services" />
     <orderEntry type="module" module-name="jeci-persistence" />
     <orderEntry type="module" module-name="jeci-domain" />

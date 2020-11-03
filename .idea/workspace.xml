@@ -14,108 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/jeci/MappingHeaderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ImportMassDataDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingMassField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingMassMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GridProtocolImportDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolImportDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ImportMassDataDetailDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/LabProtocolImportDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/LaboProtocolMappingDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingHeaderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingMassFieldDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingMassMapDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GridProtocolImportJPADAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolImportJPADAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ImportMassDataDetailJPADAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/LabProtocolImportJPADAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/LaboProtocolMappingJpaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingHeaderJpaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingMassFieldJpaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolMappingMassMapJpaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/resources/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ExcelParserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-history-tab-tmpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-tab-tmpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scp_midat_apps.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/MIDAT_Tomcat7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/MIDAT_Tomcat7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy-webapp-midat.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy-webapp-midat.sh.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci" beforeDir="false" afterPath="$PROJECT_DIR$/jeci" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/jeci-commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/jeci-domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingLocalizedDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/BioticWaterQualityRatingLocalizedDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SearchResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SearchResultDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/base/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/base/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/BioticWaterQualityRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/BioticWaterQualityRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/EvaluationGridFieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/EvaluationGridFieldMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/GroundProtocolMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/GroundProtocolMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/LabProtocolFieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/LabProtocolFieldMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolImportHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolImportHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/StationSamplesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/StationSamplesView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/security/RoleGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/security/RoleGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/jeci-persistence.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/EvaluationGridFieldMappingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/EvaluationGridFieldMappingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolMappingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolMappingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolImportHeaderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolImportHeaderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/SampleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/SampleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJMappingJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJMappingJPADAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolMappingJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolMappingJPADAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleJPADAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/hibernate/PersistentEnumUserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/hibernate/PersistentEnumUserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/jeci-services.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/jeci-web-commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/less/midat-sample.less" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/less/midat-sample.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/WEB-INF/jsp/layout/layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/src/main/webapp/WEB-INF/jsp/layout/layout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat" beforeDir="false" afterPath="$PROJECT_DIR$/midat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/midat-services.iml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/midat-services.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/BioticWaterQualityRatingReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/BioticWaterQualityRatingReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/GroundProtocolReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/ProtocolImportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/StationReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/BioticWaterQualityRatingReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/BioticWaterQualityRatingReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/ProtocolImportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/ProtocolImportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/interfaces/SampleReadUpdateDeleteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/resources/MIDAT-GUIMessages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/midat-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/midat-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleReadUpdateDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/api/SampleReadUpdateDeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/java/ch/cscf/midat/web/controllers/app/protocolimport/ProtocolImportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/resources/META-INF/midat-security-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/resources/META-INF/midat-security-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/common-logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/common-logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/details-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/details-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/samples-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/js/samples/samples-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/biotic-index-ratings.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/biotic-index-ratings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/search-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/search-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/test/java/ch/cscf/jeci/test/integration/services/TestBioticWaterQualityGradeReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/test/java/ch/cscf/jeci/test/integration/services/TestBioticWaterQualityGradeReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +54,7 @@
         <entry key="$PROJECT_DIR$/midat" value="develop" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/midat" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JsFlowSettings">
@@ -606,7 +505,7 @@
       <workItem from="1603116668685" duration="1405000" />
       <workItem from="1603793560243" duration="508000" />
       <workItem from="1603794073394" duration="17702000" />
-      <workItem from="1603961796237" duration="85609000" />
+      <workItem from="1603961796237" duration="87098000" />
     </task>
     <task id="LOCAL-00001" summary="change jeci.version in the pom  from 3.6.0 to 3.6.2">
       <created>1483979388303</created>
@@ -1097,13 +996,13 @@
     <state width="544" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.956@1680.23.1920.1057" timestamp="1598521351064" />
     <state width="567" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1598952773309" />
     <state width="567" height="466" key="DebuggerActiveHint/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1599033416836" />
-    <state width="1638" height="403" key="GridCell.Tab.0.bottom" timestamp="1604414516459">
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1604415959776">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834558" />
     <state width="1878" height="160" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362028" />
     <state width="1878" height="160" key="GridCell.Tab.0.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691437" />
-    <state width="1638" height="403" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516459" />
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959776" />
     <state width="1835" height="312" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
     <state width="1835" height="504" key="GridCell.Tab.0.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792688" />
     <state width="1587" height="410" key="GridCell.Tab.0.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
@@ -1128,13 +1027,13 @@
     <state width="1332" height="382" key="GridCell.Tab.0.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
     <state width="917" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185427" />
     <state width="917" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
-    <state width="1638" height="403" key="GridCell.Tab.0.center" timestamp="1604414516458">
+    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1604415959775">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834556" />
     <state width="1878" height="160" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362026" />
     <state width="1878" height="160" key="GridCell.Tab.0.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691434" />
-    <state width="1638" height="403" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516458" />
+    <state width="1638" height="345" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959775" />
     <state width="1835" height="312" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
     <state width="1835" height="504" key="GridCell.Tab.0.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792686" />
     <state width="1587" height="410" key="GridCell.Tab.0.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
@@ -1159,13 +1058,13 @@
     <state width="1332" height="382" key="GridCell.Tab.0.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964664" />
     <state width="917" height="320" key="GridCell.Tab.0.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185426" />
     <state width="917" height="320" key="GridCell.Tab.0.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272848" />
-    <state width="1638" height="403" key="GridCell.Tab.0.left" timestamp="1604414516457">
+    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1604415959775">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834555" />
     <state width="1878" height="160" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362025" />
     <state width="1878" height="160" key="GridCell.Tab.0.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691433" />
-    <state width="1638" height="403" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516457" />
+    <state width="1638" height="345" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959775" />
     <state width="1835" height="312" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
     <state width="1835" height="504" key="GridCell.Tab.0.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792685" />
     <state width="1587" height="410" key="GridCell.Tab.0.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202491" />
@@ -1190,13 +1089,13 @@
     <state width="1332" height="382" key="GridCell.Tab.0.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964664" />
     <state width="917" height="320" key="GridCell.Tab.0.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185425" />
     <state width="917" height="320" key="GridCell.Tab.0.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272848" />
-    <state width="1638" height="403" key="GridCell.Tab.0.right" timestamp="1604414516458">
+    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1604415959775">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834557" />
     <state width="1878" height="160" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052362027" />
     <state width="1878" height="160" key="GridCell.Tab.0.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691435" />
-    <state width="1638" height="403" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516458" />
+    <state width="1638" height="345" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959775" />
     <state width="1835" height="312" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579978" />
     <state width="1835" height="504" key="GridCell.Tab.0.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792687" />
     <state width="1587" height="410" key="GridCell.Tab.0.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262202492" />
@@ -1221,13 +1120,13 @@
     <state width="1332" height="382" key="GridCell.Tab.0.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
     <state width="917" height="320" key="GridCell.Tab.0.right/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185427" />
     <state width="917" height="320" key="GridCell.Tab.0.right/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
-    <state width="1371" height="403" key="GridCell.Tab.1.bottom" timestamp="1604414516267">
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1604415959777">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834452" />
     <state width="1576" height="500" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361883" />
     <state width="1576" height="500" key="GridCell.Tab.1.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691300" />
-    <state width="1371" height="403" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516267" />
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959777" />
     <state width="1835" height="312" key="GridCell.Tab.1.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
     <state width="1587" height="272" key="GridCell.Tab.1.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792437" />
     <state width="1587" height="410" key="GridCell.Tab.1.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
@@ -1252,13 +1151,13 @@
     <state width="1332" height="382" key="GridCell.Tab.1.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
     <state width="1345" height="420" key="GridCell.Tab.1.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
     <state width="917" height="320" key="GridCell.Tab.1.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
-    <state width="1371" height="403" key="GridCell.Tab.1.center" timestamp="1604414516265">
+    <state width="1638" height="345" key="GridCell.Tab.1.center" timestamp="1604415959776">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834450" />
     <state width="1576" height="500" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361882" />
     <state width="1576" height="500" key="GridCell.Tab.1.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691298" />
-    <state width="1371" height="403" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516265" />
+    <state width="1638" height="345" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959776" />
     <state width="1835" height="312" key="GridCell.Tab.1.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
     <state width="1587" height="272" key="GridCell.Tab.1.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792436" />
     <state width="1587" height="410" key="GridCell.Tab.1.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
@@ -1283,13 +1182,13 @@
     <state width="1332" height="382" key="GridCell.Tab.1.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
     <state width="1345" height="420" key="GridCell.Tab.1.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185282" />
     <state width="917" height="320" key="GridCell.Tab.1.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
-    <state width="1371" height="403" key="GridCell.Tab.1.left" timestamp="1604414516264">
+    <state width="1638" height="345" key="GridCell.Tab.1.left" timestamp="1604415959776">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834449" />
     <state width="1576" height="500" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361881" />
     <state width="1576" height="500" key="GridCell.Tab.1.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691297" />
-    <state width="1371" height="403" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516264" />
+    <state width="1638" height="345" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959776" />
     <state width="1835" height="312" key="GridCell.Tab.1.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
     <state width="1587" height="272" key="GridCell.Tab.1.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792436" />
     <state width="1587" height="410" key="GridCell.Tab.1.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205547" />
@@ -1314,13 +1213,13 @@
     <state width="1332" height="382" key="GridCell.Tab.1.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964665" />
     <state width="1345" height="420" key="GridCell.Tab.1.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185282" />
     <state width="917" height="320" key="GridCell.Tab.1.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272849" />
-    <state width="1371" height="403" key="GridCell.Tab.1.right" timestamp="1604414516266">
+    <state width="1638" height="345" key="GridCell.Tab.1.right" timestamp="1604415959776">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834451" />
     <state width="1576" height="500" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361882" />
     <state width="1576" height="500" key="GridCell.Tab.1.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691299" />
-    <state width="1371" height="403" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516266" />
+    <state width="1638" height="345" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959776" />
     <state width="1835" height="312" key="GridCell.Tab.1.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579979" />
     <state width="1587" height="272" key="GridCell.Tab.1.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792437" />
     <state width="1587" height="410" key="GridCell.Tab.1.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262205548" />
@@ -1345,13 +1244,13 @@
     <state width="1332" height="382" key="GridCell.Tab.1.right/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
     <state width="1345" height="420" key="GridCell.Tab.1.right/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
     <state width="917" height="320" key="GridCell.Tab.1.right/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272850" />
-    <state width="1371" height="403" key="GridCell.Tab.2.bottom" timestamp="1604414516269">
+    <state width="1638" height="345" key="GridCell.Tab.2.bottom" timestamp="1604415959778">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834455" />
     <state width="1576" height="500" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361886" />
     <state width="1576" height="500" key="GridCell.Tab.2.bottom/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691303" />
-    <state width="1371" height="403" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516269" />
+    <state width="1638" height="345" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959778" />
     <state width="1835" height="312" key="GridCell.Tab.2.bottom/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
     <state width="1587" height="272" key="GridCell.Tab.2.bottom/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792441" />
     <state width="1587" height="575" key="GridCell.Tab.2.bottom/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />
@@ -1375,13 +1274,13 @@
     <state width="1332" height="382" key="GridCell.Tab.2.bottom/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
     <state width="1345" height="420" key="GridCell.Tab.2.bottom/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185284" />
     <state width="917" height="320" key="GridCell.Tab.2.bottom/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
-    <state width="1371" height="403" key="GridCell.Tab.2.center" timestamp="1604414516268">
+    <state width="1638" height="345" key="GridCell.Tab.2.center" timestamp="1604415959777">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834454" />
     <state width="1576" height="500" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361885" />
     <state width="1576" height="500" key="GridCell.Tab.2.center/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691302" />
-    <state width="1371" height="403" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516268" />
+    <state width="1638" height="345" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959777" />
     <state width="1835" height="312" key="GridCell.Tab.2.center/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
     <state width="1587" height="272" key="GridCell.Tab.2.center/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792440" />
     <state width="1587" height="575" key="GridCell.Tab.2.center/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />
@@ -1405,13 +1304,13 @@
     <state width="1332" height="382" key="GridCell.Tab.2.center/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964667" />
     <state width="1345" height="420" key="GridCell.Tab.2.center/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
     <state width="917" height="320" key="GridCell.Tab.2.center/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
-    <state width="1371" height="403" key="GridCell.Tab.2.left" timestamp="1604414516267">
+    <state width="1638" height="345" key="GridCell.Tab.2.left" timestamp="1604415959777">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834453" />
     <state width="1576" height="500" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361884" />
     <state width="1576" height="500" key="GridCell.Tab.2.left/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691301" />
-    <state width="1371" height="403" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516267" />
+    <state width="1638" height="345" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959777" />
     <state width="1835" height="312" key="GridCell.Tab.2.left/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
     <state width="1587" height="272" key="GridCell.Tab.2.left/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792439" />
     <state width="1587" height="575" key="GridCell.Tab.2.left/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506188" />
@@ -1435,13 +1334,13 @@
     <state width="1332" height="382" key="GridCell.Tab.2.left/1680.23.1920.1057/3600.23.1920.1057/0.23.1680.961@1680.23.1920.1057" timestamp="1599038964666" />
     <state width="1345" height="420" key="GridCell.Tab.2.left/1680.23.1920.977/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.977" timestamp="1598877185283" />
     <state width="917" height="320" key="GridCell.Tab.2.left/1680.23.1920.978/3600.23.1920.1057/0.23.1680.1027@1680.23.1920.978" timestamp="1598877272851" />
-    <state width="1371" height="403" key="GridCell.Tab.2.right" timestamp="1604414516268">
+    <state width="1638" height="345" key="GridCell.Tab.2.right" timestamp="1604415959777">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1576" height="524" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.0.1920.1080/0.0.1680.1050@-1920.-107.1920.1080" timestamp="1604077834455" />
     <state width="1576" height="500" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.1027@-1920.-107.1920.1080" timestamp="1604052361885" />
     <state width="1576" height="500" key="GridCell.Tab.2.right/-1920.-107.1920.1080/1680.23.1920.1057/0.23.1680.956@-1920.-107.1920.1080" timestamp="1604056691303" />
-    <state width="1371" height="403" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604414516268" />
+    <state width="1638" height="345" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604415959777" />
     <state width="1835" height="312" key="GridCell.Tab.2.right/0.23.1680.947/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600762579980" />
     <state width="1587" height="272" key="GridCell.Tab.2.right/0.23.1680.949/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600160792440" />
     <state width="1587" height="575" key="GridCell.Tab.2.right/0.23.1680.952/1680.23.1920.1057/3600.23.1920.1057@1680.23.1920.1057" timestamp="1600262506189" />

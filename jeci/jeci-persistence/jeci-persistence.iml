@@ -28,6 +28,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.06" level="project" />
     <orderEntry type="module" module-name="jeci-domain" />
     <orderEntry type="module" module-name="jeci-commons" />
     <orderEntry type="library" name="Maven: ch.unine.sitel.Object2Map:Object2Map:1.0-SNAPSHOT" level="project" />
