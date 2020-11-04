@@ -172,8 +172,11 @@ public class ProtocolImportService implements ch.cscf.midat.services.interfaces.
 
 
         List<MIDATProtocolVersion> versions = protocolVersionDAO.findForType(thesaurusReadOnlyService.getValueId(ThesaurusCodes.REALM_MIDATPROTO, ThesaurusCodes.MIDATPROTO_LABORATORY));
-        translator.fillLocalizedFields(versions);
-        values.setProtocolVersions(versions);
+        // only show active versions
+        List<MIDATProtocolVersion> activeVersions = versions.stream().filter(v -> v.getStatus() == EntityStatus.ACTIVE).collect(Collectors.toList());
+
+        translator.fillLocalizedFields(activeVersions);
+        values.setProtocolVersions(activeVersions);
 
         return values;
     }

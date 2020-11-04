@@ -584,7 +584,7 @@ public class ExcelParserService {
                         // Date mTimeStamp = format.parse(String.valueOf(cell.getDateCellValue()));
                         cellValue =dateString;
                     } else {
-                        cellValue = String.valueOf(cell.getNumericCellValue());
+                        cellValue = replacePeriodByComma(cell);
                     }
                     break;
                 case FORMULA:
@@ -593,7 +593,7 @@ public class ExcelParserService {
                             cellValue=String.valueOf(cell.getBooleanCellValue());
                             break;
                         case NUMERIC:
-                            cellValue=String.valueOf(cell.getNumericCellValue());
+                            cellValue= replacePeriodByComma(cell);
                             break;
                         case STRING:
                             cellValue=String.valueOf(cell.getRichStringCellValue());
@@ -605,6 +605,16 @@ public class ExcelParserService {
             }
         }
         return cellValue;
+    }
+
+    /**
+     * This is a helper method used to replace the period by a comma
+     * @param cell
+     * @return
+     */
+    private String replacePeriodByComma(Cell cell) {
+        return String.valueOf(cell.getNumericCellValue()) == null
+                ? null : String.valueOf(cell.getNumericCellValue()).replace('.', ',');
     }
 
 

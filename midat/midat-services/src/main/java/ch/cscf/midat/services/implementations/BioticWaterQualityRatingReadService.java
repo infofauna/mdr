@@ -4,7 +4,9 @@ import ch.cscf.jeci.domain.ThesaurusCodes;
 import ch.cscf.jeci.domain.dto.midat.BioticWaterQualityRatingDTO;
 import ch.cscf.jeci.domain.dto.midat.BioticWaterQualityRatingLocalizedDTO;
 import ch.cscf.jeci.domain.entities.midat.BioticWaterQualityRating;
+import ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceVersion;
 import ch.cscf.jeci.persistence.daos.interfaces.midat.BioticWaterQualityRatingDAO;
+import ch.cscf.jeci.persistence.daos.interfaces.midat.IndiceVersionDAO;
 import ch.cscf.jeci.services.general.I18nService;
 import ch.cscf.jeci.persistence.daos.thesaurus.interfaces.ThesaurusReadOnlyService;
 import com.google.common.collect.ArrayListMultimap;
@@ -32,6 +34,9 @@ public class BioticWaterQualityRatingReadService implements  ch.cscf.midat.servi
 
     @Autowired
     private I18nService i18NService;
+
+    @Autowired
+    private IndiceVersionDAO indiceVersionDAO;
 
     private final ListMultimap<String, BioticWaterQualityRatingDTO> ratings = ArrayListMultimap.create();
 
@@ -84,9 +89,23 @@ public class BioticWaterQualityRatingReadService implements  ch.cscf.midat.servi
     public List<BioticWaterQualityRatingLocalizedDTO> getBiologicalRatingForIndexTypeLocalized(String indexTypeCode) {
         checkTypeCode(indexTypeCode);
 
+        List<SampleIndiceVersion> activeIndexes = (List<SampleIndiceVersion>) indiceVersionDAO.list();
+
         List<BioticWaterQualityRatingDTO> indexRatings = ratings.get(indexTypeCode);
         List<BioticWaterQualityRatingLocalizedDTO> localizedRatings = new ArrayList<>(indexRatings.size());
         for(BioticWaterQualityRatingDTO rating : indexRatings){
+
+            // add only active indexes
+            List<SampleIndiceVersion> activeIndexesVal = activeIndexes.stream().filter(v -> {
+                if (v.getId().intValue() == rating.legendVersionId.intValue() && v.getCurrent() == 'Y') {
+                    return true;
+                }
+                return false;
+            }).collect(Collectors.toList());
+
+            if(activeIndexesVal.size() == 0){
+                continue;
+            }
             String ratingDesignation = thesaurus.getLocalizedString(ThesaurusCodes.REALM_BIOLSTATETXT, rating.ratingCode, i18NService.currentLanguageCode());
             localizedRatings.add(new BioticWaterQualityRatingLocalizedDTO(rating, ratingDesignation));
         }

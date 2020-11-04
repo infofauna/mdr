@@ -20,6 +20,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolMappingHeader.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStationItemView.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QEvaluationGridFieldMapping.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceVersion.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/security/User.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/thesaurus/LocalizedThesaurusEntry.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/errors/Message.java
@@ -114,6 +115,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/LabRecordField.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleComment.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleGrid.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceVersion.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QLabRecordField.java

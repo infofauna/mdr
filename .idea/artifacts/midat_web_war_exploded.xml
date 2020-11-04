@@ -14,7 +14,7 @@
           <element id="module-output" name="midat-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="midat-services-4.1.0.jar">
+          <element id="archive" name="midat-services-4.1.1.jar">
             <element id="module-output" name="midat-services" />
           </element>
           <element id="archive" name="jeci-services-4.1.0-SNAPSHOT.jar">

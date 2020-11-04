@@ -18,6 +18,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/infofauna/TaxonPathJpaDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/SampleProjectJPADAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/utils/ReflectionUtil.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/IndiceVersionJpaDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJPADAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/admin/JeciApplicationDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/ImportMassDataDetailJPADAO.java
@@ -73,6 +74,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/admin/UserDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/admin/GroupDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/infofauna/TaxonomicRankDAO.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/IndiceVersionDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/infofauna/TaxonPathDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolItemDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/SampleDAO.java

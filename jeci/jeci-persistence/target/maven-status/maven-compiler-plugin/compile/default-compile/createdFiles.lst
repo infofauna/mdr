@@ -14,6 +14,7 @@ ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolImportJPADAO.class
 ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolImportDAO.class
 ch/cscf/jeci/persistence/daos/jpa/admin/RoleJpaDAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/SampleInstitutionJPADAO.class
+ch/cscf/jeci/persistence/daos/jpa/midat/IndiceVersionJpaDAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/SampleProjectJPADAO.class
 ch/cscf/jeci/persistence/daos/jpa/infofauna/LanguageJpaDAO.class
 ch/cscf/jeci/persistence/daos/jpa/infofauna/LocalizedThesaurusEntryJPADAO.class
@@ -68,6 +69,7 @@ ch/cscf/jeci/persistence/daos/jpa/infofauna/ThesaurusCodesRealmJPADAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/ImportMassDataDetailJPADAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/EvaluationGridFieldJMappingJPADAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/ProtocolImportHeaderJpaDAO.class
+ch/cscf/jeci/persistence/daos/interfaces/midat/IndiceVersionDAO.class
 ch/cscf/jeci/persistence/daos/interfaces/midat/IndexAvaliabilityCalendarDAO.class
 ch/cscf/jeci/persistence/querydsl/QuerydslConfiguration.class
 ch/cscf/jeci/persistence/daos/interfaces/admin/UserSPDAO.class

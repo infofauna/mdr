@@ -1,9 +1,11 @@
 package ch.cscf.jeci.web.controllers.api;
 
 import ch.cscf.jeci.domain.ThesaurusCodes;
+import ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceVersion;
 import ch.cscf.jeci.domain.entities.thesaurus.LocalizedThesaurusEntry;
 import ch.cscf.jeci.persistence.daos.thesaurus.interfaces.ThesaurusReadOnlyService;
 import ch.cscf.jeci.services.general.I18nService;
+import ch.cscf.midat.services.interfaces.IndiceVersionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author: henryp
@@ -22,6 +25,10 @@ public class SelectOptionsJSONController extends AbstractRestController {
 
     @Autowired
     private ThesaurusReadOnlyService thesaurusReadOnlyService;
+
+    @Autowired
+    private IndiceVersionService indiceVersionService;
+
 
     @Autowired
     private I18nService i18NService;
@@ -45,6 +52,9 @@ public class SelectOptionsJSONController extends AbstractRestController {
 
         List<LocalizedThesaurusEntry> entries = thesaurusReadOnlyService.getEntriesForRealm(ThesaurusCodes.REALM_MIDATINDICE, i18NService.currentLanguageCode());
 
+
+        List<SampleIndiceVersion> activeIndexes = indiceVersionService.getActiveVersions();
+
         List<Option> options = new ArrayList<>();
 
         for(LocalizedThesaurusEntry entry : entries){
@@ -54,6 +64,18 @@ public class SelectOptionsJSONController extends AbstractRestController {
             if(entry.getCode().equalsIgnoreCase("ALL")){
                 continue;
             }
+            // add only active indexes
+            List<SampleIndiceVersion> activeIndexesVal = activeIndexes.stream().filter(v -> {
+                if (v.getMidatIndice().intValue() == entry.getValueId().intValue() && v.getCurrent() == 'Y') {
+                    return true;
+                }
+                return false;
+            }).collect(Collectors.toList());
+
+            if(activeIndexesVal.size() == 0){
+                continue;
+            }
+
             option.setLabel(entry.getCode());
             option.setValue(entry.getCode());
             options.add(option);

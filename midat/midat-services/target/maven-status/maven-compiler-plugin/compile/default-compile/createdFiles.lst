@@ -2,6 +2,7 @@ ch/cscf/midat/services/implementations/SampleIntervalReadService.class
 ch/cscf/midat/services/interfaces/InstitutionReadService.class
 ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.class
 ch/cscf/midat/services/interfaces/SampleIntervalReadService.class
+ch/cscf/midat/services/interfaces/IndiceVersionService.class
 ch/cscf/midat/services/implementations/GroundProtocolReadService.class
 ch/cscf/midat/services/implementations/SampleSearchService.class
 ch/cscf/midat/services/implementations/ProtocolVersionCachedRepository.class
@@ -15,6 +16,7 @@ ch/cscf/midat/services/implementations/ProtocolImportService.class
 ch/cscf/midat/services/interfaces/ProjectReadService.class
 ch/cscf/midat/services/interfaces/GroundProtocolReadService.class
 ch/cscf/midat/services/implementations/GeoStationsSession.class
+ch/cscf/midat/services/implementations/IndiceVersionService.class
 ch/cscf/midat/services/implementations/ExcelParserService$1.class
 ch/cscf/midat/services/implementations/StationUpdateService.class
 ch/cscf/midat/services/implementations/ProjectReadService.class

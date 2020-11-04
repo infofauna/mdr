@@ -100,6 +100,7 @@ ch/cscf/jeci/domain/entities/security/QRole.class
 ch/cscf/jeci/domain/entities/security/QUser.class
 ch/cscf/jeci/domain/entities/utility/QTaskStatus.class
 ch/cscf/jeci/domain/entities/base/BaseEntity.class
+ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceVersion.class
 ch/cscf/jeci/domain/entities/systematics/TaxonDesignation.class
 ch/cscf/jeci/domain/entities/midat/IndexAvaliabilityCalendar.class
 ch/cscf/jeci/domain/dto/infofauna/TaxonDTO.class
@@ -145,5 +146,6 @@ ch/cscf/jeci/domain/entities/midat/sample/QSampleImportDisplayLog.class
 ch/cscf/jeci/domain/entities/midat/sample/QSampleStation.class
 ch/cscf/jeci/domain/entities/midat/sample/SampleProtocolPerUserCanton.class
 ch/cscf/jeci/domain/entities/midat/QProtocolMappingHeader.class
+ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceVersion.class
 ch/cscf/jeci/domain/entities/midat/LabProtocolImport.class
 ch/cscf/jeci/domain/entities/midat/sample/QSampleInfoIbchData.class
