@@ -1,3 +1,10 @@
 ./distro
 ./.idea
-./**/tagret
+./**/target
+
+/distro
+/.idea
+
+.idea
+distro
+/**/target

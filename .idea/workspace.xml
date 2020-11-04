@@ -14,12 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_midat_services_4_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/jeci_web_commons_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/midat_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distro/midat-4.0.0-dev.war" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +506,7 @@
       <workItem from="1603116668685" duration="1405000" />
       <workItem from="1603793560243" duration="508000" />
       <workItem from="1603794073394" duration="17702000" />
-      <workItem from="1603961796237" duration="111194000" />
+      <workItem from="1603961796237" duration="112108000" />
     </task>
     <task id="LOCAL-00001" summary="change jeci.version in the pom  from 3.6.0 to 3.6.2">
       <created>1483979388303</created>
