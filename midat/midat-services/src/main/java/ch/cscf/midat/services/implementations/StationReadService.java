@@ -367,6 +367,7 @@ public class StationReadService implements ch.cscf.midat.services.interfaces.Sta
 
                 );
                 logger.info("Station["+station.getStationNumber()+"] Color["+color+"] was calculated based on Sample date ["+recentSample.getSampleDate()+"]");
+
                 colorById.put(station.getStationId(), color);
             }
         });
@@ -423,23 +424,25 @@ public class StationReadService implements ch.cscf.midat.services.interfaces.Sta
                                              Double makroIndexValue,
                                              Integer makroLegendVersionId) {
         String colorCode = null;
-        if ((ibchIndexValue == null && ThesaurusCodes.MIDATINDICE_IBCH.equalsIgnoreCase(index))
-                || (spearIndexValue == null && ThesaurusCodes.MIDATINDICE_SPEARINDEX.equalsIgnoreCase(index))
-                || (makroIndexValue == null && ThesaurusCodes.MIDATINDICE_MAKROINDEX.equalsIgnoreCase(index))
-                || (ibchLegendVersionId == null)
-                || (spearLegendVersionId == null)
-                || (makroLegendVersionId == null)
-                ) {
+
+        logger.info("getColorCodePerIndexValue[index:"+index+"], ibchIndexValue["+ibchIndexValue+"], ibchLegendVersionId["+ibchLegendVersionId+"], spearIndexValue["+spearIndexValue+"], spearLegendVersionId["+spearLegendVersionId+"]");
+        if ((ibchIndexValue == null || ibchLegendVersionId == null) && ThesaurusCodes.MIDATINDICE_IBCH.equalsIgnoreCase(index)) {
             colorCode = COLOR_CODE_NOT_CALCULATED_INDEX;
-        } else {
+        } else if ((spearIndexValue == null  || spearLegendVersionId == null ) && ThesaurusCodes.MIDATINDICE_SPEARINDEX.equalsIgnoreCase(index)) {
+            colorCode = COLOR_CODE_NOT_CALCULATED_INDEX;
+        }else if ((makroIndexValue == null  || makroLegendVersionId == null ) && ThesaurusCodes.MIDATINDICE_MAKROINDEX.equalsIgnoreCase(index)) {
+            colorCode = COLOR_CODE_NOT_CALCULATED_INDEX;
+        }
+        else {
             if (ThesaurusCodes.MIDATINDICE_IBCH.equalsIgnoreCase(index)) {
-                BioticWaterQualityRatingDTO ibchRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_IBCH, ibchIndexValue.intValue(),ibchLegendVersionId);
+
+                BioticWaterQualityRatingDTO ibchRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_IBCH, ibchIndexValue,ibchLegendVersionId);
                 colorCode = ibchRating.bgColorCode;
             } else if (ThesaurusCodes.MIDATINDICE_SPEARINDEX.equalsIgnoreCase(index)) {
-                BioticWaterQualityRatingDTO spearRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_SPEARINDEX, spearIndexValue.intValue(),spearLegendVersionId);
+                BioticWaterQualityRatingDTO spearRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_SPEARINDEX, spearIndexValue,spearLegendVersionId);
                 colorCode = spearRating.bgColorCode;
             } else if (ThesaurusCodes.MIDATINDICE_MAKROINDEX.equalsIgnoreCase(index)) {
-                BioticWaterQualityRatingDTO makroRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_MAKROINDEX, makroIndexValue.intValue(),makroLegendVersionId);
+                BioticWaterQualityRatingDTO makroRating = qualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_MAKROINDEX, makroIndexValue,makroLegendVersionId);
                 colorCode = makroRating.bgColorCode;
             }
         }
