@@ -11,6 +11,7 @@ import ch.cscf.jeci.domain.entities.thesaurus.ThesaurusValue;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -39,6 +40,10 @@ import java.util.stream.Collectors;
 })
 @SequenceGenerator(allocationSize=1, name = "idSeq", sequenceName = "SEQ_SAMPLEHEADER")
 public class Sample extends BaseEntity {
+
+    //DecimalFormat df3 = new DecimalFormat("#.###");
+    //DecimalFormat df2 = new DecimalFormat("#.##");
+
 
     @ManyToMany
     @JoinTable(name = "SAMPLEHEADERADMINGROUP", schema = "MIDAT",
@@ -225,6 +230,7 @@ public class Sample extends BaseEntity {
 
     @Column(name = "SPH_VC")
     private Double valeurCorrection; //Valeur de correction VC
+
 
 
     public String getProject() {

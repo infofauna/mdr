@@ -43,14 +43,16 @@ public class BioticWaterQualityRatingReadService implements  ch.cscf.midat.servi
     @PostConstruct
     public void init(){
 
-        for(BioticWaterQualityRating rating : biologicalRatingDAO.list("sortOrder", Lists.newArrayList("indexType", "designation", "bgColor", "textColor"))){
+        for(BioticWaterQualityRating rating : biologicalRatingDAO.list("sortOrder", Lists.newArrayList("indexType", "designation", "bgColor", "textColor","sampleIndiceVersion"))){
             String indexTypeCode = rating.getIndexType().getCode();
             String ratingCode = rating.getDesignation().getCode();
+            Integer legendVersionId = rating.getSampleIndiceVersion().getId().intValue();
+            String currentVersion = String.valueOf(rating.getSampleIndiceVersion().getCurrent());
 
             String bgColorCode = rating.getBgColor() == null ? null : rating.getBgColor().getCode();
             String textColorCode = rating.getTextColor() == null ? null : rating.getTextColor().getCode();
 
-            BioticWaterQualityRatingDTO dto = new BioticWaterQualityRatingDTO(indexTypeCode, ratingCode, bgColorCode, textColorCode, rating.getRangeLegendText(), rating.getFromValue(), rating.getToValue(), rating.getSortOrder(),rating.getLegendVersionId());
+            BioticWaterQualityRatingDTO dto = new BioticWaterQualityRatingDTO(indexTypeCode, ratingCode, bgColorCode, textColorCode, rating.getRangeLegendText(), rating.getFromValue(), rating.getToValue(), rating.getSortOrder(),legendVersionId,currentVersion);
             ratings.put(indexTypeCode, dto);
         }
     }
@@ -97,7 +99,7 @@ public class BioticWaterQualityRatingReadService implements  ch.cscf.midat.servi
 
             // add only active indexes
             List<SampleIndiceVersion> activeIndexesVal = activeIndexes.stream().filter(v -> {
-                if (v.getId().intValue() == rating.legendVersionId.intValue() && v.getCurrent() == 'Y') {
+                if (v.getId().intValue() == rating.legendVersionId.intValue()    ) {
                     return true;
                 }
                 return false;

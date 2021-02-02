@@ -77,6 +77,7 @@ public class ThesaurusCodes {
     public static final String REALM_MIDATGRND = "MIDATGRND";
     public static final String REALM_BIOLSTATETXT = "BIOLSTATETXT";
     public static final String REALM_MIDATLOADCOMMENT = "MIDATLOADCMT";
+    public static final String REALM_IBCHQ = "IBCH_Q";
 
 
 

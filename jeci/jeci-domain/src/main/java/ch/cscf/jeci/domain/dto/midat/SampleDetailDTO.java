@@ -99,6 +99,8 @@ public class SampleDetailDTO {
 
     private Integer ibchQ; // Régime IBCH-Q
 
+    private String ibchQDesignation; // Régime IBCH-Q Designation
+
     private Double valeurCorrection; //Valeur de correction VC
 
 
@@ -552,5 +554,13 @@ public class SampleDetailDTO {
 
     public void setValeurCorrection(Double valeurCorrection) {
         this.valeurCorrection = valeurCorrection;
+    }
+
+    public String getIbchQDesignation() {
+        return ibchQDesignation;
+    }
+
+    public void setIbchQDesignation(String ibchQDesignation) {
+        this.ibchQDesignation = ibchQDesignation;
     }
 }

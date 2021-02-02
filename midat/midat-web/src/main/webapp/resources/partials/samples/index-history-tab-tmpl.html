@@ -57,6 +57,38 @@
             &nbsp;{{"export.csv.columns.labRecordField.taxon.family" | j18n }}
         </div>
 
+        <div class="form-group form-inline">
+            <label class="control-label">
+                IBCH-Q:
+            </label>
+            <p class="form-control-static">
+                <span ng-if="sampleIndiceHistoryData.ibchQ">
+                     {{sampleIndiceHistoryData.ibchQ }}/{{ sampleIndiceHistoryData.ibchQDesignation}}
+                </span>
+
+                <span ng-if="!sampleIndiceHistoryData.ibchQ">
+                     -
+                </span>
+
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                VC:
+            </label>
+            <p class="form-control-static">
+                <span ng-if="sampleIndiceHistoryData.valeurCorrection">
+                    {{sampleIndiceHistoryData.valeurCorrection | number:2 }}
+                </span>
+                <span ng-if="!sampleIndiceHistoryData.valeurCorrection">
+                    -
+                </span>
+            </p>
+
+        </div>
+
     </div>
 
     <div class="col-md-6">
@@ -73,27 +105,40 @@
                 {{"details.sample.ibch.indicator" | j18n }} :
             </label>
             <p class="form-control-static">
-                {{sampleIndiceHistoryData.valeurGi}} / {{sampleIndiceHistoryData.taxonIndicateur}}
+                {{sampleIndiceHistoryData.valeurGi || '-'}} / {{sampleIndiceHistoryData.taxonIndicateur || '-'}}
             </p>
 
         </div>
 
         <div class="form-group form-inline">
             <label class="control-label">
-                GI_2019:
+                GI:
             </label>
             <p class="form-control-static">
-                {{sampleIndiceHistoryData.giFinal}}
+                <span ng-if="sampleIndiceHistoryData.giFinal">
+                    {{sampleIndiceHistoryData.giFinal | number:3}}
+                </span>
+                <span ng-if="!sampleIndiceHistoryData.giFinal">
+                    -
+                </span>
+
             </p>
 
         </div>
 
         <div class="form-group form-inline">
             <label class="control-label">
-                VT_2019:
+                VT:
             </label>
             <p class="form-control-static">
-                {{sampleIndiceHistoryData.valuerVt}}
+                <span ng-if="sampleIndiceHistoryData.valuerVt">
+                     {{sampleIndiceHistoryData.valuerVt | number:3}}
+                </span>
+
+                <span ng-if="!sampleIndiceHistoryData.valuerVt">
+                    -
+                </span>
+
             </p>
 
         </div>
@@ -111,39 +156,52 @@
                       bs-popover data-title="{{sampleIndiceHistoryData.ibchLegendVersionId}}" data-placement="top" data-template="{{indexesPopoverTplUrl}}"
 
                       data-content="IBCH" data-trigger="hover" >
-                {{sampleIndiceHistoryData.ibchIndexValue}}
+                {{sampleIndiceHistoryData.ibchIndexValue | number:3}}
                </span>
                <span ng-if="!sampleIndiceHistoryData.ibchLegendVersionId" >
-                    {{sampleIndiceHistoryData.ibchIndexValue}}
+                    {{sampleIndiceHistoryData.ibchIndexValue | number:3}}
                </span>
            </span>
         </div>
 
         <div class="form-group form-inline">
             <label class="control-label">
-                IBCH_2019_R:
+                IBCH-R:
             </label>
             <p class="form-control-static">
-                {{sample.ibchRobust}}
+
+                <span ng-if="sampleIndiceHistoryData.ibchRobust">
+                     {{sampleIndiceHistoryData.ibchRobust | number:3}}
+                </span>
+
+                <span ng-if="!sampleIndiceHistoryData.ibchRobust">
+                    -
+                </span>
+
             </p>
 
         </div>
+
+
 
         <div style="margin-top: 10px;">
 
             <label class="control-label">
                 SPEAR :&nbsp;&nbsp;
             </label>
-            <span ng-if="sampleIndiceHistoryData.spearIndexValue ">
+            <span ng-if="sampleIndiceHistoryData.spearIndexValue">
                 <span class="badge" style="background-color: {{sampleIndiceHistoryData.spearQuality.bgColorCode}}; color: {{sampleIndiceHistoryData.spearQuality.textColorCode}}"
-                      ng-if="sampleIndiceHistoryData.spearLegendVersionId"  data-title="{{sampleIndiceHistoryData.spearLegendVersionId}}" bs-popover data-placement="top" data-html="true" data-template="{{indexesPopoverTplUrl}}" data-content="SPEAR" data-trigger="hover" data-container="body">
-                    {{sample.bioticIndexes.spearIndexValue}}
+                      ng-if="sampleIndiceHistoryData.spearLegendVersionId"
+                      data-title="{{sampleIndiceHistoryData.spearLegendVersionId}}"
+                      bs-popover data-placement="top" data-html="true"
+                      data-template="{{indexesPopoverTplUrl}}" data-content="SPEAR" data-trigger="hover" data-container="body">
+                    {{sampleIndiceHistoryData.spearIndexValue | number:2}}
                 </span>
-                <span ng-if="!sample.spearLegendVersionId">
-                      {{sample.bioticIndexes.spearIndexValue}}
+                <span ng-if="!sampleIndiceHistoryData.spearLegendVersionId">
+                      {{sampleIndiceHistoryData.spearIndexValue | number:2}}
                 </span>
             </span>
-            <span ng-if="!sample.bioticIndexes.spearIndexValue">{{"sample.bioticIndexes.notAvailable" | j18n }}</span>
+            <span ng-if="!sampleIndiceHistoryData.spearIndexValue">{{"sample.bioticIndexes.notAvailable" | j18n }}</span>
         </div>
 
     </div>

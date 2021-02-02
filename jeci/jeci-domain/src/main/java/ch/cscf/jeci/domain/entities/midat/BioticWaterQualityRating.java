@@ -1,7 +1,11 @@
 package ch.cscf.jeci.domain.entities.midat;
 
 import ch.cscf.jeci.domain.entities.base.BaseEntity;
+import ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceVersion;
+import ch.cscf.jeci.domain.entities.security.Role;
 import ch.cscf.jeci.domain.entities.thesaurus.ThesaurusValue;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 
@@ -58,10 +62,18 @@ public class BioticWaterQualityRating extends BaseEntity {
     private int sortOrder;
 
 
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "BLS_IVR_ID" ,referencedColumnName = "IVR_ID")
+    private SampleIndiceVersion sampleIndiceVersion;
 
-    @Column(name = "BLS_IVR_ID")
-    private Integer legendVersionId;
 
+    public SampleIndiceVersion getSampleIndiceVersion() {
+        return sampleIndiceVersion;
+    }
+
+    public void setSampleIndiceVersion(SampleIndiceVersion sampleIndiceVersion) {
+        this.sampleIndiceVersion = sampleIndiceVersion;
+    }
 
     public ThesaurusValue getIndexType() {
         return indexType;
@@ -95,11 +107,5 @@ public class BioticWaterQualityRating extends BaseEntity {
         return sortOrder;
     }
 
-    public Integer getLegendVersionId() {
-        return legendVersionId;
-    }
 
-    public void setLegendVersionId(Integer legendVersionId) {
-        this.legendVersionId = legendVersionId;
-    }
 }

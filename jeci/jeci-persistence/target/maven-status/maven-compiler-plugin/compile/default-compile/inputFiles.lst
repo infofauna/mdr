@@ -89,6 +89,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/Page.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/storedprocedures/midat/GetExcelSheetsSP.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/infofauna/ThesaurusValueJPADAO.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/HydroregimeDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/storedprocedures/midat/ImportProtocolSP.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/infofauna/ThesaurusCodesRealmDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolImportJPADAO.java
@@ -100,6 +101,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ImportMassDataDetailDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/ProtocolMappingHeaderDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/storedprocedures/midat/ValidateDataSP.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/midat/HydroregimeJpaDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/interfaces/midat/GroundProtocolMappingDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/sp/infofauna/I18nMessageSPDAO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-persistence/src/main/java/ch/cscf/jeci/persistence/daos/jpa/admin/GroupJpaDAO.java

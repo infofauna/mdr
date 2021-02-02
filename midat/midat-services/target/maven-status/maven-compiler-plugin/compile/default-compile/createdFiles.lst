@@ -14,6 +14,7 @@ ch/cscf/midat/services/interfaces/EvaluationGridReadService.class
 ch/cscf/midat/services/implementations/StationReadService.class
 ch/cscf/midat/services/implementations/ProtocolImportService.class
 ch/cscf/midat/services/interfaces/ProjectReadService.class
+ch/cscf/midat/services/implementations/HydroregimeService.class
 ch/cscf/midat/services/interfaces/GroundProtocolReadService.class
 ch/cscf/midat/services/implementations/GeoStationsSession.class
 ch/cscf/midat/services/implementations/IndiceVersionService.class
@@ -30,3 +31,4 @@ ch/cscf/midat/services/implementations/StationReadService$1.class
 ch/cscf/midat/services/interfaces/StationReadService.class
 ch/cscf/midat/services/implementations/BioticWaterQualityRatingReadService.class
 ch/cscf/midat/services/implementations/ExcelParserService.class
+ch/cscf/midat/services/interfaces/HydroregimeService.class

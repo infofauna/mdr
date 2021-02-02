@@ -20,8 +20,9 @@ public class BioticWaterQualityRatingDTO {
     public final Integer legendVersionId;
 
     public final double fromValue, toValue;
+    public final String currentVersion;
 
-    public BioticWaterQualityRatingDTO(String indexTypeCode, String stateCode, String bgColorCode, String textColorCode, String rangeLegendText, double fromValue, double toValue, int sortOrder,Integer legendVersionId) {
+    public BioticWaterQualityRatingDTO(String indexTypeCode, String stateCode, String bgColorCode, String textColorCode, String rangeLegendText, double fromValue, double toValue, int sortOrder,Integer legendVersionId,String currentVersion) {
         this.indexTypeCode = indexTypeCode;
         this.ratingCode = stateCode;
         this.bgColorCode = bgColorCode;
@@ -31,5 +32,6 @@ public class BioticWaterQualityRatingDTO {
         this.toValue = toValue;
         this.sortOrder = sortOrder;
         this.legendVersionId= legendVersionId;
+        this.currentVersion = currentVersion;
     }
 }

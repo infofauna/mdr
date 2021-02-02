@@ -47,6 +47,7 @@ ch/cscf/jeci/persistence/hibernate/PersistentEnumUserType.class
 ch/cscf/jeci/persistence/daos/thesaurus/implementation/ThesaurusReadOnlyService$2.class
 ch/cscf/jeci/persistence/daos/interfaces/admin/I18nMessagesDAO.class
 ch/cscf/jeci/persistence/daos/interfaces/infofauna/TaxonPathDAO.class
+ch/cscf/jeci/persistence/daos/interfaces/midat/HydroregimeDAO.class
 ch/cscf/jeci/persistence/SortOrder.class
 ch/cscf/jeci/persistence/storedprocedures/midat/ImportProtocolSP.class
 ch/cscf/jeci/persistence/daos/jpa/midat/GroundProtocolItemJPADAO.class
@@ -60,6 +61,7 @@ ch/cscf/jeci/persistence/storedprocedures/StoredProcedure.class
 ch/cscf/jeci/persistence/daos/thesaurus/implementation/ThesaurusReadOnlyService.class
 ch/cscf/jeci/persistence/daos/sp/StoredProcedureDAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationItemJPADAO.class
+ch/cscf/jeci/persistence/daos/jpa/midat/HydroregimeJpaDAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO.class
 ch/cscf/jeci/persistence/daos/jpa/midat/SampleStationJPADAO$StationSamplesQueryBuilder.class
 ch/cscf/jeci/persistence/daos/jpa/infofauna/TaxonPathJpaDAO.class

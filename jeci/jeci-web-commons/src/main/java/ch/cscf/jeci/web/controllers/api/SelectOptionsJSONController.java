@@ -66,7 +66,7 @@ public class SelectOptionsJSONController extends AbstractRestController {
             }
             // add only active indexes
             List<SampleIndiceVersion> activeIndexesVal = activeIndexes.stream().filter(v -> {
-                if (v.getMidatIndice().intValue() == entry.getValueId().intValue() && v.getCurrent() == 'Y') {
+                if (v.getMidatIndice().intValue() == entry.getValueId().intValue() ) {
                     return true;
                 }
                 return false;

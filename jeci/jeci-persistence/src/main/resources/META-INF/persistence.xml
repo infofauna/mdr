@@ -85,6 +85,7 @@
         <class>ch.cscf.jeci.domain.entities.midat.ImportMassDataDetail</class>
         <class>ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceHistory</class>
         <class>ch.cscf.jeci.domain.entities.midat.sample.SampleIndiceVersion</class>
+        <class>ch.cscf.jeci.domain.entities.midat.sample.SampleHydroregime</class>
 
 
 

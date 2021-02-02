@@ -12,6 +12,7 @@ ch/cscf/jeci/domain/entities/midat/sample/SampleAttributeSource.class
 ch/cscf/jeci/domain/entities/midat/QImportMassDataDetail.class
 ch/cscf/jeci/domain/entities/midat/QGroundProtocolItem.class
 ch/cscf/jeci/domain/entities/base/Person.class
+ch/cscf/jeci/domain/entities/midat/sample/SampleHydroregime.class
 ch/cscf/jeci/domain/entities/midat/QEvaluationGridItem.class
 ch/cscf/jeci/domain/entities/midat/QGroundProtocolMapping.class
 ch/cscf/jeci/domain/entities/midat/QProtocolImportHeader.class
@@ -116,6 +117,7 @@ ch/cscf/jeci/domain/dto/midat/FilterDTO.class
 ch/cscf/jeci/domain/entities/midat/ProtocolImportLog.class
 ch/cscf/jeci/domain/dto/jeci/AuditingInfo.class
 ch/cscf/jeci/domain/entities/security/QRoleGroup.class
+ch/cscf/jeci/domain/entities/midat/sample/QSampleHydroregime.class
 ch/cscf/jeci/domain/entities/midat/sample/SampleComment.class
 ch/cscf/jeci/domain/entities/thesaurus/QThesaurusCodesRealm.class
 ch/cscf/jeci/domain/entities/midat/QMassImportHeader.class

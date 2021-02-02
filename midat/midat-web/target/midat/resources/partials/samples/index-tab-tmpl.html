@@ -56,6 +56,41 @@
                 {{sample.sommeAbon || 0}}
             </p>
         </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                IBCH-Q:
+            </label>
+            <p class="form-control-static">
+                <span ng-if="sample.ibchQ">
+                     {{sample.ibchQ }}/{{ sample.ibchQDesignation}}
+                </span>
+
+                <span ng-if="!sample.ibchQ">
+                     -
+                </span>
+
+            </p>
+
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label">
+                VC:
+            </label>
+            <p class="form-control-static">
+                <span ng-if="sample.valeurCorrection">
+                    {{sample.valeurCorrection | number:2}}
+                </span>
+
+                <span ng-if="!sample.valeurCorrection">
+                    -
+                </span>
+
+
+            </p>
+
+        </div>
     </div>
 
     <div class="col-md-6">
@@ -82,20 +117,34 @@
 
                 <div class="form-group form-inline">
                     <label class="control-label">
-                        GI_2019:
+                        GI:
                     </label>
                     <p class="form-control-static">
-                        {{sample.giFinal}}
+                        <span ng-if="sample.giFinal">
+                             {{sample.giFinal | number:3}}
+                        </span>
+
+                        <span ng-if="!sample.giFinal">
+                            -
+                        </span>
+
                     </p>
 
                 </div>
 
                 <div class="form-group form-inline">
                     <label class="control-label">
-                        VT_2019:
+                        VT:
                     </label>
                     <p class="form-control-static">
-                        {{sample.valuerVt}}
+                        <span ng-if="sample.valuerVt">
+                             {{sample.valuerVt | number:3}}
+                        </span>
+
+                        <span ng-if="!sample.valuerVt">
+                            -
+                        </span>
+
                     </p>
 
                 </div>
@@ -114,10 +163,10 @@
                               bs-popover data-title="{{sample.ibchLegendVersionId}}" data-placement="top" data-template="{{indexesPopoverTplUrl}}"
 
                               data-content="IBCH" data-trigger="hover" >
-                        {{sample.bioticIndexes.ibchIndexValue}}
+                        {{sample.bioticIndexes.ibchIndexValue | number:3 }}
                        </span>
                        <span ng-if="!sample.ibchLegendVersionId" >
-                            {{sample.bioticIndexes.ibchIndexValue}}
+                            {{sample.bioticIndexes.ibchIndexValue | number:3}}
                        </span>
                    </span>
 
@@ -169,13 +218,23 @@
 
                 <div class="form-group form-inline">
                     <label class="control-label">
-                        IBCH_2019_R:
+                        IBCH-R:
                     </label>
                     <p class="form-control-static">
-                        {{sample.ibchRobust}}
+                        <span ng-if="sample.ibchRobust">
+                               {{sample.ibchRobust | number:3}}
+                        </span>
+
+                        <span ng-if="!sample.ibchRobust">
+                            -
+                        </span>
+
                     </p>
 
                 </div>
+
+
+
 
                 <div style="margin-top: 10px;">
                     <label class="control-label">
@@ -185,10 +244,10 @@
                     <span ng-if="sample.bioticIndexes.spearIndexValue ">
                                                 <span class="badge" style="background-color: {{sample.bioticIndexes.spearQuality.bgColorCode}}; color: {{sample.bioticIndexes.spearQuality.textColorCode}}"
                                                       ng-if="sample.spearLegendVersionId"  data-title="{{sample.spearLegendVersionId}}" bs-popover data-placement="top" data-html="true" data-template="{{indexesPopoverTplUrl}}" data-content="SPEAR" data-trigger="hover" data-container="body">
-                                                    {{sample.bioticIndexes.spearIndexValue}}
+                                                    {{sample.bioticIndexes.spearIndexValue | number:2}}
                                                 </span>
                                                 <span ng-if="!sample.spearLegendVersionId">
-                                                      {{sample.bioticIndexes.spearIndexValue}}
+                                                      {{sample.bioticIndexes.spearIndexValue | number:2}}
                                                 </span>
                                             </span>
                     <span ng-if="!sample.bioticIndexes.spearIndexValue">{{"sample.bioticIndexes.notAvailable" | j18n }}</span>

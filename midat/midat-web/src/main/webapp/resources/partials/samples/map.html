@@ -45,7 +45,7 @@
                     <div class="col-sm-6 ">
                     <ul  class="biotic-ul">
                         <li  ng-repeat="rating in bioticIndexQualityValues[indexType]" class="biotic-li">
-                        <span class="label" title="{{rating.rangeLegendText}}" ng-style="{ 'background-color': rating.bgColorCode, color: rating.textColorCode }">
+                        <span class="label" title="{{rating.rangeLegendText}}"  ng-if="rating.currentVersion=='Y'" ng-style="{ 'background-color': rating.bgColorCode, color: rating.textColorCode }">
                             {{rating.rating}}
                         </span>
                         </li>

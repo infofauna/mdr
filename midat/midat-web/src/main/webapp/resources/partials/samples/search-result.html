@@ -148,10 +148,10 @@
                         <span class="badge" ng-if="gridItem.ibchLegendVersionId" ng-style="{ 'background-color': gridItem.indexes.ibchQuality.bgColorCode, color: gridItem.indexes.ibchQuality.textColorCode}"
                               bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title={{gridItem.ibchLegendVersionId}} data-content="IBCH" data-trigger="hover" >
                             IBCH :
-                            {{gridItem.indexes.ibchIndexValue}}
+                            {{gridItem.indexes.ibchIndexValue | number:3 }}
                         </span>
                         <span ng-if="!gridItem.ibchLegendVersionId">
-                             {{gridItem.indexes.ibchIndexValue}}
+                             {{gridItem.indexes.ibchIndexValue | number:3}}
                         </span>
                     </span>
 
@@ -159,10 +159,10 @@
                         <span class="badge" ng-if="gridItem.spearLegendVersionId"  ng-style="{ 'background-color': gridItem.indexes.spearQuality.bgColorCode, color: gridItem.indexes.spearQuality.textColorCode}"
                               bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title="{{gridItem.spearLegendVersionId}}" data-content="SPEAR" data-trigger="hover" >
                             SPEAR :
-                            {{gridItem.indexes.spearIndexValue}}
+                            {{gridItem.indexes.spearIndexValue | number:2 }}
                         </span>
                          <span  ng-if="!gridItem.spearLegendVersionId">
-                               {{gridItem.indexes.spearIndexValue}}
+                               {{gridItem.indexes.spearIndexValue | number:2 }}
                          </span>
                     </span>
 
@@ -170,10 +170,10 @@
                         <span class="badge" ng-if="gridItem.makroLegendVersionId" ng-style="{ 'background-color': gridItem.indexes.makroindexQuality.bgColorCode, color: gridItem.indexes.makroindexQuality.textColorCode}"
                               bs-popover data-placement="top" data-template="{{indexesPopoverTplUrl}}" data-title="{{gridItem.makroLegendVersionId}}" data-content="MAKROINDEX" data-trigger="hover" >
                             MAKRO :
-                            {{gridItem.indexes.makroIndexValue}}
+                            {{gridItem.indexes.makroIndexValue | number:2 }}
                         </span>
                         <span ng-if="!gridItem.makroLegendVersionId">
-                             {{gridItem.indexes.makroIndexValue}}
+                             {{gridItem.indexes.makroIndexValue | number:2 }}
                         </span>
                     </span>
 

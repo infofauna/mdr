@@ -33,6 +33,7 @@
             <name qname="@" />
             <name qname="APPMANAGER" />
             <name qname="FAUNA_APP" />
+            <name qname="INFOFAUNA" />
             <name qname="MIDAT" />
             <name qname="PUBLIC" />
           </node>

@@ -53,9 +53,9 @@ public class QBioticWaterQualityRating extends EntityPathBase<BioticWaterQuality
 
     public final ch.cscf.jeci.domain.entities.thesaurus.QThesaurusValue indexType;
 
-    public final NumberPath<Integer> legendVersionId = createNumber("legendVersionId", Integer.class);
-
     public final StringPath rangeLegendText = createString("rangeLegendText");
+
+    public final ch.cscf.jeci.domain.entities.midat.sample.QSampleIndiceVersion sampleIndiceVersion;
 
     public final NumberPath<Integer> sortOrder = createNumber("sortOrder", Integer.class);
 
@@ -101,6 +101,7 @@ public class QBioticWaterQualityRating extends EntityPathBase<BioticWaterQuality
         this.designation = inits.isInitialized("designation") ? new ch.cscf.jeci.domain.entities.thesaurus.QThesaurusValue(forProperty("designation"), inits.get("designation")) : null;
         this.id = _super.id;
         this.indexType = inits.isInitialized("indexType") ? new ch.cscf.jeci.domain.entities.thesaurus.QThesaurusValue(forProperty("indexType"), inits.get("indexType")) : null;
+        this.sampleIndiceVersion = inits.isInitialized("sampleIndiceVersion") ? new ch.cscf.jeci.domain.entities.midat.sample.QSampleIndiceVersion(forProperty("sampleIndiceVersion"), inits.get("sampleIndiceVersion")) : null;
         this.status = _super.status;
         this.textColor = inits.isInitialized("textColor") ? new ch.cscf.jeci.domain.entities.thesaurus.QThesaurusValue(forProperty("textColor"), inits.get("textColor")) : null;
         this.updateDate = _super.updateDate;

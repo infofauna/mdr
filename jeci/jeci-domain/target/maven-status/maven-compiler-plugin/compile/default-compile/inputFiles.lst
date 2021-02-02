@@ -117,6 +117,7 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleGrid.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceVersion.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleHydroregime.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QLabRecordField.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/ProtocolIndex.java
@@ -148,4 +149,5 @@
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleStation.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/systematics/TaxonPathDTO.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QProtocolIndex.java
+/Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleHydroregime.java
 /Users/abdallahkanso/Development/projects/cscf/infofauna_2020/midat_rivieres/jeci-shell-new-user-permissions/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/QGroundProtocolItem.java

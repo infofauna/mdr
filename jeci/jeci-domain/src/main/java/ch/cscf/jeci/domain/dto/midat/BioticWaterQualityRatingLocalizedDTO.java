@@ -7,13 +7,13 @@ public class BioticWaterQualityRatingLocalizedDTO extends BioticWaterQualityRati
 
     public final String rating;
 
-    public BioticWaterQualityRatingLocalizedDTO(String indexTypeCode, String stateCode, String bgColorCode, String textColorCode, String rangeLegendText, double fromValue, double toValue, int sortOrder, String rating, Integer legendVersionId) {
-        super(indexTypeCode, stateCode, bgColorCode, textColorCode, rangeLegendText, fromValue, toValue, sortOrder,legendVersionId);
+    public BioticWaterQualityRatingLocalizedDTO(String indexTypeCode, String stateCode, String bgColorCode, String textColorCode, String rangeLegendText, double fromValue, double toValue, int sortOrder, String rating, Integer legendVersionId,String currentVersion) {
+        super(indexTypeCode, stateCode, bgColorCode, textColorCode, rangeLegendText, fromValue, toValue, sortOrder,legendVersionId,currentVersion);
         this.rating=rating;
     }
 
     public BioticWaterQualityRatingLocalizedDTO(BioticWaterQualityRatingDTO unlocalizedRating, String rating) {
-        super(unlocalizedRating.indexTypeCode, unlocalizedRating.ratingCode, unlocalizedRating.bgColorCode, unlocalizedRating.textColorCode, unlocalizedRating.rangeLegendText, unlocalizedRating.fromValue,unlocalizedRating.toValue,unlocalizedRating.sortOrder,unlocalizedRating.legendVersionId);
+        super(unlocalizedRating.indexTypeCode, unlocalizedRating.ratingCode, unlocalizedRating.bgColorCode, unlocalizedRating.textColorCode, unlocalizedRating.rangeLegendText, unlocalizedRating.fromValue,unlocalizedRating.toValue,unlocalizedRating.sortOrder,unlocalizedRating.legendVersionId,unlocalizedRating.currentVersion);
         this.rating=rating;
     }
 

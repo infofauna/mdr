@@ -63,7 +63,7 @@ private Integer makroLegendVersionId;
     @Column(name = "IHY_IBCHROBUST")
     private Double ibchRobust; //IBCH_2019_R
 
-    @Column(name = "IHY_SPEARVALUE")
+    @Column(name = "IHY_SPEARINDEXVALUE")
     private Double spearIndexValue; // SPEAR_2018
 
     @Column(name = "IHY_SUMFAMILY")
@@ -99,6 +99,16 @@ private Integer makroLegendVersionId;
     @Transient
     private BioticWaterQualityRatingDTO spearQuality;
 
+    @Transient
+    private String ibchQDesignation; // Régime IBCH-Q
+
+    public String getIbchQDesignation() {
+        return ibchQDesignation;
+    }
+
+    public void setIbchQDesignation(String ibchQDesignation) {
+        this.ibchQDesignation = ibchQDesignation;
+    }
 
     public Long getSampleId() {
         return sampleId;

@@ -14,10 +14,7 @@ import ch.cscf.jeci.domain.entities.thesaurus.LocalizedThesaurusEntry;
 import ch.cscf.jeci.exceptions.NotFoundException;
 import ch.cscf.jeci.persistence.daos.interfaces.admin.GroupDAO;
 import ch.cscf.jeci.persistence.daos.interfaces.infofauna.LanguageDAO;
-import ch.cscf.jeci.persistence.daos.interfaces.midat.IndexAvaliabilityCalendarDAO;
-import ch.cscf.jeci.persistence.daos.interfaces.midat.ProtocolImportDAO;
-import ch.cscf.jeci.persistence.daos.interfaces.midat.SampleDAO;
-import ch.cscf.jeci.persistence.daos.interfaces.midat.SampleStationDAO;
+import ch.cscf.jeci.persistence.daos.interfaces.midat.*;
 import ch.cscf.jeci.persistence.daos.thesaurus.interfaces.ThesaurusReadOnlyService;
 import ch.cscf.jeci.services.general.EntityFieldTranslatorService;
 import ch.cscf.jeci.services.general.I18nService;
@@ -93,6 +90,9 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
 
     @Autowired
     private IndexAvaliabilityCalendarDAO indexAvaliabilityCalendarDAO;
+
+    @Autowired
+    private HydroregimeDAO hydroregimeDAO;
 
     private List<String> valueNames = Lists.newArrayList("search.details.station.number","search.details.station.distance");
 
@@ -266,6 +266,13 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
         dto.setIbchQ(sample.getIbchQ());
         dto.setValeurCorrection(sample.getValeurCorrection());
 
+        if(sample.getIbchQ()!=null){
+            String hydroCvlCode=  hydroregimeDAO.getSampleHydroregime(sample.getIbchQ()).getHdrCode();
+            String desc= thesaurusReadOnlyService.getLocalizedString(ThesaurusCodes.REALM_IBCHQ, hydroCvlCode, i18n.currentLanguageCode());
+            dto.setIbchQDesignation(desc);
+        }else{
+            dto.setIbchQDesignation("");
+        }
 
         Map<String, String> documents = sample.getDocuments().stream().collect(
                 Collectors.toMap(document -> {
@@ -709,6 +716,7 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
     }
 
 
+
     /** **/
 
     @Override
@@ -734,7 +742,17 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
             spearQuality = bioticWaterQualityRatingReadService.getBiologicalRatingForIndexTypeAndValue(ThesaurusCodes.MIDATINDICE_SPEARINDEX, sampleIndiceHistory.getSpearIndexValue(),sampleIndiceHistory.getSpearLegendVersionId());
             sampleIndiceHistory.setSpearQuality(spearQuality);
         }
-       return sampleIndiceHistory;
+
+        if(sampleIndiceHistory.getIbchQ()!=null){
+            String hydroCvlCode=  hydroregimeDAO.getSampleHydroregime(sampleIndiceHistory.getIbchQ()).getHdrCode();
+            String desc= thesaurusReadOnlyService.getLocalizedString(ThesaurusCodes.REALM_IBCHQ, hydroCvlCode, i18n.currentLanguageCode());
+            sampleIndiceHistory.setIbchQDesignation(desc);
+        }else{
+            sampleIndiceHistory.setIbchQDesignation("");
+        }
+
+
+        return sampleIndiceHistory;
     }
 
 }

@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/biotic-index-ratings.html" value="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples" />
         <entry key="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" value="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples" />
+        <entry key="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-history-tab-tmpl.html" value="file://$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples" />
       </map>
     </option>
   </component>
