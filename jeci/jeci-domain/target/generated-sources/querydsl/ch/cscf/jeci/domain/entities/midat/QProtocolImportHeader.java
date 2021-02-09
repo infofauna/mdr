@@ -34,6 +34,10 @@ public class QProtocolImportHeader extends EntityPathBase<ProtocolImportHeader> 
 
     public final StringPath autreneoz_2 = createString("autreneoz_2");
 
+    public final StringPath countAutoz1 = createString("countAutoz1");
+
+    public final StringPath countAutoz2 = createString("countAutoz2");
+
     //inherited
     public final DateTimePath<java.util.Date> creationDate;
 
@@ -129,6 +133,8 @@ public class QProtocolImportHeader extends EntityPathBase<ProtocolImportHeader> 
     public final ch.cscf.jeci.domain.entities.security.QUser updateUser;
 
     public final StringPath valeurGi = createString("valeurGi");
+
+    public final StringPath valeurGiMax = createString("valeurGiMax");
 
     public final StringPath valeurVt = createString("valeurVt");
 

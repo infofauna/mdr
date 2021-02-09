@@ -181,6 +181,18 @@ public class ProtocolImportHeader extends BaseEntity {
     @Column(name = "IPH_VC")
     private String vc;
 
+
+    @Column(name = "IPH_VALEURGIMAX")
+    private String valeurGiMax;
+
+    @Column(name = "IPH_COUNTAUTOZ_2")
+    private String countAutoz2;
+
+    @Column(name = "IPH_COUNTAUTOZ_1")
+    private String countAutoz1;
+
+
+
     @Transient
     private Set<Long> commentIds;
 
@@ -552,6 +564,30 @@ public class ProtocolImportHeader extends BaseEntity {
 
     public void setValidated(Character validated) {
         this.validated = validated;
+    }
+
+    public String getValeurGiMax() {
+        return valeurGiMax;
+    }
+
+    public void setValeurGiMax(String valeurGiMax) {
+        this.valeurGiMax = valeurGiMax;
+    }
+
+    public String getCountAutoz2() {
+        return countAutoz2;
+    }
+
+    public void setCountAutoz2(String countAutoz2) {
+        this.countAutoz2 = countAutoz2;
+    }
+
+    public String getCountAutoz1() {
+        return countAutoz1;
+    }
+
+    public void setCountAutoz1(String countAutoz1) {
+        this.countAutoz1 = countAutoz1;
     }
 }
 

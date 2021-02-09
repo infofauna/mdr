@@ -55,6 +55,10 @@ public class ExcelParserService {
     static final String IPH_VC = "vc";
     static final String IPH_WATERCOURSE = "waterCourse";
 
+    static final String IPH_VALEURGIMAX = "valeurGiMax";
+    static final String IPH_COUNTAUTOZ_2 = "countAutoz2";
+    static final String IPH_COUNTAUTOZ_1 = "countAutoz1";
+
 
    /** Mapped columns for Mass import **/
     static final String IMD_HIGHERTAXON = "highertaxon";
