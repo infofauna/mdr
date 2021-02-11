@@ -14,32 +14,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jeci-shell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jeci-shell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_domain_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_domain_3_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_persistence_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_services_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_web_commons_classes_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_web_commons_classes_3_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_web_commons_war_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_jeci_web_commons_war_3_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_cscf_midat_services_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/target/jeci-commons-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/target/jeci-commons-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/Sample.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/Sample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/jeci-domain-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/jeci-domain-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/maven-archiver/pom.properties" afterDir="false" />
@@ -55,13 +37,9 @@
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/midat-services-4.1.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-services/target/classes/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/classes/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/classes/versioning.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/classes/versioning.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/midat-services-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat-4.1.1-dev.war" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat-4.1.1-dev.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" afterDir="false" />
@@ -70,14 +48,12 @@
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-web-commons-4.1.0-SNAPSHOT-classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-web-commons-4.1.0-SNAPSHOT-classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/midat-services-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/META-INF/maven/ch.cscf/jeci-web-commons/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/META-INF/maven/ch.cscf/jeci-web-commons/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-domain-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-domain-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-persistence-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-persistence-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/war/work/ch.cscf/jeci-web-commons/WEB-INF/lib/midat-services-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midat/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -588,7 +564,7 @@
       <workItem from="1613033272577" duration="809000" />
       <workItem from="1613035699215" duration="73000" />
       <workItem from="1613035787488" duration="444000" />
-      <workItem from="1613036257708" duration="7560000" />
+      <workItem from="1613036257708" duration="9099000" />
     </task>
     <task id="LOCAL-00001" summary="change jeci.version in the pom  from 3.6.0 to 3.6.2">
       <created>1483979388303</created>

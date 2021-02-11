@@ -170,7 +170,7 @@ public class Sample extends BaseEntity {
     private List<SampleTaxonIndicateur> sampleTaxonIndicateur;
 
 
-    @OneToMany(mappedBy = "sample")
+    @OneToMany(mappedBy = "sampleId")
     private List<SampleIndiceHistory> sampleIndiceHistoryList;
 
     @OneToOne(fetch = FetchType.LAZY)
