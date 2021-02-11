@@ -105,6 +105,8 @@ public class QSample extends EntityPathBase<Sample> {
 
     public final NumberPath<Integer> sampleDateYear = createNumber("sampleDateYear", Integer.class);
 
+    public final ListPath<SampleIndiceHistory, QSampleIndiceHistory> sampleIndiceHistoryList = this.<SampleIndiceHistory, QSampleIndiceHistory>createList("sampleIndiceHistoryList", SampleIndiceHistory.class, QSampleIndiceHistory.class, PathInits.DIRECT2);
+
     public final QSampleMassOriginalFile sampleMassOriginalFile;
 
     public final NumberPath<Long> sampleMassOriginalFileId = createNumber("sampleMassOriginalFileId", Long.class);

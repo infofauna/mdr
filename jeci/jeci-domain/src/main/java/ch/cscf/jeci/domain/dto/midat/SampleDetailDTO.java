@@ -103,6 +103,8 @@ public class SampleDetailDTO {
 
     private Double valeurCorrection; //Valeur de correction VC
 
+    private Boolean hasHistory;
+
 
     public SampleDetailDTO() {
     }
@@ -562,5 +564,13 @@ public class SampleDetailDTO {
 
     public void setIbchQDesignation(String ibchQDesignation) {
         this.ibchQDesignation = ibchQDesignation;
+    }
+
+    public Boolean getHasHistory() {
+        return hasHistory;
+    }
+
+    public void setHasHistory(Boolean hasHistory) {
+        this.hasHistory = hasHistory;
     }
 }

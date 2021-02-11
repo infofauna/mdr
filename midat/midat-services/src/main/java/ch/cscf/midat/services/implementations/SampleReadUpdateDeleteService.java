@@ -266,6 +266,18 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
         dto.setIbchQ(sample.getIbchQ());
         dto.setValeurCorrection(sample.getValeurCorrection());
 
+        //if no history found disable the archived history tab
+        dto.setHasHistory(false);
+        logger.info("getSampleIndiceHistoryList:",sample.getSampleIndiceHistoryList());
+        if(sample.getSampleIndiceHistoryList()!=null){
+            List<SampleIndiceHistory> history = sample.getSampleIndiceHistoryList()
+                    .stream().filter(h -> h.getVersionSeq().intValue() == -1)
+                    .collect(Collectors.toList());
+            if(history !=null && history.size() == 1 ){
+                dto.setHasHistory(true);
+            }
+        }
+
         if(sample.getIbchQ()!=null){
             String hydroCvlCode=  hydroregimeDAO.getSampleHydroregime(sample.getIbchQ()).getHdrCode();
             String desc= thesaurusReadOnlyService.getLocalizedString(ThesaurusCodes.REALM_IBCHQ, hydroCvlCode, i18n.currentLanguageCode());

@@ -165,12 +165,6 @@
         <sourceRoots />
       </configuration>
     </facet>
-    <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="Manually" manifestLocation="midat/midat-web/target/midat/WEB-INF/classes/org/hibernate/spatial" jarfileLocation="jeci-shell.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
-        <additionalProperties />
-        <additionalJARContents />
-      </configuration>
-    </facet>
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
@@ -205,6 +199,12 @@
           <file>file://$MODULE_DIR$/infofauna/infofauna-services/src/main/resources/META-INF/infofauna-services-context.xml</file>
           <file>file://$MODULE_DIR$/jeci/jeci-commons/target/classes/config/environment-config.properties</file>
         </fileset>
+      </configuration>
+    </facet>
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="Manually" manifestLocation="midat/midat-web/target/midat/WEB-INF/classes/org/hibernate/spatial" jarfileLocation="jeci-shell.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties />
+        <additionalJARContents />
       </configuration>
     </facet>
   </component>

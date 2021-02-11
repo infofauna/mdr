@@ -63,6 +63,8 @@ public class QSampleIndiceHistory extends EntityPathBase<SampleIndiceHistory> {
 
     public final NumberPath<Integer> plecopteraCounter = createNumber("plecopteraCounter", Integer.class);
 
+    public final QSample sample;
+
     public final NumberPath<Long> sampleId = createNumber("sampleId", Long.class);
 
     public final NumberPath<Integer> sommeAbon = createNumber("sommeAbon", Integer.class);
@@ -120,6 +122,7 @@ public class QSampleIndiceHistory extends EntityPathBase<SampleIndiceHistory> {
         this.dbUpdateDate = _super.dbUpdateDate;
         this.dbUpdateUser = _super.dbUpdateUser;
         this.id = _super.id;
+        this.sample = inits.isInitialized("sample") ? new QSample(forProperty("sample"), inits.get("sample")) : null;
         this.status = _super.status;
         this.updateDate = _super.updateDate;
         this.updateUser = _super.updateUser;

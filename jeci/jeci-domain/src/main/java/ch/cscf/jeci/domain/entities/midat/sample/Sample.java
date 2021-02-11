@@ -169,6 +169,10 @@ public class Sample extends BaseEntity {
     @OneToMany(mappedBy = "sample")
     private List<SampleTaxonIndicateur> sampleTaxonIndicateur;
 
+
+    @OneToMany(mappedBy = "sample")
+    private List<SampleIndiceHistory> sampleIndiceHistoryList;
+
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="SPH_ID", updatable = false, insertable = false)
     private SampleProtocolType sampleProtocolType;
@@ -513,5 +517,13 @@ public class Sample extends BaseEntity {
 
     public void setValeurCorrection(Double valeurCorrection) {
         this.valeurCorrection = valeurCorrection;
+    }
+
+    public List<SampleIndiceHistory> getSampleIndiceHistoryList() {
+        return sampleIndiceHistoryList;
+    }
+
+    public void setSampleIndiceHistoryList(List<SampleIndiceHistory> sampleIndiceHistoryList) {
+        this.sampleIndiceHistoryList = sampleIndiceHistoryList;
     }
 }

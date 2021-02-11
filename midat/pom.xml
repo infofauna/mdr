@@ -37,7 +37,7 @@
         <repository>
             <id>version99</id>
             <!-- highly available repository serving empty artifacts. See : http://www.slf4j.org/faq.html#excludingJCL -->
-            <url>http://version99.qos.ch/</url>
+            <url>https://version99.qos.ch/</url>
         </repository>
     </repositories>
 
@@ -136,6 +136,7 @@
             <plugins>
 
                 <!-- Compiler plugin - specify java version -->
+                <!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -144,6 +145,20 @@
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>
+                </plugin>
+                -->
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <fork>true</fork>
+                        <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/bin/javac</executable>
+                    </configuration>
+
                 </plugin>
 
             </plugins>

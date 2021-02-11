@@ -32,6 +32,11 @@ public class SampleIndiceHistory extends BaseEntity {
 @Column(name = "IHY_SPH_ID")
 private Long sampleId;
 
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IHY_SPH_ID", insertable = false, updatable = false)
+    private Sample sample;
+
 @Column(name = "IHY_IVR_ID_IBCH")
 private Integer ibchLegendVersionId;
 
@@ -285,5 +290,13 @@ private Integer makroLegendVersionId;
 
     public void setSpearQuality(BioticWaterQualityRatingDTO spearQuality) {
         this.spearQuality = spearQuality;
+    }
+
+    public Sample getSample() {
+        return sample;
+    }
+
+    public void setSample(Sample sample) {
+        this.sample = sample;
     }
 }

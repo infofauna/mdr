@@ -384,8 +384,13 @@
         </uib-tab>
 
         <!-------------------- Index tab 3------------------>
+        <uib-tab   heading="{{'search.details.sample.indexs' | j18n }}"   ng-if="!sample.hasHistory" >
+            <br/>
+            <br/>
+            <ng-include src="indexTabTemplatePath" ></ng-include>
+        </uib-tab>
 
-        <uib-tab  heading="{{'search.details.sample.indexs' | j18n }}"   >
+        <uib-tab  heading="{{'search.details.sample.indexs' | j18n }}"  ng-if="sample.hasHistory" >
             <uib-tabset class="subNavTab" >
 
                 <uib-tab   heading="{{'search.details.sample.indexTab1' | j18n }}"  class="subTabContent" >

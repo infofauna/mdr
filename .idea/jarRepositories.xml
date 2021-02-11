@@ -7,6 +7,11 @@
       <option name="url" value="http://www.hibernatespatial.org/repository" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="version99" />
+      <option name="name" value="version99" />
+      <option name="url" value="https://version99.qos.ch/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Repository serving Spring release artifacts" />
       <option name="url" value="https://repo.springsource.org/libs-release-remote" />

@@ -71,7 +71,7 @@
         <repository>
             <id>version99</id>
             <!-- highly available repository serving empty artifacts. See : http://www.slf4j.org/faq.html#excludingJCL -->
-            <url>http://version99.qos.ch/</url>
+            <url>https://version99.qos.ch/</url>
         </repository>
 
     </repositories>
@@ -485,6 +485,7 @@
 		<plugins>
 
             <!-- build number plugin : generates build number from Git (first 6 digits from hash) -->
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
@@ -503,6 +504,8 @@
                 </executions>
             </plugin>
 
+
+
         </plugins>
 
         <!-- Plugins management specifies plugins configuration for all sub-modules -->
@@ -510,6 +513,7 @@
             <plugins>
 
                 <!-- Compiler plugin - specify java version -->
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -517,8 +521,14 @@
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
+                        <fork>true</fork>
+                        <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/bin/javac</executable>
                     </configuration>
+
                 </plugin>
+
+
+
 
             </plugins>
         </pluginManagement>

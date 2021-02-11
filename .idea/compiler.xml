@@ -30,18 +30,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="infofauna-parent" target="1.5" />
-      <module name="infofauna-services" target="1.8" />
-      <module name="infofauna-web" target="1.8" />
       <module name="jeci-commons" target="1.8" />
       <module name="jeci-domain" target="1.8" />
       <module name="jeci-parent" target="1.5" />
       <module name="jeci-persistence" target="1.8" />
       <module name="jeci-services" target="1.8" />
       <module name="jeci-web-commons" target="1.8" />
-      <module name="mds-parent" target="1.5" />
-      <module name="mds-services" target="1.8" />
-      <module name="mds-web" target="1.8" />
       <module name="midat-parent" target="1.5" />
       <module name="midat-services" target="1.8" />
       <module name="midat-web" target="1.8" />
