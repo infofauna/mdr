@@ -95,7 +95,9 @@ public class SampleDetailDTO {
 
     private Integer plecopteraCounter;//familles Trichoptera
 
-    private Integer sommeAbon;//Abondances
+    private Integer sommeAbon;//old Abondances
+    private Integer taxonFreqSum;//old Abondances
+
 
     private Integer ibchQ; // Régime IBCH-Q
 
@@ -572,5 +574,13 @@ public class SampleDetailDTO {
 
     public void setHasHistory(Boolean hasHistory) {
         this.hasHistory = hasHistory;
+    }
+
+    public Integer getTaxonFreqSum() {
+        return taxonFreqSum;
+    }
+
+    public void setTaxonFreqSum(Integer taxonFreqSum) {
+        this.taxonFreqSum = taxonFreqSum;
     }
 }

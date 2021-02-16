@@ -227,7 +227,12 @@ public class Sample extends BaseEntity {
     private Integer plecopteraCounter;//familles Trichoptera
 
     @Column(name = "SPH_SOMMEABON")
-    private Integer sommeAbon;//Abondances
+    private Integer sommeAbon;//old Abondances
+
+
+    @Column(name = "SPH_TAXONFREQUENCESUM")
+    private Integer taxonFreqSum;//new Abondances
+
 
     @Column(name = "SPH_IBCHQ")
     private Integer ibchQ; // Régime IBCH-Q
@@ -525,5 +530,13 @@ public class Sample extends BaseEntity {
 
     public void setSampleIndiceHistoryList(List<SampleIndiceHistory> sampleIndiceHistoryList) {
         this.sampleIndiceHistoryList = sampleIndiceHistoryList;
+    }
+
+    public Integer getTaxonFreqSum() {
+        return taxonFreqSum;
+    }
+
+    public void setTaxonFreqSum(Integer taxonFreqSum) {
+        this.taxonFreqSum = taxonFreqSum;
     }
 }

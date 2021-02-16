@@ -263,6 +263,7 @@ public class SampleReadUpdateDeleteService implements ch.cscf.midat.services.int
         dto.setTricopteraCounter(sample.getTricopteraCounter());
         dto.setPlecopteraCounter(sample.getPlecopteraCounter());
         dto.setSommeAbon(sample.getSommeAbon());
+        dto.setTaxonFreqSum(sample.getTaxonFreqSum());
         dto.setIbchQ(sample.getIbchQ());
         dto.setValeurCorrection(sample.getValeurCorrection());
 

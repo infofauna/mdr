@@ -14,19 +14,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75198392-d351-4a97-96c4-3cbfa6ae46ae" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/APPMANAGER.bAr7Lg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/APPMANAGER.bAr7Lg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/APPMANAGER.bAr7Lg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/APPMANAGER.bAr7Lg.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/FAUNA_APP.75AuBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/FAUNA_APP.75AuBA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/MIDAT.W0hfBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/MIDAT.W0hfBA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/MIDAT.W0hfBA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bdeb644-84ad-4853-bee9-c972a210c229/storage_v2/_src_/schema/MIDAT.W0hfBA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/target/classes/config/environment-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/target/classes/config/environment-config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/target/jeci-commons-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/target/jeci-commons-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-commons/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/src/main/java/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/dto/midat/SampleDetailDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/QSample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/Sample.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/Sample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/classes/ch/cscf/jeci/domain/entities/midat/sample/SampleIndiceHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSampleIndiceHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/generated-sources/querydsl/ch/cscf/jeci/domain/entities/midat/sample/QSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/jeci-domain-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/jeci-domain-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-domain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/target/jeci-persistence-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/target/jeci-persistence-4.1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-persistence/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/target/jeci-persistence-4.1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeci/jeci-persistence/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-services/target/jeci-services-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/target/jeci-services-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-services/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-services/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT-classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT-classes.jar" afterDir="false" />
@@ -37,11 +46,14 @@
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/jeci-services-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/WEB-INF/lib/midat-services-4.1.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeci/jeci-web-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jeci/jeci-web-commons/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-services/target/classes/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/classes/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/classes/versioning.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/classes/versioning.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-services/target/midat-services-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-services/target/midat-services-4.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-tab-tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/src/main/webapp/resources/partials/samples/index-tab-tmpl.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat-4.1.1-dev.war" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat-4.1.1-dev.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat-4.1.1-dev.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-commons-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-domain-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-domain-4.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-persistence-4.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/midat/midat-web/target/midat/WEB-INF/lib/jeci-persistence-4.1.0-SNAPSHOT.jar" afterDir="false" />
@@ -564,7 +576,7 @@
       <workItem from="1613033272577" duration="809000" />
       <workItem from="1613035699215" duration="73000" />
       <workItem from="1613035787488" duration="444000" />
-      <workItem from="1613036257708" duration="9099000" />
+      <workItem from="1613036257708" duration="16888000" />
     </task>
     <task id="LOCAL-00001" summary="change jeci.version in the pom  from 3.6.0 to 3.6.2">
       <created>1483979388303</created>
@@ -877,12 +889,12 @@
     <option featureType="com.intellij.configurationType" implementationName="BashConfigurationType" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -1138,7 +1150,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/midat/midat-services/src/main/java/ch/cscf/midat/services/implementations/SampleReadUpdateDeleteService.java</url>
-          <line>400</line>
+          <line>401</line>
           <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint type="java-line">

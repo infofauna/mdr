@@ -130,6 +130,8 @@ public class QSample extends EntityPathBase<Sample> {
     //inherited
     public final EnumPath<ch.cscf.jeci.domain.entities.base.EntityStatus> status;
 
+    public final NumberPath<Integer> taxonFreqSum = createNumber("taxonFreqSum", Integer.class);
+
     public final StringPath taxonIndicateur = createString("taxonIndicateur");
 
     public final NumberPath<Integer> taxonSumFamily = createNumber("taxonSumFamily", Integer.class);
