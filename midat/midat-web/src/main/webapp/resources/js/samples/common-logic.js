@@ -29,12 +29,7 @@ samplesApp.service('commonSearchLogic', function () {
                 $scope.sessionUser = sessionUser;
 
                 if(sessionUser &&  sessionUser.permissions && sessionUser.permissions.length>0){
-
-
-
-                    managerObject = sessionUser.permissions.indexOf('midat:manager') > -1;
-
-
+                    //managerObject = sessionUser.permissions.indexOf('midat:manager') > -1;
                     //added to check  the noexport role
                     noExportObject = sessionUser.permissions.indexOf('midat:export') === -1;
 
@@ -43,17 +38,17 @@ samplesApp.service('commonSearchLogic', function () {
                         console.log(">>>> NB. Current logged user  doesn't have the right to export data  <<<<<<<<<<<");
                         $scope.maxRows = 0;
                     }else{
-                        if(managerObject && !$.isEmptyObject(managerObject)){
+                        if(sessionUser.permissions.indexOf('midat:manager') > -1){
+                            console.log("User has midat:manager role");
                             $scope.maxRows = 500;
                         }else{
+                            console.log("User doesn't have midat:manager role");
                             $scope.maxRows = 50;
                         }
                     }
 
                     console.log("maxRows allowed for MS Export is  :"+$scope.maxRows);
                 }
-
-
             });
 
 

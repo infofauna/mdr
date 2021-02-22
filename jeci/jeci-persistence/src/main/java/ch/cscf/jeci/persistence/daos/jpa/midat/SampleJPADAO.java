@@ -1090,5 +1090,16 @@ public class SampleJPADAO extends GenericJpaEntityDAO<Sample> implements SampleD
                 .getSingleResult();
         return messages;
     }
+
+
+
+    @Override
+    public  Sample loadSampleByIphId(Long sampleIphId){
+        Sample sample  = getEm().createQuery("select sample from Sample sample " +
+                "where sample.sampleIphId=:sampleIphId ",Sample.class)
+                .setParameter("sampleIphId", sampleIphId)
+                .getSingleResult();
+        return sample;
+    }
 }
 

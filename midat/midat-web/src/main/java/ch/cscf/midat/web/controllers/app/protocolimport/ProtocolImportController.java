@@ -142,7 +142,7 @@ public class ProtocolImportController extends AbstractController {
         if(protocolVersionCachedRepository.isOfType(protocolImportHeader.getProtocolVersionId(), ThesaurusCodes.MIDATPROTO_LABORATORY)){
             returnPath = "/app/import/lab/"+protocolImportHeader.getId();
         }else{
-            returnPath = "/app/import/lab/"+protocolImportHeader.getParentId()+"/additional";
+            returnPath = "/app/import/lab/"+protocolImportHeader.getSphId()+"/additional";
         }
 
         String confirmPath;
@@ -207,7 +207,7 @@ public class ProtocolImportController extends AbstractController {
     }
 
     private void bindFormValuesForAdditionalData(Model model, ProtocolImportHeader additionalData) {
-        Long parentSampleId = additionalData.getParentId();
+        Long parentSampleId = additionalData.getSphId();
         String currentLanguageCode = i18NService.currentLanguageCode();
         Map<String, Object> parentInfo = service.getParentInfo(parentSampleId);
         model.addAttribute(MODEL_KEY, additionalData);

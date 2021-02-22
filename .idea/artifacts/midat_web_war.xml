@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="midat-4.1.1-dev.war">
+    <root id="archive" name="midat-4.1.2-dev.war">
       <element id="artifact" artifact-name="midat-web:war exploded" />
     </root>
   </artifact>

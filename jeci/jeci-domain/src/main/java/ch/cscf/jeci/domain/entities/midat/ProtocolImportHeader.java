@@ -38,6 +38,9 @@ public class ProtocolImportHeader extends BaseEntity {
     @Column(name = "IPH_IPH_ID")
     private Long parentId;
 
+    @Column(name = "IPH_SPH_ID_PARENT")
+    private Long sphId;
+
     @Column(name = "IPH_OID")
     private String sampleStationNumber;
 
@@ -100,6 +103,10 @@ public class ProtocolImportHeader extends BaseEntity {
 
     @Column(name = "IPH_PRJ_ID")
     private Long sampleProjectId;
+
+
+
+
 
 
     @Column(name = "IPH_ABSOLUTENUMBERFLAG")
@@ -589,6 +596,15 @@ public class ProtocolImportHeader extends BaseEntity {
     public void setCountAutoz1(String countAutoz1) {
         this.countAutoz1 = countAutoz1;
     }
+
+    public Long getSphId() {
+        return sphId;
+    }
+
+    public void setSphId(Long sphId) {
+        this.sphId = sphId;
+    }
+
 }
 
 

@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="jeci-web-commons-4.1.0-SNAPSHOT.war">
+    <root id="archive" name="jeci-web-commons-4.1.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="jeci-web-commons:war exploded" />
     </root>
   </artifact>

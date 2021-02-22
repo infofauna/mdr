@@ -27,7 +27,7 @@ import javax.persistence.*;
         @AttributeOverride(name = "dbUpdateUser", column = @Column(name = "IPN_MODUSER"))
 })
 
-@SequenceGenerator(allocationSize=1, name = "idSeq", sequenceName = "MIDAT.SEQ_IMPORTPROTOCOLGROUND")
+@SequenceGenerator(allocationSize=1, name = "idSeq", sequenceName = "MIDAT.SEQ_IMPORTPROTOCOLGRND")
 public class GroundProtocolImport extends BaseEntity {
 
     @Column(name = "IPN_IPH_ID")

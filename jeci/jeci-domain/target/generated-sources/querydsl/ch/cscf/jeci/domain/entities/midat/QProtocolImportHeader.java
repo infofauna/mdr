@@ -119,6 +119,8 @@ public class QProtocolImportHeader extends EntityPathBase<ProtocolImportHeader> 
 
     public final StringPath spearValue = createString("spearValue");
 
+    public final NumberPath<Long> sphId = createNumber("sphId", Long.class);
+
     public final StringPath startPointX = createString("startPointX");
 
     public final StringPath startPointY = createString("startPointY");

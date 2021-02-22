@@ -18,6 +18,7 @@ import ch.cscf.jeci.services.general.EntityFieldTranslatorService;
 import ch.cscf.jeci.services.general.I18nService;
 import ch.cscf.jeci.services.security.interfaces.SessionUserService;
 import ch.cscf.midat.services.interfaces.ProtocolVersionCachedRepository;
+import ch.cscf.midat.services.interfaces.SampleSearchService;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -280,9 +281,22 @@ public class ProtocolImportService implements ch.cscf.midat.services.interfaces.
         // set the IPH_STATUS to A
         protocolImportHeader.setStatus(EntityStatus.ACTIVE);
 
+
+        logger.info(">>>>>>>> protocolImportHeader.getSphId()) "+protocolImportHeader.getSphId());
+
+        /**
+         * When parentId is not this means we are adding additional data (sample grid or Field protocol)
+         */
+        if(protocolImportHeader.getSphId()!= null)
+        {
+            Sample sample = sampleDAO.findById(protocolImportHeader.getSphId());
+            protocolImportHeader.setParentId(sample.getSampleIphId());
+        }
         protocolImportHeaderDAO.persist(protocolImportHeader);
 
+
         Long protocolImportHeaderId = protocolImportHeader.getId();;
+        logger.info(">>>>>>>> newly added protocolImportHeaderId "+protocolImportHeader.getId());
         if (protocolVersionCachedRepository.isOfType(protocolImportHeader.getProtocolVersionId(), ThesaurusCodes.MIDATPROTO_LABORATORY)) {
                 logger.info(">>>>>>>> parse  MIDATPROTO_LABORATORY");
                 List<LabProtocolImport>  labProtocolImports = excelParserService
@@ -471,7 +485,8 @@ public class ProtocolImportService implements ch.cscf.midat.services.interfaces.
         }
 
         ProtocolImportHeader additionalDataImport = new ProtocolImportHeader();
-        additionalDataImport.setParentId(parent.getId());
+        additionalDataImport.setSphId(parentSampleId);
+        additionalDataImport.setParentId(parent.getSampleIphId());
         additionalDataImport.setAnalysisDate(parent.getAnalysisDate());
         //additionalDataImport.setLanguageId(parent.getOriginalImport().getLanguageId());
 

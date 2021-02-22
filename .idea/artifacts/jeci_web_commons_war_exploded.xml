@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="jeci-web-commons:war exploded">
-    <output-path>$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.1-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -14,16 +14,16 @@
           <element id="module-output" name="jeci-web-commons" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="jeci-services-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-services-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-services" />
           </element>
-          <element id="archive" name="jeci-persistence-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-persistence-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-persistence" />
           </element>
-          <element id="archive" name="jeci-domain-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-domain-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-domain" />
           </element>
-          <element id="archive" name="jeci-commons-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-commons-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-commons" />
           </element>
           <element id="library" level="project" name="Maven: de.grundid.opendatalab:geojson-jackson:1.2" />
@@ -62,7 +62,7 @@
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.11" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.11" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
-          <element id="archive" name="midat-services-4.1.1.jar">
+          <element id="archive" name="midat-services-4.1.2.jar">
             <element id="module-output" name="midat-services" />
           </element>
           <element id="library" level="project" name="Maven: ch.unine.sitel.Object2Map:Object2Map:1.0-SNAPSHOT" />
@@ -136,7 +136,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/jeci/jeci-web-commons/target/jeci-web-commons-4.1.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="jeci-web-commons/web/Web" />
     </root>

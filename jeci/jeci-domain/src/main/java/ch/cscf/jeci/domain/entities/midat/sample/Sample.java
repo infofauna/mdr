@@ -153,6 +153,10 @@ public class Sample extends BaseEntity {
     @Column(name = "SPH_SMF_ID")
     private Long sampleMassOriginalFileId;
 
+
+    @Column(name = "SPH_IPH_ID")
+    private Long sampleIphId;
+
     @ManyToOne(optional = true,cascade = CascadeType.ALL)
     @JoinColumn(name = "SPH_SMF_ID", updatable = false, insertable = false)
     private SampleMassOriginalFile sampleMassOriginalFile;
@@ -538,5 +542,13 @@ public class Sample extends BaseEntity {
 
     public void setTaxonFreqSum(Integer taxonFreqSum) {
         this.taxonFreqSum = taxonFreqSum;
+    }
+
+    public Long getSampleIphId() {
+        return sampleIphId;
+    }
+
+    public void setSampleIphId(Long sampleIphId) {
+        this.sampleIphId = sampleIphId;
     }
 }

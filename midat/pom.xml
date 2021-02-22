@@ -5,14 +5,14 @@
 
     <groupId>ch.cscf</groupId>
 	<artifactId>midat-parent</artifactId>
-	<version>4.1.1</version>
+	<version>4.1.2</version>
 	<packaging>pom</packaging>
 	<name>MIDAT</name>
 
 	<description>MIDAT - Qualité des eaux des rivières - parent module</description>
 
     <properties>
-        <jeci.version>4.1.0-SNAPSHOT</jeci.version>
+        <jeci.version>4.1.1-SNAPSHOT</jeci.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <org.springframework.version>4.0.5.RELEASE</org.springframework.version>
     </properties>

@@ -14,26 +14,26 @@
           <element id="module-output" name="midat-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="midat-services-4.1.1.jar">
+          <element id="archive" name="midat-services-4.1.2.jar">
             <element id="module-output" name="midat-services" />
           </element>
-          <element id="archive" name="jeci-services-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-services-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-services" />
           </element>
-          <element id="archive" name="jeci-persistence-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-persistence-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-persistence" />
           </element>
-          <element id="archive" name="jeci-domain-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-domain-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-domain" />
           </element>
-          <element id="archive" name="jeci-commons-4.1.0-SNAPSHOT.jar">
+          <element id="archive" name="jeci-commons-4.1.1-SNAPSHOT.jar">
             <element id="module-output" name="jeci-commons" />
           </element>
           <element id="library" level="project" name="Maven: de.grundid.opendatalab:geojson-jackson:1.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.2" />
-          <element id="archive" name="jeci-web-commons-4.1.0-SNAPSHOT-classes.jar">
+          <element id="archive" name="jeci-web-commons-4.1.1-SNAPSHOT-classes.jar">
             <element id="module-output" name="jeci-web-commons" />
           </element>
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />

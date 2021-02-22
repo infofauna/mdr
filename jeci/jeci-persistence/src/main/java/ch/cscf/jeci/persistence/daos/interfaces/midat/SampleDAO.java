@@ -31,6 +31,7 @@ public interface SampleDAO extends GenericEntityDAO<Sample> {
     void batchUpdateField(List<Long> sampleIds, String fieldName, Object value);
 
     Sample loadSampleForDetailsView(Long sampleId);
+    Sample loadSampleByIphId(Long sampleIphId);
 
     List<Long> searchSamplesStations(SampleSearchParameters searchParameters);
     SampleImportDisplayLog getImportLogKey(Long sampleId, Long languageId);

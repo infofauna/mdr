@@ -189,7 +189,7 @@
 
 <form:form action="${appRoot}/app/import/lab/validation" method="post" commandName="protocolImportHeader" enctype="multipart/form-data">
 
-    <form:hidden path="parentId" />
+    <form:hidden path="sphId" />
 
     <fieldset>
         <legend>
